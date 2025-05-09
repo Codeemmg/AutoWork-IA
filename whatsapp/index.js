@@ -4,11 +4,18 @@ if (!global.crypto) global.crypto = webcrypto;
 
 const fs = require('fs-extra');
 const path = require('path');
-const qrcode = require('qrcode'); // alterado
 const mime = require('mime-types');
+const QRCode = require('qrcode');
+const express = require('express');
+
 const { default: makeWASocket, useMultiFileAuthState, DisconnectReason } = require('@whiskeysockets/baileys');
 const { Boom } = require('@hapi/boom');
-const agent = require('../agent/agent'); // << CÉREBRO IA
+const agent = require('../agent/agent');
+
+// Servidor para expor QR Code em /qrcode.png
+const app = express();
+app.use(express.static('public'));
+app.listen(3000, () => console.log('🌐 Servidor web rodando em http://localhost:3000'));
 
 async function startSock() {
   const { state, saveCreds } = await useMultiFileAuthState('./auth');
@@ -21,27 +28,16 @@ async function startSock() {
 
   sock.ev.on('creds.update', saveCreds);
 
-  sock.ev.on('connection.update', ({ connection, lastDisconnect, qr }) => {
+  sock.ev.on('connection.update', async ({ connection, lastDisconnect, qr }) => {
     if (qr) {
-      qrcode.toDataURL(qr, (err, url) => {
-        if (err) {
-          console.error('Erro ao gerar QR Code:', err);
-          return;
-        }
-
-        const html = `
-          <html>
-            <body style="display:flex;align-items:center;justify-content:center;height:100vh;background:#111">
-              <img src="${url}" alt="QR Code do WhatsApp" />
-            </body>
-          </html>
-        `;
-
-        const filePath = path.join(__dirname, 'qrcode.html');
-        fs.writeFileSync(filePath, html);
-        console.log("🌐 Abrindo QR Code no navegador...");
-        require('child_process').exec(`start ${filePath}`);
-      });
+      const qrPath = path.join(__dirname, '../public/qrcode.png');
+      try {
+        await QRCode.toFile(qrPath, qr);
+        console.log('\n✅ QR Code gerado!');
+        console.log('👉 Acesse o link: https://autowork-ia.up.railway.app/qrcode.png\n');
+      } catch (err) {
+        console.error('❌ Erro ao gerar QR Code:', err);
+      }
     }
 
     if (connection === 'close') {
@@ -61,8 +57,7 @@ async function startSock() {
 
     const sender = msg.key.remoteJid;
 
-    const verificarAutorizacao = require('../tools/verificarAutorizacao'); // novo
-
+    const verificarAutorizacao = require('../tools/verificarAutorizacao');
     const numero = msg.key.remoteJid.replace('@s.whatsapp.net', '');
     const autorizado = await verificarAutorizacao(numero);
     
@@ -90,7 +85,6 @@ async function startSock() {
     await sock.sendPresenceUpdate('composing', sender);
 
     try {
-      const numero = msg.key.remoteJid.replace('@s.whatsapp.net', '');
       const resposta = await agent(texto, [], numero);
 
       if (typeof resposta === 'string') {
