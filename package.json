@@ -1,0 +1,25 @@
+{
+  "name": "autowork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.16",
+    "chartjs-node-canvas": "^5.0.0",
+    "dotenv": "^16.4.7",
+    "exceljs": "^4.4.0",
+    "fs-extra": "^11.3.0",
+    "mime-types": "^3.0.1",
+    "moment": "^2.30.1",
+    "mysql2": "^3.14.0",
+    "node-nlp": "^5.0.0-alpha.5",
+    "openai": "^4.91.0",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
