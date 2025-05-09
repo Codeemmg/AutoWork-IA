@@ -67,7 +67,14 @@ async function gerarResumoCompleto(userId, periodo, foco = null) {
     resumo += `📌 *Saldo Final:* R$ ${(totalEntradas - totalSaidas).toFixed(2)}`;
   }
 
-  const logPath = path.join(__dirname, '../logs/resumo.log');
+  // Criação segura da pasta logs
+  const logsDir = path.join(__dirname, '../logs');
+  const logPath = path.join(logsDir, 'resumo.log');
+
+  if (!fs.existsSync(logsDir)) {
+    fs.mkdirSync(logsDir, { recursive: true });
+  }
+
   const logTexto = `[${new Date().toISOString()}] ${userId} | Foco: ${foco || 'completo'} | Período: ${periodo.inicio} a ${periodo.fim} | Entradas: R$ ${totalEntradas.toFixed(2)} | Saídas: R$ ${totalSaidas.toFixed(2)} | Saldo: R$ ${(totalEntradas - totalSaidas).toFixed(2)}\n`;
   fs.appendFileSync(logPath, logTexto);
 

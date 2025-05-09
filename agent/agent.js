@@ -13,7 +13,7 @@ const interpretarPeriodo = require('../tools/interpretarPeriodo');
 const gerarResumoCompleto = require('../tools/gerarResumoCompleto');
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
-const MODEL = process.env.AI_MODEL || 'gpt-3.5-turbo';
+const MODEL = process.env.AI_MODEL || 'gpt-3.5-turbo-1106';
 
 async function agent(message, memory = [], userId = 'desconhecido') {
   const resultado = await interpretarMensagem(message);
