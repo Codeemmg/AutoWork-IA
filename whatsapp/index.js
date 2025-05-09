@@ -4,7 +4,7 @@ if (!global.crypto) global.crypto = webcrypto;
 
 const fs = require('fs-extra');
 const path = require('path');
-const qrcode = require('qrcode-terminal');
+const qrcode = require('qrcode'); // alterado
 const mime = require('mime-types');
 const { default: makeWASocket, useMultiFileAuthState, DisconnectReason } = require('@whiskeysockets/baileys');
 const { Boom } = require('@hapi/boom');
@@ -23,8 +23,25 @@ async function startSock() {
 
   sock.ev.on('connection.update', ({ connection, lastDisconnect, qr }) => {
     if (qr) {
-      qrcode.generate(qr, { small: true });
-      console.log("📲 Escaneie o QR Code acima para conectar ao WhatsApp");
+      qrcode.toDataURL(qr, (err, url) => {
+        if (err) {
+          console.error('Erro ao gerar QR Code:', err);
+          return;
+        }
+
+        const html = `
+          <html>
+            <body style="display:flex;align-items:center;justify-content:center;height:100vh;background:#111">
+              <img src="${url}" alt="QR Code do WhatsApp" />
+            </body>
+          </html>
+        `;
+
+        const filePath = path.join(__dirname, 'qrcode.html');
+        fs.writeFileSync(filePath, html);
+        console.log("🌐 Abrindo QR Code no navegador...");
+        require('child_process').exec(`start ${filePath}`);
+      });
     }
 
     if (connection === 'close') {
@@ -54,7 +71,6 @@ async function startSock() {
       await sock.sendMessage(sender, { text: "🚫 Este número não está autorizado a usar o assistente AutoWork IA. Para liberar o uso, adquira sua licença." });
       return;
     }
-    
 
     let texto = '';
     if (msg.message.conversation) {
