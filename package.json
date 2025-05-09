@@ -20,6 +20,7 @@
     "mysql2": "^3.14.0",
     "node-nlp": "^5.0.0-alpha.5",
     "openai": "^4.91.0",
+    "qrcode": "^1.5.4",
     "qrcode-terminal": "^0.12.0"
   }
 }
