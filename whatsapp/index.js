@@ -12,7 +12,13 @@ const { default: makeWASocket, useMultiFileAuthState, DisconnectReason } = requi
 const { Boom } = require('@hapi/boom');
 const agent = require('../agent/agent');
 
-// Servidor para expor QR Code em /qrcode.png
+// ✅ Set para rastrear mensagens já processadas
+const mensagensProcessadas = new Set();
+
+// 🧼 Limpa memória a cada 10 minutos
+setInterval(() => mensagensProcessadas.clear(), 10 * 60 * 1000);
+
+// 🌐 Servidor para expor QR Code
 const app = express();
 app.use(express.static('public'));
 app.listen(3000, () => console.log('🌐 Servidor web rodando em http://localhost:3000'));
@@ -55,12 +61,19 @@ async function startSock() {
     const msg = messages[0];
     if (!msg.message || msg.key.fromMe) return;
 
+    const msgId = msg.key.id;
+    if (mensagensProcessadas.has(msgId)) {
+      console.log(`🔁 Mensagem duplicada ignorada: ${msgId}`);
+      return;
+    }
+    mensagensProcessadas.add(msgId);
+
     const sender = msg.key.remoteJid;
+    const numero = sender.replace('@s.whatsapp.net', '');
 
     const verificarAutorizacao = require('../tools/verificarAutorizacao');
-    const numero = msg.key.remoteJid.replace('@s.whatsapp.net', '');
     const autorizado = await verificarAutorizacao(numero);
-    
+
     if (!autorizado) {
       console.log(`❌ Número não autorizado: ${numero}`);
       await sock.sendMessage(sender, { text: "🚫 Este número não está autorizado a usar o assistente AutoWork IA. Para liberar o uso, adquira sua licença." });
