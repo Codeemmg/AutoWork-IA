@@ -11,7 +11,6 @@ const express = require('express');
 const { default: makeWASocket, useMultiFileAuthState, DisconnectReason } = require('@whiskeysockets/baileys');
 const { Boom } = require('@hapi/boom');
 
-const IA_Cerebro = require('../core/IA_Cerebro');
 
 // ✅ Set para rastrear mensagens já processadas
 const mensagensProcessadas = new Set();
