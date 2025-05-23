@@ -61,4 +61,10 @@ async function chatLoop() {
     });
 }
 
-chatLoop();
+// Só inicia o chat se rodar pelo terminal direto:
+if (require.main === module) {
+    chatLoop();
+}
+
+// **Exporta a função para uso no WhatsApp**
+module.exports = routeMessage;
