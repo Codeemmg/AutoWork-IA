@@ -28,18 +28,19 @@ async function gerarGraficosResumo(userId = 'desconhecido') {
       [userId, inicioSemana, fimSemana]
     );
 
-    if (!dados.length) {
-      return null;
-    }
+    if (!dados.length) return null;
 
-    // 1. Gráfico de barras (por dia)
+    // Garante que a pasta ./graficos existe
+    const pastaGraficos = path.join(__dirname, '../graficos');
+    fs.mkdirSync(pastaGraficos, { recursive: true });
+
+    // Gráfico de barras (por dia)
     const dias = [...new Set(dados.map(d => moment(d.dia).format('ddd')))];
-    const porDia = dias.map(d => {
-      const total = dados
+    const porDia = dias.map(d =>
+      dados
         .filter(r => moment(r.dia).format('ddd') === d)
-        .reduce((soma, item) => soma + parseFloat(item.total), 0);
-      return total;
-    });
+        .reduce((soma, item) => soma + parseFloat(item.total), 0)
+    );
 
     const configBar = {
       type: 'bar',
@@ -55,10 +56,10 @@ async function gerarGraficosResumo(userId = 'desconhecido') {
     };
 
     const bufferBar = await chartJSNodeCanvas.renderToBuffer(configBar);
-    const pathBar = path.join(__dirname, `../graficos/grafico_bar_${userId}.png`);
+    const pathBar = path.join(pastaGraficos, `grafico_bar_${userId}.png`);
     fs.writeFileSync(pathBar, bufferBar);
 
-    // 2. Gráfico de pizza (por descrição)
+    // Gráfico de pizza (por descrição)
     const porDescricao = {};
     for (let item of dados) {
       porDescricao[item.descricao] = (porDescricao[item.descricao] || 0) + parseFloat(item.total);
@@ -77,7 +78,7 @@ async function gerarGraficosResumo(userId = 'desconhecido') {
     };
 
     const bufferPie = await chartJSNodeCanvas.renderToBuffer(configPie);
-    const pathPie = path.join(__dirname, `../graficos/grafico_pizza_${userId}.png`);
+    const pathPie = path.join(pastaGraficos, `grafico_pizza_${userId}.png`);
     fs.writeFileSync(pathPie, bufferPie);
 
     return {

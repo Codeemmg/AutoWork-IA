@@ -10,12 +10,11 @@ const express = require('express');
 
 const { default: makeWASocket, useMultiFileAuthState, DisconnectReason } = require('@whiskeysockets/baileys');
 const { Boom } = require('@hapi/boom');
-const agent = require('../agent/agent');
+
+const IA_Cerebro = require('../core/IA_Cerebro');
 
 // ✅ Set para rastrear mensagens já processadas
 const mensagensProcessadas = new Set();
-
-// 🧼 Limpa memória a cada 10 minutos
 setInterval(() => mensagensProcessadas.clear(), 10 * 60 * 1000);
 
 // 🌐 Servidor para expor QR Code
@@ -76,7 +75,9 @@ async function startSock() {
 
     if (!autorizado) {
       console.log(`❌ Número não autorizado: ${numero}`);
-      await sock.sendMessage(sender, { text: "🚫 Este número não está autorizado a usar o assistente AutoWork IA. Para liberar o uso, adquira sua licença." });
+      await sock.sendMessage(sender, {
+        text: "🚫 Este número não está autorizado a usar o assistente AutoWork IA. Para liberar o uso, adquira sua licença."
+      });
       return;
     }
 
@@ -98,26 +99,16 @@ async function startSock() {
     await sock.sendPresenceUpdate('composing', sender);
 
     try {
-      const resposta = await agent(texto, [], numero);
+      const resposta = await IA_Cerebro.processarMensagem(texto, numero);
 
-      if (typeof resposta === 'string') {
-        await sock.sendMessage(sender, { text: resposta });
-      } else if (resposta?.tipo === 'texto') {
-        await sock.sendMessage(sender, { text: resposta.conteudo });
-      } else if (resposta?.tipo === 'imagem') {
-        for (let imagem of resposta.imagens) {
-          const buffer = fs.readFileSync(imagem.caminho);
-          const mimeType = mime.lookup(imagem.caminho);
-          await sock.sendMessage(sender, {
-            image: buffer,
-            mimetype: mimeType,
-            caption: imagem.legenda
-          });
-        }
+      if (resposta?.resposta) {
+        await sock.sendMessage(sender, { text: resposta.resposta });
+      } else {
+        await sock.sendMessage(sender, { text: "⚠️ Desculpe, não entendi sua solicitação." });
       }
 
     } catch (error) {
-      console.error('Erro no agente:', error.message);
+      console.error('Erro no IA_Cerebro:', error.message);
       await sock.sendMessage(sender, { text: '⚠️ Ocorreu um erro interno ao processar sua mensagem.' });
     }
   });

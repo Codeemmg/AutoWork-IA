@@ -1,49 +1,48 @@
-const { OpenAI } = require('openai');
-require('dotenv').config();
+const fs = require("fs");
+const path = require("path");
+const { OpenAI } = require("openai");
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY
-});
+const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-const MODEL = process.env.AI_MODEL || 'gpt-3.5-turbo';
+// Carrega embeddings das categorias
+const categoriasPath = path.join(__dirname, "categorias_embeddings.json");
+let categoriasVetoriais = [];
+
+if (fs.existsSync(categoriasPath)) {
+  categoriasVetoriais = JSON.parse(fs.readFileSync(categoriasPath, "utf-8"));
+} else {
+  console.warn("⚠️ Arquivo categorias_embeddings.json não encontrado.");
+}
+
+async function gerarEmbedding(texto) {
+  const response = await openai.embeddings.create({
+    model: "text-embedding-ada-002",
+    input: texto,
+  });
+  return response.data[0].embedding;
+}
+
+function cosineSimilarity(vec1, vec2) {
+  const dot = vec1.reduce((sum, v, i) => sum + v * vec2[i], 0);
+  const normA = Math.sqrt(vec1.reduce((sum, v) => sum + v * v, 0));
+  const normB = Math.sqrt(vec2.reduce((sum, v) => sum + v * v, 0));
+  return dot / (normA * normB);
+}
 
 async function classificarCategoriaViaIA(frase) {
-  const prompt = `
-Classifique a frase abaixo em UMA das seguintes categorias:
+  if (categoriasVetoriais.length === 0) return null;
 
-- Receita
-- Despesa
-- Alimentação
-- Transporte
-- Compras
-- Saúde
-- Contas
-- Despesas Fixas
-- Transferência
-- Lazer
-- Educação
+  const embeddingFrase = await gerarEmbedding(frase);
 
-Frase: "${frase}"
-
-Retorne somente a categoria exata como uma string. Exemplo: "Receita"
-`;
-
-  try {
-    const resposta = await openai.chat.completions.create({
-      model: MODEL,
-      messages: [
-        { role: 'system', content: 'Você é um classificador de categorias financeiras.' },
-        { role: 'user', content: prompt }
-      ],
-      temperature: 0.2
-    });
-
-    const categoria = resposta.choices[0].message.content.trim();
-    return categoria;
-  } catch (err) {
-    console.error("Erro ao classificar categoria via IA:", err.message);
-    return null;
+  let melhor = { similaridade: 0, categoria: null };
+  for (const cat of categoriasVetoriais) {
+    const sim = cosineSimilarity(embeddingFrase, cat.embedding);
+    if (sim > melhor.similaridade) {
+      melhor = { similaridade: sim, categoria: cat.nome };
+    }
   }
+
+  return melhor.categoria || null;
 }
 
 module.exports = classificarCategoriaViaIA;

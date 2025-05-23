@@ -1,0 +1,212 @@
+
+=========================
+🧪 INICIANDO FLUXO 1
+=========================
+
+👤 Entrada 1: boa tarde
+🔍 Interpretação: {
+  "erro": true,
+  "mensagem": "Não entendi. Você deseja registrar, consultar ou configurar algo?"
+}
+🤖 Resposta: {
+  "tipo": "texto",
+  "conteudo": {
+    "resposta": "📊 *Resumo Financeiro*\n\n📅 De: 2025-05-12 até 2025-05-18\n\n💰 *Entradas:* R$ 2000.00\n💸 *Saídas:* R$ 1750.00\n🧮 *Saldo:* R$ 250.00",
+    "tipo": "texto"
+  }
+}
+
+👤 Entrada 2: gastei 150 no mercado ontem
+🔍 Interpretação: {
+  "erro": true,
+  "mensagem": "Não entendi. Você deseja registrar, consultar ou configurar algo?"
+}
+🤖 Resposta: {
+  "tipo": "texto",
+  "conteudo": "🔧 Função de registro ainda não implementada para esse caso."
+}
+
+=========================
+🧪 INICIANDO FLUXO 2
+=========================
+
+👤 Entrada 1: quero registrar uma conta fixa
+🔍 Interpretação: {
+  "erro": true,
+  "mensagem": "Não entendi. Você deseja registrar, consultar ou configurar algo?"
+}
+🤖 Resposta: {
+  "tipo": "texto",
+  "conteudo": {
+    "resposta": "💡 *Dica Financeira da Semana*\n\n🔎 Seu maior gasto foi com *\"testes\"*, somando *R$ 1750.00* (100.0% das suas saídas).\n\n📉 Se você reduzir isso pela metade, pode economizar cerca de *R$ 875.00* só nesta semana.",
+    "tipo": "texto"
+  }
+}
+
+👤 Entrada 2: o valor é 1200 e pago dia 5
+🔍 Interpretação: {
+  "erro": true,
+  "mensagem": "Não entendi. Você deseja registrar, consultar ou configurar algo?"
+}
+🤖 Resposta: {
+  "tipo": "texto",
+  "conteudo": "🔧 Função de registro ainda não implementada para esse caso."
+}
+
+=========================
+🧪 INICIANDO FLUXO 3
+=========================
+
+👤 Entrada 1: quero registrar
+🔍 Interpretação: {
+  "erro": true,
+  "mensagem": "Não entendi. Você deseja registrar, consultar ou configurar algo?"
+}
+🤖 Resposta: {
+  "tipo": "texto",
+  "conteudo": "⚠️ Período inválido. Especifique uma data inicial e final."
+}
+
+👤 Entrada 2: paguei 200 na farmácia
+🔍 Interpretação: {
+  "erro": true,
+  "mensagem": "Não entendi. Você deseja registrar, consultar ou configurar algo?"
+}
+🤖 Resposta: {
+  "tipo": "texto",
+  "conteudo": "🔧 Função de registro ainda não implementada para esse caso."
+}
+
+👤 Entrada 3: foi hoje
+🔍 Interpretação: {
+  "erro": true,
+  "mensagem": "Não entendi. Você deseja registrar, consultar ou configurar algo?"
+}
+🤖 Resposta: {
+  "tipo": "texto",
+  "conteudo": "📭 Nenhum registro encontrado no período.\n\n👀 Deseja ver também suas *entradas* nesse período ou um *resumo completo* com saldo?"
+}
+
+=========================
+🧪 INICIANDO FLUXO 4
+=========================
+
+👤 Entrada 1: quero saber meu maior gasto da semana
+🔍 Interpretação: {
+  "erro": true,
+  "mensagem": "Não entendi. Você deseja registrar, consultar ou configurar algo?"
+}
+🤖 Resposta: {
+  "tipo": "texto",
+  "conteudo": {
+    "resposta": "💸 Seu maior gasto nesse período (2025-05-12 a 2025-05-18) foi com *\"testes\"*, totalizando *R$ 1750.00* em *2 lançamento(s)*.",
+    "tipo": "texto"
+  }
+}
+
+👤 Entrada 2: e quanto ganhei
+🔍 Interpretação: {
+  "erro": true,
+  "mensagem": "Não entendi. Você deseja registrar, consultar ou configurar algo?"
+}
+🤖 Resposta: {
+  "tipo": "texto",
+  "conteudo": {
+    "resposta": "📈 *Entradas do Mês*\n\n📅 Período: 2025-05-01 a 2025-05-31\n💰 Total: *R$ 12334.90*\n📦 Lançamentos: 11",
+    "tipo": "texto"
+  }
+}
+
+=========================
+🧪 INICIANDO FLUXO 5
+=========================
+
+👤 Entrada 1: me ajuda a economizar
+🔍 Interpretação: {
+  "erro": true,
+  "mensagem": "Não entendi. Você deseja registrar, consultar ou configurar algo?"
+}
+🤖 Resposta: {
+  "tipo": "texto",
+  "conteudo": {
+    "resposta": "💡 *Dica Financeira da Semana*\n\n🔎 Seu maior gasto foi com *\"testes\"*, somando *R$ 1750.00* (100.0% das suas saídas).\n\n📉 Se você reduzir isso pela metade, pode economizar cerca de *R$ 875.00* só nesta semana.",
+    "tipo": "texto"
+  }
+}
+
+👤 Entrada 2: quero uma projeção do próximo mês
+🔍 Interpretação: {
+  "erro": true,
+  "mensagem": "Não entendi. Você deseja registrar, consultar ou configurar algo?"
+}
+🤖 Resposta: {
+  "tipo": "texto",
+  "conteudo": {
+    "resposta": "📈 *Entradas do Mês*\n\n📅 Período: 2025-05-01 a 2025-05-31\n💰 Total: *R$ 12334.90*\n📦 Lançamentos: 11",
+    "tipo": "texto"
+  }
+}
+
+=========================
+🧪 INICIANDO FLUXO 6
+=========================
+
+👤 Entrada 1: quero ver um gráfico dos meus gastos
+🔍 Interpretação: {
+  "erro": true,
+  "mensagem": "Não entendi. Você deseja registrar, consultar ou configurar algo?"
+}
+🤖 Resposta: {
+  "tipo": "texto",
+  "conteudo": "⚠️ Período inválido. Especifique uma data inicial e final."
+}
+
+👤 Entrada 2: essa semana
+🔍 Interpretação: {
+  "erro": true,
+  "mensagem": "Não entendi. Você deseja registrar, consultar ou configurar algo?"
+}
+🤖 Resposta: {
+  "tipo": "texto",
+  "conteudo": {
+    "resposta": "📊 *Resumo Financeiro*\n\n📅 De: 2025-05-12 até 2025-05-18\n\n💰 *Entradas:* R$ 2000.00\n💸 *Saídas:* R$ 1750.00\n🧮 *Saldo:* R$ 250.00",
+    "tipo": "texto"
+  }
+}
+
+=========================
+🧪 INICIANDO FLUXO 7
+=========================
+
+👤 Entrada 1: fiz uma compra ontem
+🔍 Interpretação: {
+  "erro": true,
+  "mensagem": "Não entendi. Você deseja registrar, consultar ou configurar algo?"
+}
+🤖 Resposta: {
+  "tipo": "texto",
+  "conteudo": "📊 *Resumo Financeiro*\n📅 De 2025-05-15 até 2025-05-15\n\n💸 *Saídas*\n📌 despesa:\n📅 15/05/2025 • testes - R$ 500.00\n📅 15/05/2025 • testes - R$ 1250.00\n\n💵 Total: R$ 1750.00\n\n\n\n👀 Deseja ver também suas *entradas* nesse período ou um *resumo completo* com saldo?"
+}
+
+👤 Entrada 2: foi 300 reais
+🔍 Interpretação: {
+  "erro": true,
+  "mensagem": "Não entendi. Você deseja registrar, consultar ou configurar algo?"
+}
+🤖 Resposta: {
+  "tipo": "texto",
+  "conteudo": "❌ Não entendi o que você quis dizer. Pode tentar de outra forma?"
+}
+
+👤 Entrada 3: no supermercado
+🔍 Interpretação: {
+  "erro": true,
+  "mensagem": "Não entendi. Você deseja registrar, consultar ou configurar algo?"
+}
+🤖 Resposta: {
+  "tipo": "texto",
+  "conteudo": {
+    "resposta": "💸 Seu maior gasto nesse período (2025-05-12 a 2025-05-18) foi com *\"testes\"*, totalizando *R$ 1750.00* em *2 lançamento(s)*.",
+    "tipo": "texto"
+  }
+}

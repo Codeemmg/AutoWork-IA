@@ -1,0 +1,10 @@
+[
+  {
+    "role": "user",
+    "content": "Como faço para agendar uma conta fixa?"
+  },
+  {
+    "role": "assistant",
+    "content": "Qual o tipo do lançamento? (entrada ou saída)"
+  }
+]

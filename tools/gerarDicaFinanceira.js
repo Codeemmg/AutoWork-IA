@@ -4,9 +4,9 @@ const moment = require('moment');
 /**
  * Gera uma dica financeira com base nos maiores gastos da semana do usuário.
  * @param {string} userId - número do WhatsApp
- * @returns {Promise<string>}
+ * @returns {Promise<{resposta: string, tipo: string}>}
  */
-async function gerarDicaFinanceira(userId = 'desconhecido') {
+module.exports = async function gerarDicaFinanceira(userId = 'desconhecido') {
   const inicioSemana = moment().startOf('isoWeek').format('YYYY-MM-DD 00:00:00');
   const fimSemana = moment().endOf('isoWeek').format('YYYY-MM-DD 23:59:59');
 
@@ -22,7 +22,7 @@ async function gerarDicaFinanceira(userId = 'desconhecido') {
     );
 
     if (!dados.length) {
-      return "📭 Nenhuma despesa registrada essa semana para análise.";
+      return { resposta: "📭 Nenhuma despesa registrada essa semana para análise.", tipo: "texto" };
     }
 
     const maior = dados[0];
@@ -30,16 +30,15 @@ async function gerarDicaFinanceira(userId = 'desconhecido') {
     const porcentagem = ((maior.total / totalGasto) * 100).toFixed(1);
     const economiaSugerida = (maior.total * 0.5).toFixed(2);
 
-    return (
+    const resposta =
       `💡 *Dica Financeira da Semana*\n\n` +
       `🔎 Seu maior gasto foi com *"${maior.descricao}"*, somando *R$ ${parseFloat(maior.total).toFixed(2)}* ` +
       `(${porcentagem}% das suas saídas).\n\n` +
-      `📉 Se você reduzir isso pela metade, pode economizar cerca de *R$ ${economiaSugerida}* só nesta semana.`
-    );
+      `📉 Se você reduzir isso pela metade, pode economizar cerca de *R$ ${economiaSugerida}* só nesta semana.`;
+
+    return { resposta, tipo: "texto" };
   } catch (err) {
     console.error("❌ Erro ao gerar dica financeira:", err.message);
-    return "❌ Erro ao gerar sugestão de melhoria.";
+    return { resposta: "❌ Erro ao gerar sugestão de melhoria.", tipo: "texto" };
   }
-}
-
-module.exports = gerarDicaFinanceira;
+};

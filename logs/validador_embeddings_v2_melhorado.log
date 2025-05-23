@@ -1,0 +1,504 @@
+
+==============================
+🧪 Teste 1: "recebi meu salário"
+🎯 Intenção esperada: registrar_entrada
+📌 Intenção detectada: registrar_entrada
+📊 Similaridade: 1.0000
+📂 Tipo: entrada
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Receita
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+⚠️ FLUXO INCOMPLETO: Qual o valor dessa transação?
+
+==============================
+🧪 Teste 2: "ganhei 500"
+🎯 Intenção esperada: registrar_entrada
+📌 Intenção detectada: registrar_entrada
+📊 Similaridade: 1.0000
+📂 Tipo: entrada
+💵 Valor: 500
+📅 Data: 2025-05-17
+🏷️ Categoria: Despesa
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 3: "gastei 120"
+🎯 Intenção esperada: registrar_saida
+📌 Intenção detectada: registrar_saida
+📊 Similaridade: 1.0000
+📂 Tipo: saida
+💵 Valor: 120
+📅 Data: 2025-05-17
+🏷️ Categoria: Despesa
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 4: "paguei o aluguel"
+🎯 Intenção esperada: registrar_saida
+📌 Intenção detectada: registrar_saida
+📊 Similaridade: 1.0000
+📂 Tipo: saida
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Despesas Fixas
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+⚠️ FLUXO INCOMPLETO: Qual o valor dessa transação?
+
+==============================
+🧪 Teste 5: "pago aluguel todo mês"
+🎯 Intenção esperada: registrar_conta_fixa
+📌 Intenção detectada: registrar_conta_fixa
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Despesas Fixas
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 6: "quanto eu tenho?"
+🎯 Intenção esperada: consultar_saldo
+📌 Intenção detectada: consultar_saldo
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Despesas Fixas
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 7: "extrato do mês"
+🎯 Intenção esperada: consultar_extrato
+📌 Intenção detectada: consultar_extrato
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Despesas Fixas
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 8: "quanto recebi esse mês?"
+🎯 Intenção esperada: consultar_entradas
+📌 Intenção detectada: consultar_entradas
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Receita
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 9: "minhas saídas da semana"
+🎯 Intenção esperada: consultar_saidas
+📌 Intenção detectada: consultar_saidas
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Lazer
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 10: "maior gasto da semana"
+🎯 Intenção esperada: consultar_maior_gasto
+📌 Intenção detectada: consultar_maior_gasto
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Despesa
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 11: "maior entrada do mês"
+🎯 Intenção esperada: consultar_maior_entrada
+📌 Intenção detectada: consultar_maior_entrada
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Receita
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 12: "quanto gastei com mercado?"
+🎯 Intenção esperada: consultar_por_categoria
+📌 Intenção detectada: consultar_por_categoria
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Alimentação
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 13: "previsão do mês"
+🎯 Intenção esperada: projetar_fluxo_futuro
+📌 Intenção detectada: projetar_fluxo_futuro
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Despesas Fixas
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 14: "gera um gráfico"
+🎯 Intenção esperada: gerar_grafico
+📌 Intenção detectada: gerar_grafico
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Saúde
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 15: "apaga o gasto de ontem"
+🎯 Intenção esperada: excluir_registro
+📌 Intenção detectada: excluir_registro
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-16
+🏷️ Categoria: Despesa
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 16: "me lembra de pagar conta"
+🎯 Intenção esperada: definir_lembrete
+📌 Intenção detectada: definir_lembrete
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Despesa
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 17: "quero economizar"
+🎯 Intenção esperada: definir_meta
+📌 Intenção detectada: definir_meta
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Contas
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 18: "mudar meu nome"
+🎯 Intenção esperada: ajustar_configuracao
+📌 Intenção detectada: ajustar_configuracao
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Transferência
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 19: "bom dia"
+🎯 Intenção esperada: cumprimento
+📌 Intenção detectada: cumprimento
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Compras
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 20: "obrigado"
+🎯 Intenção esperada: agradecimento
+📌 Intenção detectada: agradecimento
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Despesas Fixas
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 21: "você é ótimo"
+🎯 Intenção esperada: elogio
+📌 Intenção detectada: elogio
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Receita
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 22: "isso tá errado"
+🎯 Intenção esperada: reclamacao
+📌 Intenção detectada: reclamacao
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Contas
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 23: "não gostei disso"
+🎯 Intenção esperada: feedback_negativo
+📌 Intenção detectada: feedback_negativo
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Despesa
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 24: "isso foi útil"
+🎯 Intenção esperada: feedback_positivo
+📌 Intenção detectada: feedback_positivo
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Lazer
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 25: "tchau"
+🎯 Intenção esperada: despedida
+📌 Intenção detectada: despedida
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Alimentação
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 26: "como registrar um gasto?"
+🎯 Intenção esperada: duvida_sobre_funcionalidade
+📌 Intenção detectada: duvida_sobre_funcionalidade
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Despesa
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 27: "modo escuro seria bom"
+🎯 Intenção esperada: sugestao_de_melhoria
+📌 Intenção detectada: sugestao_de_melhoria
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Contas
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 28: "agenda um compromisso"
+🎯 Intenção esperada: agendar_compromisso
+📌 Intenção detectada: agendar_compromisso
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Lazer
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 29: "call com equipe amanhã"
+🎯 Intenção esperada: agendar_reuniao
+📌 Intenção detectada: agendar_reuniao
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Saúde
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 30: "programa boleto para dia 10"
+🎯 Intenção esperada: agendar_pagamento
+📌 Intenção detectada: agendar_pagamento
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: 10
+📅 Data: 2025-05-10
+🏷️ Categoria: Contas
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 31: "minha agenda da semana"
+🎯 Intenção esperada: consultar_agenda
+📌 Intenção detectada: consultar_agenda
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Lazer
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 32: "cancela o lembrete"
+🎯 Intenção esperada: cancelar_agendamento
+📌 Intenção detectada: cancelar_agendamento
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Despesa
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 33: "remarca a reunião"
+🎯 Intenção esperada: adiar_compromisso
+📌 Intenção detectada: adiar_compromisso
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Lazer
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 34: "tem algo agendado?"
+🎯 Intenção esperada: consultar_lembretes
+📌 Intenção detectada: consultar_lembretes
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Lazer
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 35: "consulta médica terça"
+🎯 Intenção esperada: marcar_consulta_medica
+📌 Intenção detectada: marcar_consulta_medica
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-13
+🏷️ Categoria: Saúde
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 36: "reunião com equipe"
+🎯 Intenção esperada: marcar_reuniao_profissional
+📌 Intenção detectada: marcar_reuniao_profissional
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Compras
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 37: "viagem pra são paulo dia 15"
+🎯 Intenção esperada: agendar_viagem
+📌 Intenção detectada: agendar_viagem
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: 15
+📅 Data: 2025-05-15
+🏷️ Categoria: Lazer
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 38: "lavar o carro amanhã"
+🎯 Intenção esperada: criar_tarefa_pessoal
+📌 Intenção detectada: criar_tarefa_pessoal
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Transporte
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 39: "me lembra do aniversário da minha mãe dia 4"
+🎯 Intenção esperada: lembrar_aniversario
+📌 Intenção detectada: lembrar_aniversario
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: 4
+📅 Data: 2025-05-04
+🏷️ Categoria: Compras
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 40: "como está meu dia?"
+🎯 Intenção esperada: organizar_dia
+📌 Intenção detectada: organizar_dia
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Receita
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 41: "pendências de hoje"
+🎯 Intenção esperada: resumo_do_dia
+📌 Intenção detectada: resumo_do_dia
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Despesa
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
+
+==============================
+🧪 Teste 42: "asdfg"
+🎯 Intenção esperada: comando_invalido
+📌 Intenção detectada: comando_invalido
+📊 Similaridade: 1.0000
+📂 Tipo: null
+💵 Valor: null
+📅 Data: 2025-05-17
+🏷️ Categoria: Despesas Fixas
+✅ INTENÇÃO DETECTADA CORRETAMENTE
+✅ FLUXO COMPLETO
