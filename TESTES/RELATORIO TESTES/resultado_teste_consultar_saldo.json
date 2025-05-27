@@ -1,0 +1,272 @@
+[
+  {
+    "Frase": "recebi 100 reais do João",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "registrar_entrada",
+    "Similaridade": 1,
+    "Quem Atendeu": "agent",
+    "Status": "✅",
+    "Foi para agent.js ou superagent.js": "agent"
+  },
+  {
+    "Frase": "ganhei 250 de comissão",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "registrar_entrada",
+    "Similaridade": 1,
+    "Quem Atendeu": "agent",
+    "Status": "✅",
+    "Foi para agent.js ou superagent.js": "agent"
+  },
+  {
+    "Frase": "depositaram 700 na minha conta",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "registrar_agendamento",
+    "Similaridade": 1,
+    "Quem Atendeu": "agent",
+    "Status": "❌",
+    "Foi para agent.js ou superagent.js": "agent"
+  },
+  {
+    "Frase": "entrou 2000 na empresa",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "registrar_entrada",
+    "Similaridade": 1,
+    "Quem Atendeu": "agent",
+    "Status": "✅",
+    "Foi para agent.js ou superagent.js": "agent"
+  },
+  {
+    "Frase": "me pagaram hoje",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "duvida_uso",
+    "Similaridade": "-",
+    "Quem Atendeu": "superagent",
+    "Status": "❌",
+    "Foi para agent.js ou superagent.js": "superagent"
+  },
+  {
+    "Frase": "entrou dinheiro agora",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "duvida_uso",
+    "Similaridade": "-",
+    "Quem Atendeu": "superagent",
+    "Status": "❌",
+    "Foi para agent.js ou superagent.js": "superagent"
+  },
+  {
+    "Frase": "transferência recebida",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "duvida_uso",
+    "Similaridade": "-",
+    "Quem Atendeu": "superagent",
+    "Status": "❌",
+    "Foi para agent.js ou superagent.js": "superagent"
+  },
+  {
+    "Frase": "fiz um depósito de 400",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "registrar_entrada",
+    "Similaridade": 0.9048606812816933,
+    "Quem Atendeu": "agent",
+    "Status": "✅",
+    "Foi para agent.js ou superagent.js": "agent"
+  },
+  {
+    "Frase": "acabei de receber 50 reais",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "registrar_agendamento",
+    "Similaridade": 0.8908793664171923,
+    "Quem Atendeu": "agent",
+    "Status": "❌",
+    "Foi para agent.js ou superagent.js": "agent"
+  },
+  {
+    "Frase": "recebi aluguel",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "duvida_uso",
+    "Similaridade": "-",
+    "Quem Atendeu": "superagent",
+    "Status": "❌",
+    "Foi para agent.js ou superagent.js": "superagent"
+  },
+  {
+    "Frase": "entrou um pix de 120",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "registrar_entrada",
+    "Similaridade": 1,
+    "Quem Atendeu": "agent",
+    "Status": "✅",
+    "Foi para agent.js ou superagent.js": "agent"
+  },
+  {
+    "Frase": "me pagaram comissão hoje",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "duvida_uso",
+    "Similaridade": "-",
+    "Quem Atendeu": "superagent",
+    "Status": "❌",
+    "Foi para agent.js ou superagent.js": "superagent"
+  },
+  {
+    "Frase": "recebi valor do cliente",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "duvida_uso",
+    "Similaridade": "-",
+    "Quem Atendeu": "superagent",
+    "Status": "❌",
+    "Foi para agent.js ou superagent.js": "superagent"
+  },
+  {
+    "Frase": "dinheiro entrou na conta",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "duvida_uso",
+    "Similaridade": "-",
+    "Quem Atendeu": "superagent",
+    "Status": "❌",
+    "Foi para agent.js ou superagent.js": "superagent"
+  },
+  {
+    "Frase": "entrou uma entrada agora",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "consultar_entradas",
+    "Similaridade": 0.8933204085972981,
+    "Quem Atendeu": "agent",
+    "Status": "❌",
+    "Foi para agent.js ou superagent.js": "agent"
+  },
+  {
+    "Frase": "recebi transferência bancária",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "duvida_uso",
+    "Similaridade": "-",
+    "Quem Atendeu": "superagent",
+    "Status": "❌",
+    "Foi para agent.js ou superagent.js": "superagent"
+  },
+  {
+    "Frase": "pagaram o boleto",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "duvida_uso",
+    "Similaridade": "-",
+    "Quem Atendeu": "superagent",
+    "Status": "❌",
+    "Foi para agent.js ou superagent.js": "superagent"
+  },
+  {
+    "Frase": "minha venda caiu na conta",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "duvida_uso",
+    "Similaridade": "-",
+    "Quem Atendeu": "superagent",
+    "Status": "❌",
+    "Foi para agent.js ou superagent.js": "superagent"
+  },
+  {
+    "Frase": "pix recebido",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "duvida_uso",
+    "Similaridade": "-",
+    "Quem Atendeu": "superagent",
+    "Status": "❌",
+    "Foi para agent.js ou superagent.js": "superagent"
+  },
+  {
+    "Frase": "me depositaram hoje",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "duvida_uso",
+    "Similaridade": "-",
+    "Quem Atendeu": "superagent",
+    "Status": "❌",
+    "Foi para agent.js ou superagent.js": "superagent"
+  },
+  {
+    "Frase": "entrou crédito de 90",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "registrar_entrada",
+    "Similaridade": 1,
+    "Quem Atendeu": "agent",
+    "Status": "✅",
+    "Foi para agent.js ou superagent.js": "agent"
+  },
+  {
+    "Frase": "chegou dinheiro",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "duvida_uso",
+    "Similaridade": "-",
+    "Quem Atendeu": "superagent",
+    "Status": "❌",
+    "Foi para agent.js ou superagent.js": "superagent"
+  },
+  {
+    "Frase": "venda concluída, valor recebido",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "duvida_uso",
+    "Similaridade": "-",
+    "Quem Atendeu": "superagent",
+    "Status": "❌",
+    "Foi para agent.js ou superagent.js": "superagent"
+  },
+  {
+    "Frase": "caixa recebeu pagamento",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "duvida_uso",
+    "Similaridade": "-",
+    "Quem Atendeu": "superagent",
+    "Status": "❌",
+    "Foi para agent.js ou superagent.js": "superagent"
+  },
+  {
+    "Frase": "fiz uma entrada hoje",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "consultar_entradas",
+    "Similaridade": 0.9066236126645466,
+    "Quem Atendeu": "agent",
+    "Status": "❌",
+    "Foi para agent.js ou superagent.js": "agent"
+  },
+  {
+    "Frase": "saldo atualizado com entrada",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "consultar_saldo",
+    "Similaridade": 0.9303557481575637,
+    "Quem Atendeu": "agent",
+    "Status": "❌",
+    "Foi para agent.js ou superagent.js": "agent"
+  },
+  {
+    "Frase": "recebi 30 reais em espécie",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "registrar_entrada",
+    "Similaridade": 1,
+    "Quem Atendeu": "agent",
+    "Status": "✅",
+    "Foi para agent.js ou superagent.js": "agent"
+  },
+  {
+    "Frase": "dinheiro caiu hoje",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "duvida_uso",
+    "Similaridade": "-",
+    "Quem Atendeu": "superagent",
+    "Status": "❌",
+    "Foi para agent.js ou superagent.js": "superagent"
+  },
+  {
+    "Frase": "recebi do cliente João",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "duvida_uso",
+    "Similaridade": "-",
+    "Quem Atendeu": "superagent",
+    "Status": "❌",
+    "Foi para agent.js ou superagent.js": "superagent"
+  },
+  {
+    "Frase": "pagamento recebido",
+    "Intenção Esperada": "registrar_entrada",
+    "Intenção Detectada": "duvida_uso",
+    "Similaridade": "-",
+    "Quem Atendeu": "superagent",
+    "Status": "❌",
+    "Foi para agent.js ou superagent.js": "superagent"
+  }
+]

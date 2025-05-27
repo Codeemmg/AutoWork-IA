@@ -11,7 +11,8 @@ const express = require('express');
 const { default: makeWASocket, useMultiFileAuthState, DisconnectReason } = require('@whiskeysockets/baileys');
 const { Boom } = require('@hapi/boom');
 
-const IA_Cerebro = require('../core/IA_Cerebro');
+// AGORA O AGENTE INTELIGENTE!
+const agent = require('../agent/roteador'); // ou agent.js/superagent.js conforme seu fluxo
 
 // ✅ Set para rastrear mensagens já processadas
 const mensagensProcessadas = new Set();
@@ -99,16 +100,18 @@ async function startSock() {
     await sock.sendPresenceUpdate('composing', sender);
 
     try {
-      const resposta = await IA_Cerebro.processarMensagem(texto, numero);
+      // Chama o AGENTE CENTRAL do AUTOWORK IA!
+      const resultado = await agent(numero, texto, []);
+      let respostaFinal = resultado.resposta || resultado;
 
-      if (resposta?.resposta) {
-        await sock.sendMessage(sender, { text: resposta.resposta });
+      if (respostaFinal) {
+        await sock.sendMessage(sender, { text: respostaFinal });
       } else {
         await sock.sendMessage(sender, { text: "⚠️ Desculpe, não entendi sua solicitação." });
       }
 
     } catch (error) {
-      console.error('Erro no IA_Cerebro:', error.message);
+      console.error('Erro no agent:', error.message);
       await sock.sendMessage(sender, { text: '⚠️ Ocorreu um erro interno ao processar sua mensagem.' });
     }
   });

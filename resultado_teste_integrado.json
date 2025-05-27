@@ -1,0 +1,132 @@
+[
+  {
+    "frase": "quero registrar um compromisso de pagamento de 500 reais para dia 10 de junho",
+    "resposta": {
+      "resposta": "✅ Agendamento salvo: *quero registrar um compromisso de pagamento de 500 reais para dia 10 de junho* em 2025-05-26 (saida — R$500.00)",
+      "resultado": {
+        "intencao": "registrar_agendamento",
+        "tipo": "saida",
+        "valor": 500,
+        "descricao": "quero registrar um compromisso de pagamento de 500 reais para dia 10 de junho",
+        "categoria": "Despesas Fixas",
+        "data": "2025-06-10",
+        "data_vencimento": "2025-05-26",
+        "periodo": {
+          "inicio": "2025-05-26",
+          "fim": "2025-05-26"
+        },
+        "similaridade": 0.8743831112746233
+      },
+      "debugLog": [
+        {
+          "etapa": "inicio_interpretar",
+          "frase": "quero registrar um compromisso de pagamento de 500 reais para dia 10 de junho"
+        },
+        {
+          "etapa": "categoria_classificada",
+          "categoria": "Despesas Fixas"
+        },
+        {
+          "etapa": "dados_extraidos",
+          "via": "embedding",
+          "intencao": "registrar_agendamento",
+          "tipo": "saida",
+          "valor": 500,
+          "descricao": "quero registrar um compromisso de pagamento de 500 reais para dia 10 de junho",
+          "categoria": "Despesas Fixas",
+          "data": "2025-06-10",
+          "periodo": {
+            "inicio": "2025-05-26",
+            "fim": "2025-05-26"
+          },
+          "similaridade": 0.8743831112746233
+        },
+        {
+          "etapa": "fim_interpretar",
+          "via": "embedding",
+          "intencao": "registrar_agendamento",
+          "tipo": "saida",
+          "valor": 500,
+          "descricao": "quero registrar um compromisso de pagamento de 500 reais para dia 10 de junho",
+          "categoria": "Despesas Fixas",
+          "data": "2025-06-10",
+          "periodo": {
+            "inicio": "2025-05-26",
+            "fim": "2025-05-26"
+          },
+          "similaridade": 0.8743831112746233
+        },
+        {
+          "etapa": "periodo_personalizado",
+          "periodo": {
+            "inicio": "2025-05-26",
+            "fim": "2025-05-26"
+          }
+        },
+        {
+          "etapa": "registro_agendamento",
+          "insertId": 12
+        }
+      ]
+    },
+    "quem_atendeu": "agent",
+    "intencao_detectada": "registrar_agendamento",
+    "erro": false
+  },
+  {
+    "frase": "anotar aluguel de 1200 reais para o próximo mês",
+    "resposta": {
+      "resposta": "✅ Registro salvo: *anotar aluguel de 1200 reais para o próximo mês* — R$120",
+      "resultado": {
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 120,
+        "descricao": "anotar aluguel de 1200 reais para o próximo mês",
+        "categoria": "Despesas Fixas",
+        "data": "2025-05-27",
+        "periodo": {
+          "inicio": "2025-06-01",
+          "fim": "2025-06-30",
+          "diaDefault": "2025-06-26"
+        },
+        "similaridade": 1
+      },
+      "debugLog": [
+        {
+          "etapa": "inicio_interpretar",
+          "frase": "anotar aluguel de 1200 reais para o próximo mês"
+        },
+        {
+          "etapa": "interpretação_direta",
+          "intencao": "registrar_saida",
+          "tipo": "saida",
+          "valor": 120,
+          "descricao": "anotar aluguel de 1200 reais para o próximo mês",
+          "categoria": "Despesas Fixas",
+          "data": "2025-05-27",
+          "periodo": {
+            "inicio": "2025-06-01",
+            "fim": "2025-06-30",
+            "diaDefault": "2025-06-26"
+          },
+          "similaridade": 1
+        },
+        {
+          "etapa": "fim_interpretar",
+          "via": "direto"
+        },
+        {
+          "etapa": "periodo_personalizado",
+          "periodo": {
+            "inicio": "2025-06-01",
+            "fim": "2025-06-30",
+            "diaDefault": "2025-06-26"
+          }
+        }
+      ]
+    },
+    "quem_atendeu": "agent",
+    "intencao_detectada": "registrar_saida",
+    "erro": false
+  }
+]

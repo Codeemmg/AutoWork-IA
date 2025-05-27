@@ -1,64 +1,51 @@
+// roteador.js
+const { INTENT_THRESHOLD, FALLBACK_THRESHOLD } = require('./config');
+const { logEvent } = require('./logs');
 const agent = require('./agent');
 const superagent = require('./superagent');
-const readline = require('readline');
+require('dotenv').config();
 
-// Roteador inteligente (profissional)
+// Função de roteamento principal
 async function routeMessage(user_id, frase) {
-    let debugLog = [];
-    const respostaAgent = await agent(user_id, frase, debugLog);
+    logEvent('ROUTER_START', { user_id, frase });
 
-    const intencao = respostaAgent.resultado && respostaAgent.resultado.intencao;
-    const erro = respostaAgent.resultado && respostaAgent.resultado.erro;
-    const similaridade = respostaAgent.resultado && respostaAgent.resultado.similaridade;
+    // 1. Detectar intenção e similaridade
+    const { intencao, similaridade } = await detectarIntencao(frase);
 
-    // Define quando o SuperAgent deve ser chamado:
-    const precisaSuperAgent =
-        erro ||
-        !intencao ||
-        [
-            'erro_ou_duvida',
-            'ajuda',
-            'explicacao',
-            'tutorial',
-            'saudacao',
-            'comando_invalido'
-        ].includes((intencao || '').toLowerCase()) ||
-        (typeof similaridade === 'number' && similaridade < 0.75);
+    logEvent('INTENTION_DETECTED', { intencao, similaridade });
 
-    if (precisaSuperAgent) {
+    if (similaridade >= INTENT_THRESHOLD) {
+        logEvent('ROUTE_DECISION', { rota: 'agent', intencao, similaridade });
+        const resposta = await agent(user_id, frase);
+
+        // Fallback contextual: verifica se o agent respondeu erro de dados obrigatórios
+        if (
+            !resposta || resposta === 'undefined' ||
+            (resposta.resultado && resposta.resultado.erro && (
+                resposta.resultado.mensagem === "Qual o valor?" ||
+                resposta.resultado.mensagem === "Qual o tipo do lançamento? (entrada ou saída)" ||
+                resposta.resultado.mensagem.startsWith("❌ Faltam informações obrigatórias")
+            ))
+        ) {
+            logEvent('FALLBACK_TO_SUPERAGENT', { motivo: 'Agent sem dado crítico', intencao, frase });
+            return await superagent(user_id, frase);
+        }
+
+        return resposta;
+    } else if (similaridade >= FALLBACK_THRESHOLD) {
+        logEvent('ROUTE_DECISION', { rota: 'superagent', intencao, similaridade });
         return await superagent(user_id, frase);
+    } else {
+        logEvent('ROUTE_DECISION', { rota: 'nenhuma', intencao, similaridade });
+        return "Desculpe, não entendi seu comando. Pode reformular?";
     }
-
-    // Caso contrário, retorna a resposta clássica do agent.js
-    return respostaAgent.resposta;
 }
 
-// === Interface interativa (console) ===
-
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-
-const user_id = 'usuario_teste_router';
-
-console.log('🤖 Roteador do AutoWork IA (Agent.js + SuperAgent) — Converse aqui! (Digite "sair" para encerrar)\n');
-
-async function chatLoop() {
-    rl.question('👤 Você: ', async (frase) => {
-        if (frase.trim().toLowerCase() === 'sair') {
-            console.log('🤖 Até logo! 🚀');
-            rl.close();
-            return;
-        }
-        try {
-            const resposta = await routeMessage(user_id, frase);
-            console.log('🤖 AutoWork:', resposta, '\n');
-        } catch (err) {
-            console.log('❌ Erro:', err.message);
-        }
-        chatLoop();
-    });
+// Simulação da função de detecção de intenção (use sua real!)
+async function detectarIntencao(frase) {
+    // ...chamar seu modelo de embeddings ou IA
+    // Simulação:
+    return { intencao: "consultar_saldo", similaridade: 0.92 }; // Exemplo
 }
 
-chatLoop();
+module.exports = { routeMessage };

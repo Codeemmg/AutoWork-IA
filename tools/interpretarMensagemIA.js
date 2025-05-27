@@ -8,6 +8,37 @@ const { OpenAI } = require('openai');
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 const { format, startOfWeek, addDays } = require("date-fns");
 
+// Função de extração de valor PT-BR
+function extrairValor(frase) {
+    if (!frase) return null;
+
+    // Remove datas (ex: 25 de junho, 12/06, 10/03/2025)
+    let fraseSemDatas = frase.replace(/\b\d{1,2}\/\d{1,2}(\/\d{2,4})?\b/g, '');
+    fraseSemDatas = fraseSemDatas.replace(/\b\d{1,2} de \w+\b/gi, '');
+
+    // Regex: valor precedido por R$, reais, valor, etc.
+    const regexValor = /(?:r\$|reais|valor(?: de)?|por|no valor de)?\s*(\d{1,3}(?:\.\d{3})*(?:,\d{2})?|\d+)/gi;
+    let matches = [];
+    let match;
+
+    while ((match = regexValor.exec(fraseSemDatas)) !== null) {
+        let valorBruto = match[1]
+            .replace(/\./g, '') // Remove separador de milhar
+            .replace(',', '.'); // Troca vírgula por ponto decimal
+
+        let valorNum = parseFloat(valorBruto);
+        if (!isNaN(valorNum) && valorNum > 0) {
+            matches.push(valorNum);
+        }
+    }
+
+    // Retorna o maior valor encontrado (quase sempre é o valor correto)
+    if (matches.length) {
+        return Math.max(...matches);
+    }
+    return null;
+}
+
 // Função para extrair período da frase
 function extrairPeriodoDaFrase(frase) {
   const texto = frase.toLowerCase();
@@ -17,6 +48,20 @@ function extrairPeriodoDaFrase(frase) {
     janeiro: 0, fevereiro: 1, março: 2, abril: 3, maio: 4, junho: 5,
     julho: 6, agosto: 7, setembro: 8, outubro: 9, novembro: 10, dezembro: 11
   };
+
+  if (/pr[oó]ximo m[eê]s|m[eê]s que vem/.test(texto)) {
+    // Mantém o mesmo dia, mas para o mês seguinte
+    const diaHoje = hoje.getDate();
+    let mes = hoje.getMonth() + 1;
+    let ano = hoje.getFullYear();
+    if (mes > 11) { mes = 0; ano++; }
+    return {
+      inicio: format(new Date(ano, mes, 1), "yyyy-MM-dd"),
+      fim: format(new Date(ano, mes + 1, 0), "yyyy-MM-dd"),
+      diaDefault: format(new Date(ano, mes, diaHoje), "yyyy-MM-dd"),
+    };
+  }
+
 
   if (/m[eê]s passado|último mês|mes anterior/.test(texto)) {
     const ano = hoje.getMonth() === 0 ? hoje.getFullYear() - 1 : hoje.getFullYear();
@@ -110,10 +155,7 @@ async function interpretarMensagemIA(frase, debugLog = []) {
   const texto = frase.toLowerCase();
   if (debugLog) debugLog.push({ etapa: "inicio_interpretar", frase });
 
-  function extrairValor(texto) {
-    const match = texto.match(/\d+[.,]?\d*/);
-    return match ? parseFloat(match[0].replace(',', '.')) : null;
-  }
+  const valorDireto = extrairValor(texto);
   function tentarTipoPeloTexto(texto) {
     if (/(\b(recebi|ganhei|entrou|venda|depositaram|vendi)\b)/i.test(texto)) return 'entrada';
     if (/(\b(gastei|paguei|comprei|investi|retirada|doei|mandei|transferi|pagar|boleto|conta|mensalidade|aluguel|internet|fatura|cartão|empréstimo|seguro)\b)/i.test(texto)) return 'saida';
@@ -138,7 +180,6 @@ async function interpretarMensagemIA(frase, debugLog = []) {
     return 'Outro';
   }
 
-  const valorDireto = extrairValor(texto);
   const tipoDireto = tentarTipoPeloTexto(texto);
   const categoriaDireta = tentarCategoriaSimples(texto);
   const resultadoData = extrairDataNatural(frase);
@@ -313,8 +354,7 @@ async function interpretarMensagemIA(frase, debugLog = []) {
   }
 
   // Extração de valor mesmo via embeddings
-  const valorMatch = texto.match(/\d+[.,]?\d*/);
-  const valor = valorMatch ? parseFloat(valorMatch[0].replace(",", ".")) : null;
+  const valor = extrairValor(texto);
 
   if (debugLog) debugLog.push({
     etapa: "dados_extraidos",

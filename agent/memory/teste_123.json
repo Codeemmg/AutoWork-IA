@@ -1,0 +1,42 @@
+[
+  {
+    "role": "user",
+    "content": "anota um gasto"
+  },
+  {
+    "role": "assistant",
+    "content": "Claro, preciso que você me forneça a data, o valor e uma breve descrição do gasto para registrar."
+  },
+  {
+    "role": "user",
+    "content": "registre uma entrada"
+  },
+  {
+    "role": "assistant",
+    "content": "Para registrar a entrada, por favor, informe a data, o valor e de onde vem essa receita."
+  },
+  {
+    "role": "user",
+    "content": "quero marcar um agendamento para dia 25"
+  },
+  {
+    "role": "assistant",
+    "content": "Eu posso agendar para você. Qual é o horário e a descrição do agendamento?"
+  },
+  {
+    "role": "user",
+    "content": "quais agendamentos eu tenho para esta semana?"
+  },
+  {
+    "role": "assistant",
+    "content": "Você pode me informar a data de início da semana para que eu verifique seus agendamentos?"
+  },
+  {
+    "role": "user",
+    "content": "remover um agendamento de consulta"
+  },
+  {
+    "role": "assistant",
+    "content": "Para remover o agendamento, preciso que você me informe a data e o horário da consulta."
+  }
+]

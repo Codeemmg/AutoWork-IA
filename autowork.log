@@ -1,0 +1,1221 @@
+[2025-05-26T13:27:41.841Z] [ROUTER_START] {"user_id":"teste_123","frase":"gastei 100 no mercado ontem"}
+[2025-05-26T13:27:41.842Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.843Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.845Z] [ROUTER_START] {"user_id":"teste_123","frase":"recebi 1200 do cliente"}
+[2025-05-26T13:27:41.846Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.847Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.849Z] [ROUTER_START] {"user_id":"teste_123","frase":"paguei a fatura do cartão hoje"}
+[2025-05-26T13:27:41.851Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.851Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.854Z] [ROUTER_START] {"user_id":"teste_123","frase":"vendi uma moto por 3500 ontem"}
+[2025-05-26T13:27:41.855Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.856Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.858Z] [ROUTER_START] {"user_id":"teste_123","frase":"quanto tenho de saldo?"}
+[2025-05-26T13:27:41.858Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.858Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.860Z] [ROUTER_START] {"user_id":"teste_123","frase":"me mostra as entradas do mês"}
+[2025-05-26T13:27:41.861Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.861Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.862Z] [ROUTER_START] {"user_id":"teste_123","frase":"me mostra as saídas desse mês"}
+[2025-05-26T13:27:41.863Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.863Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.868Z] [ROUTER_START] {"user_id":"teste_123","frase":"qual foi meu maior gasto?"}
+[2025-05-26T13:27:41.869Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.870Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.876Z] [ROUTER_START] {"user_id":"teste_123","frase":"como posso economizar mais?"}
+[2025-05-26T13:27:41.877Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.878Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.885Z] [ROUTER_START] {"user_id":"teste_123","frase":"me ensina a organizar minhas finanças"}
+[2025-05-26T13:27:41.886Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.887Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.891Z] [ROUTER_START] {"user_id":"teste_123","frase":"o que é um extrato?"}
+[2025-05-26T13:27:41.892Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.893Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.894Z] [ROUTER_START] {"user_id":"teste_123","frase":"preciso de uma dica financeira"}
+[2025-05-26T13:27:41.895Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.896Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.899Z] [ROUTER_START] {"user_id":"teste_123","frase":"bom dia!"}
+[2025-05-26T13:27:41.900Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.901Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.903Z] [ROUTER_START] {"user_id":"teste_123","frase":"obrigado!"}
+[2025-05-26T13:27:41.904Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.905Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.908Z] [ROUTER_START] {"user_id":"teste_123","frase":"não entendi como funciona"}
+[2025-05-26T13:27:41.909Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.910Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.911Z] [ROUTER_START] {"user_id":"teste_123","frase":"qual o valor?"}
+[2025-05-26T13:27:41.912Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.913Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.915Z] [ROUTER_START] {"user_id":"teste_123","frase":"anota um gasto"}
+[2025-05-26T13:27:41.916Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.917Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.919Z] [ROUTER_START] {"user_id":"teste_123","frase":"registre uma entrada"}
+[2025-05-26T13:27:41.920Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.921Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.923Z] [ROUTER_START] {"user_id":"teste_123","frase":"quero marcar um agendamento para dia 25"}
+[2025-05-26T13:27:41.924Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.924Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.926Z] [ROUTER_START] {"user_id":"teste_123","frase":"quais agendamentos eu tenho para esta semana?"}
+[2025-05-26T13:27:41.927Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.928Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.929Z] [ROUTER_START] {"user_id":"teste_123","frase":"remover um agendamento de consulta"}
+[2025-05-26T13:27:41.930Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:27:41.930Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:32.980Z] [ROUTER_START] {"user_id":"teste_123","frase":"gastei 100 no mercado ontem"}
+[2025-05-26T13:28:32.981Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:32.982Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:32.985Z] [ROUTER_START] {"user_id":"teste_123","frase":"recebi 1200 do cliente"}
+[2025-05-26T13:28:32.985Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:32.986Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:32.988Z] [ROUTER_START] {"user_id":"teste_123","frase":"paguei a fatura do cartão hoje"}
+[2025-05-26T13:28:32.988Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:32.989Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:32.991Z] [ROUTER_START] {"user_id":"teste_123","frase":"vendi uma moto por 3500 ontem"}
+[2025-05-26T13:28:32.991Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:32.991Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:32.993Z] [ROUTER_START] {"user_id":"teste_123","frase":"quanto tenho de saldo?"}
+[2025-05-26T13:28:32.994Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:32.994Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:32.997Z] [ROUTER_START] {"user_id":"teste_123","frase":"me mostra as entradas do mês"}
+[2025-05-26T13:28:32.998Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.000Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.001Z] [ROUTER_START] {"user_id":"teste_123","frase":"me mostra as saídas desse mês"}
+[2025-05-26T13:28:33.002Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.002Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.004Z] [ROUTER_START] {"user_id":"teste_123","frase":"qual foi meu maior gasto?"}
+[2025-05-26T13:28:33.005Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.005Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.007Z] [ROUTER_START] {"user_id":"teste_123","frase":"como posso economizar mais?"}
+[2025-05-26T13:28:33.008Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.008Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.010Z] [ROUTER_START] {"user_id":"teste_123","frase":"me ensina a organizar minhas finanças"}
+[2025-05-26T13:28:33.011Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.011Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.013Z] [ROUTER_START] {"user_id":"teste_123","frase":"o que é um extrato?"}
+[2025-05-26T13:28:33.014Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.014Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.017Z] [ROUTER_START] {"user_id":"teste_123","frase":"preciso de uma dica financeira"}
+[2025-05-26T13:28:33.017Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.018Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.020Z] [ROUTER_START] {"user_id":"teste_123","frase":"bom dia!"}
+[2025-05-26T13:28:33.020Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.021Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.024Z] [ROUTER_START] {"user_id":"teste_123","frase":"obrigado!"}
+[2025-05-26T13:28:33.024Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.025Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.026Z] [ROUTER_START] {"user_id":"teste_123","frase":"não entendi como funciona"}
+[2025-05-26T13:28:33.027Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.027Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.028Z] [ROUTER_START] {"user_id":"teste_123","frase":"qual o valor?"}
+[2025-05-26T13:28:33.029Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.029Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.030Z] [ROUTER_START] {"user_id":"teste_123","frase":"anota um gasto"}
+[2025-05-26T13:28:33.031Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.031Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.033Z] [ROUTER_START] {"user_id":"teste_123","frase":"registre uma entrada"}
+[2025-05-26T13:28:33.034Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.034Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.035Z] [ROUTER_START] {"user_id":"teste_123","frase":"quero marcar um agendamento para dia 25"}
+[2025-05-26T13:28:33.036Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.036Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.038Z] [ROUTER_START] {"user_id":"teste_123","frase":"quais agendamentos eu tenho para esta semana?"}
+[2025-05-26T13:28:33.039Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.039Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.041Z] [ROUTER_START] {"user_id":"teste_123","frase":"remover um agendamento de consulta"}
+[2025-05-26T13:28:33.041Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:28:33.042Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.246Z] [ROUTER_START] {"user_id":"teste_123","frase":"gastei 100 no mercado ontem"}
+[2025-05-26T13:31:36.247Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.247Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.248Z] [AGENT_START] {"user_id":"teste_123","frase":"consultar_saldo"}
+[2025-05-26T13:31:36.251Z] [ROUTER_START] {"user_id":"teste_123","frase":"recebi 1200 do cliente"}
+[2025-05-26T13:31:36.251Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.252Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.253Z] [AGENT_START] {"user_id":"teste_123","frase":"consultar_saldo"}
+[2025-05-26T13:31:36.255Z] [ROUTER_START] {"user_id":"teste_123","frase":"paguei a fatura do cartão hoje"}
+[2025-05-26T13:31:36.255Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.256Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.256Z] [AGENT_START] {"user_id":"teste_123","frase":"consultar_saldo"}
+[2025-05-26T13:31:36.259Z] [ROUTER_START] {"user_id":"teste_123","frase":"vendi uma moto por 3500 ontem"}
+[2025-05-26T13:31:36.259Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.260Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.260Z] [AGENT_START] {"user_id":"teste_123","frase":"consultar_saldo"}
+[2025-05-26T13:31:36.262Z] [ROUTER_START] {"user_id":"teste_123","frase":"quanto tenho de saldo?"}
+[2025-05-26T13:31:36.263Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.263Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.264Z] [AGENT_START] {"user_id":"teste_123","frase":"consultar_saldo"}
+[2025-05-26T13:31:36.266Z] [ROUTER_START] {"user_id":"teste_123","frase":"me mostra as entradas do mês"}
+[2025-05-26T13:31:36.267Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.267Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.268Z] [AGENT_START] {"user_id":"teste_123","frase":"consultar_saldo"}
+[2025-05-26T13:31:36.271Z] [ROUTER_START] {"user_id":"teste_123","frase":"me mostra as saídas desse mês"}
+[2025-05-26T13:31:36.271Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.272Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.273Z] [AGENT_START] {"user_id":"teste_123","frase":"consultar_saldo"}
+[2025-05-26T13:31:36.275Z] [ROUTER_START] {"user_id":"teste_123","frase":"qual foi meu maior gasto?"}
+[2025-05-26T13:31:36.276Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.276Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.277Z] [AGENT_START] {"user_id":"teste_123","frase":"consultar_saldo"}
+[2025-05-26T13:31:36.278Z] [ROUTER_START] {"user_id":"teste_123","frase":"como posso economizar mais?"}
+[2025-05-26T13:31:36.279Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.279Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.280Z] [AGENT_START] {"user_id":"teste_123","frase":"consultar_saldo"}
+[2025-05-26T13:31:36.282Z] [ROUTER_START] {"user_id":"teste_123","frase":"me ensina a organizar minhas finanças"}
+[2025-05-26T13:31:36.282Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.283Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.284Z] [AGENT_START] {"user_id":"teste_123","frase":"consultar_saldo"}
+[2025-05-26T13:31:36.286Z] [ROUTER_START] {"user_id":"teste_123","frase":"o que é um extrato?"}
+[2025-05-26T13:31:36.286Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.287Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.287Z] [AGENT_START] {"user_id":"teste_123","frase":"consultar_saldo"}
+[2025-05-26T13:31:36.289Z] [ROUTER_START] {"user_id":"teste_123","frase":"preciso de uma dica financeira"}
+[2025-05-26T13:31:36.290Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.291Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.291Z] [AGENT_START] {"user_id":"teste_123","frase":"consultar_saldo"}
+[2025-05-26T13:31:36.293Z] [ROUTER_START] {"user_id":"teste_123","frase":"bom dia!"}
+[2025-05-26T13:31:36.293Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.294Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.294Z] [AGENT_START] {"user_id":"teste_123","frase":"consultar_saldo"}
+[2025-05-26T13:31:36.297Z] [ROUTER_START] {"user_id":"teste_123","frase":"obrigado!"}
+[2025-05-26T13:31:36.298Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.299Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.299Z] [AGENT_START] {"user_id":"teste_123","frase":"consultar_saldo"}
+[2025-05-26T13:31:36.301Z] [ROUTER_START] {"user_id":"teste_123","frase":"não entendi como funciona"}
+[2025-05-26T13:31:36.304Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.305Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.305Z] [AGENT_START] {"user_id":"teste_123","frase":"consultar_saldo"}
+[2025-05-26T13:31:36.307Z] [ROUTER_START] {"user_id":"teste_123","frase":"qual o valor?"}
+[2025-05-26T13:31:36.307Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.308Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.308Z] [AGENT_START] {"user_id":"teste_123","frase":"consultar_saldo"}
+[2025-05-26T13:31:36.310Z] [ROUTER_START] {"user_id":"teste_123","frase":"anota um gasto"}
+[2025-05-26T13:31:36.310Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.311Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.311Z] [AGENT_START] {"user_id":"teste_123","frase":"consultar_saldo"}
+[2025-05-26T13:31:36.313Z] [ROUTER_START] {"user_id":"teste_123","frase":"registre uma entrada"}
+[2025-05-26T13:31:36.313Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.314Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.315Z] [AGENT_START] {"user_id":"teste_123","frase":"consultar_saldo"}
+[2025-05-26T13:31:36.317Z] [ROUTER_START] {"user_id":"teste_123","frase":"quero marcar um agendamento para dia 25"}
+[2025-05-26T13:31:36.317Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.318Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.319Z] [AGENT_START] {"user_id":"teste_123","frase":"consultar_saldo"}
+[2025-05-26T13:31:36.321Z] [ROUTER_START] {"user_id":"teste_123","frase":"quais agendamentos eu tenho para esta semana?"}
+[2025-05-26T13:31:36.321Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.322Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.323Z] [AGENT_START] {"user_id":"teste_123","frase":"consultar_saldo"}
+[2025-05-26T13:31:36.325Z] [ROUTER_START] {"user_id":"teste_123","frase":"remover um agendamento de consulta"}
+[2025-05-26T13:31:36.325Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.326Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:31:36.327Z] [AGENT_START] {"user_id":"teste_123","frase":"consultar_saldo"}
+[2025-05-26T13:34:47.158Z] [ROUTER_START] {"user_id":"teste_123","frase":"gastei 100 no mercado ontem"}
+[2025-05-26T13:34:47.159Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:47.159Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:47.160Z] [AGENT_START] {"user_id":"teste_123","frase":"gastei 100 no mercado ontem"}
+[2025-05-26T13:34:47.164Z] [REGISTRO_FINANCEIRO] {"user_id":"teste_123","intencao":"registrar_saida","tipo":"saida","valor":100,"descricao":"gastei 100 no mercado ontem","categoria":"Alimentação","data":"2025-05-25","periodo":{"inicio":"2025-05-25","fim":"2025-05-25"},"similaridade":1}
+[2025-05-26T13:34:47.212Z] [ROUTER_START] {"user_id":"teste_123","frase":"recebi 1200 do cliente"}
+[2025-05-26T13:34:47.212Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:47.213Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:47.213Z] [AGENT_START] {"user_id":"teste_123","frase":"recebi 1200 do cliente"}
+[2025-05-26T13:34:47.215Z] [REGISTRO_FINANCEIRO] {"user_id":"teste_123","intencao":"registrar_entrada","tipo":"entrada","valor":1200,"descricao":"recebi 1200 do cliente","categoria":"Outro","data":"2025-05-26","periodo":null,"similaridade":1}
+[2025-05-26T13:34:47.220Z] [ROUTER_START] {"user_id":"teste_123","frase":"paguei a fatura do cartão hoje"}
+[2025-05-26T13:34:47.221Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:47.222Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:47.222Z] [AGENT_START] {"user_id":"teste_123","frase":"paguei a fatura do cartão hoje"}
+[2025-05-26T13:34:49.584Z] [AGENT_INTENCAO_ERRO] {"user_id":"teste_123","resultado":{"erro":true,"mensagem":"Qual o valor?","intencao":"registrar_saida","tipo":"saida","valor":null,"descricao":"paguei a fatura do cartão hoje","categoria":"Despesa","data":"2025-05-26","periodo":{"inicio":"2025-05-26","fim":"2025-05-26"},"similaridade":0.9658780800146431}}
+[2025-05-26T13:34:49.586Z] [ROUTER_START] {"user_id":"teste_123","frase":"vendi uma moto por 3500 ontem"}
+[2025-05-26T13:34:49.587Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:49.588Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:49.588Z] [AGENT_START] {"user_id":"teste_123","frase":"vendi uma moto por 3500 ontem"}
+[2025-05-26T13:34:49.589Z] [REGISTRO_FINANCEIRO] {"user_id":"teste_123","intencao":"registrar_entrada","tipo":"entrada","valor":3500,"descricao":"vendi uma moto por 3500 ontem","categoria":"Outro","data":"2025-05-25","periodo":{"inicio":"2025-05-25","fim":"2025-05-25"},"similaridade":1}
+[2025-05-26T13:34:49.597Z] [ROUTER_START] {"user_id":"teste_123","frase":"quanto tenho de saldo?"}
+[2025-05-26T13:34:49.598Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:49.599Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:49.600Z] [AGENT_START] {"user_id":"teste_123","frase":"quanto tenho de saldo?"}
+[2025-05-26T13:34:50.558Z] [CONSULTA_SALDO] {"user_id":"teste_123","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T13:34:50.583Z] [ROUTER_START] {"user_id":"teste_123","frase":"me mostra as entradas do mês"}
+[2025-05-26T13:34:50.583Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:50.584Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:50.584Z] [AGENT_START] {"user_id":"teste_123","frase":"me mostra as entradas do mês"}
+[2025-05-26T13:34:50.933Z] [CONSULTA_ENTRADAS] {"user_id":"teste_123","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T13:34:50.950Z] [ROUTER_START] {"user_id":"teste_123","frase":"me mostra as saídas desse mês"}
+[2025-05-26T13:34:50.951Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:50.951Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:50.952Z] [AGENT_START] {"user_id":"teste_123","frase":"me mostra as saídas desse mês"}
+[2025-05-26T13:34:54.220Z] [AGENDAMENTO_CONSULTA] {"user_id":"teste_123","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"consultar_agendamentos","tipo":null,"valor":null,"descricao":"me mostra as saídas desse mês","categoria":"Lazer","data":"2025-05-26","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"},"similaridade":0.9186820396606472}}
+[2025-05-26T13:34:54.225Z] [ROUTER_START] {"user_id":"teste_123","frase":"qual foi meu maior gasto?"}
+[2025-05-26T13:34:54.226Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:54.227Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:54.228Z] [AGENT_START] {"user_id":"teste_123","frase":"qual foi meu maior gasto?"}
+[2025-05-26T13:34:54.466Z] [CONSULTA_MAIOR_GASTO] {"user_id":"teste_123","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T13:34:54.473Z] [ROUTER_START] {"user_id":"teste_123","frase":"como posso economizar mais?"}
+[2025-05-26T13:34:54.473Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:54.474Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:54.474Z] [AGENT_START] {"user_id":"teste_123","frase":"como posso economizar mais?"}
+[2025-05-26T13:34:54.814Z] [CONSULTA_MAIOR_GASTO] {"user_id":"teste_123","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T13:34:54.818Z] [ROUTER_START] {"user_id":"teste_123","frase":"me ensina a organizar minhas finanças"}
+[2025-05-26T13:34:54.819Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:54.820Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:54.820Z] [AGENT_START] {"user_id":"teste_123","frase":"me ensina a organizar minhas finanças"}
+[2025-05-26T13:34:56.343Z] [AGENT_INTENCAO_ERRO] {"user_id":"teste_123","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"duvida_uso","tipo":null,"valor":null,"descricao":"me ensina a organizar minhas finanças","categoria":"Educação","data":"2025-05-26","periodo":null,"similaridade":0.8864328432863849}}
+[2025-05-26T13:34:56.345Z] [ROUTER_START] {"user_id":"teste_123","frase":"o que é um extrato?"}
+[2025-05-26T13:34:56.345Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:56.346Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:56.346Z] [AGENT_START] {"user_id":"teste_123","frase":"o que é um extrato?"}
+[2025-05-26T13:34:56.687Z] [CONSULTA_EXTRATO] {"user_id":"teste_123","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T13:34:56.691Z] [ROUTER_START] {"user_id":"teste_123","frase":"preciso de uma dica financeira"}
+[2025-05-26T13:34:56.691Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:56.692Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:56.693Z] [AGENT_START] {"user_id":"teste_123","frase":"preciso de uma dica financeira"}
+[2025-05-26T13:34:56.947Z] [CONSULTA_EXTRATO] {"user_id":"teste_123","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T13:34:56.950Z] [ROUTER_START] {"user_id":"teste_123","frase":"bom dia!"}
+[2025-05-26T13:34:56.951Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:56.951Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:56.951Z] [AGENT_START] {"user_id":"teste_123","frase":"bom dia!"}
+[2025-05-26T13:34:57.437Z] [SAUDACAO] {"user_id":"teste_123"}
+[2025-05-26T13:34:57.439Z] [ROUTER_START] {"user_id":"teste_123","frase":"obrigado!"}
+[2025-05-26T13:34:57.440Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:57.440Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:57.440Z] [AGENT_START] {"user_id":"teste_123","frase":"obrigado!"}
+[2025-05-26T13:34:59.906Z] [SAUDACAO] {"user_id":"teste_123"}
+[2025-05-26T13:34:59.908Z] [ROUTER_START] {"user_id":"teste_123","frase":"não entendi como funciona"}
+[2025-05-26T13:34:59.909Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:59.910Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:34:59.910Z] [AGENT_START] {"user_id":"teste_123","frase":"não entendi como funciona"}
+[2025-05-26T13:35:00.676Z] [AGENT_INTENCAO_ERRO] {"user_id":"teste_123","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"duvidas","tipo":null,"valor":null,"descricao":"não entendi como funciona","categoria":"Transporte","data":"2025-05-26","periodo":null,"similaridade":0.9271437299230633}}
+[2025-05-26T13:35:00.678Z] [ROUTER_START] {"user_id":"teste_123","frase":"qual o valor?"}
+[2025-05-26T13:35:00.679Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:35:00.680Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:35:00.682Z] [AGENT_START] {"user_id":"teste_123","frase":"qual o valor?"}
+[2025-05-26T13:35:00.959Z] [CONSULTA_MAIOR_GASTO] {"user_id":"teste_123","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T13:35:00.962Z] [ROUTER_START] {"user_id":"teste_123","frase":"anota um gasto"}
+[2025-05-26T13:35:00.962Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:35:00.963Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:35:00.963Z] [AGENT_START] {"user_id":"teste_123","frase":"anota um gasto"}
+[2025-05-26T13:35:01.853Z] [CONSULTA_SAIDAS] {"user_id":"teste_123","periodo":{"inicio":"2025-01-01","fim":"2025-12-31"}}
+[2025-05-26T13:35:01.857Z] [ROUTER_START] {"user_id":"teste_123","frase":"registre uma entrada"}
+[2025-05-26T13:35:01.857Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:35:01.858Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:35:01.858Z] [AGENT_START] {"user_id":"teste_123","frase":"registre uma entrada"}
+[2025-05-26T13:35:03.532Z] [AGENT_INTENCAO_ERRO] {"user_id":"teste_123","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"duvida_uso","tipo":null,"valor":null,"descricao":"registre uma entrada","categoria":"Despesa","data":"2025-05-26","periodo":null,"similaridade":0.8647794254651012}}
+[2025-05-26T13:35:03.534Z] [ROUTER_START] {"user_id":"teste_123","frase":"quero marcar um agendamento para dia 25"}
+[2025-05-26T13:35:03.535Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:35:03.536Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:35:03.537Z] [AGENT_START] {"user_id":"teste_123","frase":"quero marcar um agendamento para dia 25"}
+[2025-05-26T13:35:05.050Z] [AGENDAMENTO_CONSULTA] {"user_id":"teste_123","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"consultar_agendamentos","tipo":null,"valor":25,"descricao":"quero marcar um agendamento para dia 25","categoria":"Despesas Fixas","data":"2025-05-26","periodo":{"inicio":"2025-05-26","fim":"2025-05-26"},"similaridade":0.8824579446502011}}
+[2025-05-26T13:35:05.053Z] [ROUTER_START] {"user_id":"teste_123","frase":"quais agendamentos eu tenho para esta semana?"}
+[2025-05-26T13:35:05.053Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:35:05.053Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:35:05.054Z] [AGENT_START] {"user_id":"teste_123","frase":"quais agendamentos eu tenho para esta semana?"}
+[2025-05-26T13:35:06.681Z] [AGENDAMENTO_CONSULTA] {"user_id":"teste_123","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"consultar_agendamentos","tipo":null,"valor":null,"descricao":"quais agendamentos eu tenho para esta semana?","categoria":"Lazer","data":"2025-05-26","periodo":{"inicio":"2025-05-26","fim":"2025-06-01"},"similaridade":0.9559917063839296}}
+[2025-05-26T13:35:06.686Z] [ROUTER_START] {"user_id":"teste_123","frase":"remover um agendamento de consulta"}
+[2025-05-26T13:35:06.686Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:35:06.687Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:35:06.688Z] [AGENT_START] {"user_id":"teste_123","frase":"remover um agendamento de consulta"}
+[2025-05-26T13:35:07.290Z] [AGENDAMENTO_CONSULTA] {"user_id":"teste_123","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"consultar_agendamentos","tipo":null,"valor":null,"descricao":"remover um agendamento de consulta","categoria":"Saúde","data":"2025-05-26","periodo":null,"similaridade":0.8750815036572434}}
+[2025-05-26T13:42:13.579Z] [ROUTER_START] {"user_id":"teste_123","frase":"gastei 100 no mercado ontem"}
+[2025-05-26T13:42:13.580Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:13.580Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:13.581Z] [AGENT_START] {"user_id":"teste_123","frase":"gastei 100 no mercado ontem"}
+[2025-05-26T13:42:13.587Z] [REGISTRO_FINANCEIRO] {"user_id":"teste_123","intencao":"registrar_saida","tipo":"saida","valor":100,"descricao":"gastei 100 no mercado ontem","categoria":"Alimentação","data":"2025-05-25","periodo":{"inicio":"2025-05-25","fim":"2025-05-25"},"similaridade":1}
+[2025-05-26T13:42:13.656Z] [ROUTER_START] {"user_id":"teste_123","frase":"recebi 1200 do cliente"}
+[2025-05-26T13:42:13.657Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:13.657Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:13.658Z] [AGENT_START] {"user_id":"teste_123","frase":"recebi 1200 do cliente"}
+[2025-05-26T13:42:13.662Z] [REGISTRO_FINANCEIRO] {"user_id":"teste_123","intencao":"registrar_entrada","tipo":"entrada","valor":1200,"descricao":"recebi 1200 do cliente","categoria":"Outro","data":"2025-05-26","periodo":null,"similaridade":1}
+[2025-05-26T13:42:13.670Z] [ROUTER_START] {"user_id":"teste_123","frase":"paguei a fatura do cartão hoje"}
+[2025-05-26T13:42:13.670Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:13.672Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:13.672Z] [AGENT_START] {"user_id":"teste_123","frase":"paguei a fatura do cartão hoje"}
+[2025-05-26T13:42:15.824Z] [AGENT_INTENCAO_ERRO] {"user_id":"teste_123","resultado":{"erro":true,"mensagem":"Qual o valor?","intencao":"registrar_saida","tipo":"saida","valor":null,"descricao":"paguei a fatura do cartão hoje","categoria":"Despesa","data":"2025-05-26","periodo":{"inicio":"2025-05-26","fim":"2025-05-26"},"similaridade":0.9658780800146431}}
+[2025-05-26T13:42:15.825Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"paguei a fatura do cartão hoje"}
+[2025-05-26T13:42:15.826Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"paguei a fatura do cartão hoje"}
+[2025-05-26T13:42:15.832Z] [ROUTER_START] {"user_id":"teste_123","frase":"vendi uma moto por 3500 ontem"}
+[2025-05-26T13:42:15.833Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:15.833Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:15.834Z] [AGENT_START] {"user_id":"teste_123","frase":"vendi uma moto por 3500 ontem"}
+[2025-05-26T13:42:15.834Z] [REGISTRO_FINANCEIRO] {"user_id":"teste_123","intencao":"registrar_entrada","tipo":"entrada","valor":3500,"descricao":"vendi uma moto por 3500 ontem","categoria":"Outro","data":"2025-05-25","periodo":{"inicio":"2025-05-25","fim":"2025-05-25"},"similaridade":1}
+[2025-05-26T13:42:15.853Z] [ROUTER_START] {"user_id":"teste_123","frase":"quanto tenho de saldo?"}
+[2025-05-26T13:42:15.854Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:15.854Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:15.855Z] [AGENT_START] {"user_id":"teste_123","frase":"quanto tenho de saldo?"}
+[2025-05-26T13:42:16.555Z] [CONSULTA_SALDO] {"user_id":"teste_123","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T13:42:16.563Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"quanto tenho de saldo?"}
+[2025-05-26T13:42:16.564Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"quanto tenho de saldo?"}
+[2025-05-26T13:42:16.565Z] [ROUTER_START] {"user_id":"teste_123","frase":"me mostra as entradas do mês"}
+[2025-05-26T13:42:16.565Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:16.566Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:16.566Z] [AGENT_START] {"user_id":"teste_123","frase":"me mostra as entradas do mês"}
+[2025-05-26T13:42:17.273Z] [CONSULTA_ENTRADAS] {"user_id":"teste_123","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T13:42:17.295Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"me mostra as entradas do mês"}
+[2025-05-26T13:42:17.295Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"me mostra as entradas do mês"}
+[2025-05-26T13:42:17.297Z] [ROUTER_START] {"user_id":"teste_123","frase":"me mostra as saídas desse mês"}
+[2025-05-26T13:42:17.297Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:17.298Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:17.298Z] [AGENT_START] {"user_id":"teste_123","frase":"me mostra as saídas desse mês"}
+[2025-05-26T13:42:18.468Z] [AGENDAMENTO_CONSULTA] {"user_id":"teste_123","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"consultar_agendamentos","tipo":null,"valor":null,"descricao":"me mostra as saídas desse mês","categoria":"Lazer","data":"2025-05-26","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"},"similaridade":0.9186820396606472}}
+[2025-05-26T13:42:18.473Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"me mostra as saídas desse mês"}
+[2025-05-26T13:42:18.474Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"me mostra as saídas desse mês"}
+[2025-05-26T13:42:18.476Z] [ROUTER_START] {"user_id":"teste_123","frase":"qual foi meu maior gasto?"}
+[2025-05-26T13:42:18.477Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:18.477Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:18.478Z] [AGENT_START] {"user_id":"teste_123","frase":"qual foi meu maior gasto?"}
+[2025-05-26T13:42:19.107Z] [CONSULTA_MAIOR_GASTO] {"user_id":"teste_123","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T13:42:19.111Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"qual foi meu maior gasto?"}
+[2025-05-26T13:42:19.111Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"qual foi meu maior gasto?"}
+[2025-05-26T13:42:19.113Z] [ROUTER_START] {"user_id":"teste_123","frase":"como posso economizar mais?"}
+[2025-05-26T13:42:19.113Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:19.114Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:19.114Z] [AGENT_START] {"user_id":"teste_123","frase":"como posso economizar mais?"}
+[2025-05-26T13:42:19.900Z] [CONSULTA_MAIOR_GASTO] {"user_id":"teste_123","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T13:42:19.902Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"como posso economizar mais?"}
+[2025-05-26T13:42:19.903Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"como posso economizar mais?"}
+[2025-05-26T13:42:19.904Z] [ROUTER_START] {"user_id":"teste_123","frase":"me ensina a organizar minhas finanças"}
+[2025-05-26T13:42:19.905Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:19.905Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:19.906Z] [AGENT_START] {"user_id":"teste_123","frase":"me ensina a organizar minhas finanças"}
+[2025-05-26T13:42:21.147Z] [AGENT_INTENCAO_ERRO] {"user_id":"teste_123","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"duvida_uso","tipo":null,"valor":null,"descricao":"me ensina a organizar minhas finanças","categoria":"Educação","data":"2025-05-26","periodo":null,"similaridade":0.8864328432863849}}
+[2025-05-26T13:42:21.150Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"me ensina a organizar minhas finanças"}
+[2025-05-26T13:42:21.151Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"me ensina a organizar minhas finanças"}
+[2025-05-26T13:42:21.154Z] [ROUTER_START] {"user_id":"teste_123","frase":"o que é um extrato?"}
+[2025-05-26T13:42:21.154Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:21.155Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:21.156Z] [AGENT_START] {"user_id":"teste_123","frase":"o que é um extrato?"}
+[2025-05-26T13:42:21.618Z] [CONSULTA_EXTRATO] {"user_id":"teste_123","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T13:42:21.621Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"o que é um extrato?"}
+[2025-05-26T13:42:21.621Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"o que é um extrato?"}
+[2025-05-26T13:42:21.624Z] [ROUTER_START] {"user_id":"teste_123","frase":"preciso de uma dica financeira"}
+[2025-05-26T13:42:21.624Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:21.625Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:21.625Z] [AGENT_START] {"user_id":"teste_123","frase":"preciso de uma dica financeira"}
+[2025-05-26T13:42:22.378Z] [CONSULTA_EXTRATO] {"user_id":"teste_123","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T13:42:22.381Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"preciso de uma dica financeira"}
+[2025-05-26T13:42:22.382Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"preciso de uma dica financeira"}
+[2025-05-26T13:42:22.384Z] [ROUTER_START] {"user_id":"teste_123","frase":"bom dia!"}
+[2025-05-26T13:42:22.384Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:22.384Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:22.385Z] [AGENT_START] {"user_id":"teste_123","frase":"bom dia!"}
+[2025-05-26T13:42:24.886Z] [SAUDACAO] {"user_id":"teste_123"}
+[2025-05-26T13:42:24.887Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"bom dia!"}
+[2025-05-26T13:42:24.887Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"bom dia!"}
+[2025-05-26T13:42:24.889Z] [ROUTER_START] {"user_id":"teste_123","frase":"obrigado!"}
+[2025-05-26T13:42:24.889Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:24.890Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:24.890Z] [AGENT_START] {"user_id":"teste_123","frase":"obrigado!"}
+[2025-05-26T13:42:25.716Z] [SAUDACAO] {"user_id":"teste_123"}
+[2025-05-26T13:42:25.717Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"obrigado!"}
+[2025-05-26T13:42:25.717Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"obrigado!"}
+[2025-05-26T13:42:25.721Z] [ROUTER_START] {"user_id":"teste_123","frase":"não entendi como funciona"}
+[2025-05-26T13:42:25.722Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:25.723Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:25.723Z] [AGENT_START] {"user_id":"teste_123","frase":"não entendi como funciona"}
+[2025-05-26T13:42:26.642Z] [AGENT_INTENCAO_ERRO] {"user_id":"teste_123","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"duvidas","tipo":null,"valor":null,"descricao":"não entendi como funciona","categoria":"Transporte","data":"2025-05-26","periodo":null,"similaridade":0.9271437299230633}}
+[2025-05-26T13:42:26.643Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"não entendi como funciona"}
+[2025-05-26T13:42:26.643Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"não entendi como funciona"}
+[2025-05-26T13:42:26.646Z] [ROUTER_START] {"user_id":"teste_123","frase":"qual o valor?"}
+[2025-05-26T13:42:26.647Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:26.647Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:26.648Z] [AGENT_START] {"user_id":"teste_123","frase":"qual o valor?"}
+[2025-05-26T13:42:27.178Z] [CONSULTA_MAIOR_GASTO] {"user_id":"teste_123","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T13:42:27.181Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"qual o valor?"}
+[2025-05-26T13:42:27.181Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"qual o valor?"}
+[2025-05-26T13:42:27.184Z] [ROUTER_START] {"user_id":"teste_123","frase":"anota um gasto"}
+[2025-05-26T13:42:27.184Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:27.184Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:27.185Z] [AGENT_START] {"user_id":"teste_123","frase":"anota um gasto"}
+[2025-05-26T13:42:28.510Z] [CONSULTA_SAIDAS] {"user_id":"teste_123","periodo":{"inicio":"2025-01-01","fim":"2025-12-31"}}
+[2025-05-26T13:42:28.514Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"anota um gasto"}
+[2025-05-26T13:42:28.515Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"anota um gasto"}
+[2025-05-26T13:42:28.517Z] [ROUTER_START] {"user_id":"teste_123","frase":"registre uma entrada"}
+[2025-05-26T13:42:28.517Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:28.518Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:28.518Z] [AGENT_START] {"user_id":"teste_123","frase":"registre uma entrada"}
+[2025-05-26T13:42:29.503Z] [AGENT_INTENCAO_ERRO] {"user_id":"teste_123","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"duvida_uso","tipo":null,"valor":null,"descricao":"registre uma entrada","categoria":"Despesa","data":"2025-05-26","periodo":null,"similaridade":0.8647794254651012}}
+[2025-05-26T13:42:29.504Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"registre uma entrada"}
+[2025-05-26T13:42:29.505Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"registre uma entrada"}
+[2025-05-26T13:42:29.507Z] [ROUTER_START] {"user_id":"teste_123","frase":"quero marcar um agendamento para dia 25"}
+[2025-05-26T13:42:29.508Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:29.509Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:29.509Z] [AGENT_START] {"user_id":"teste_123","frase":"quero marcar um agendamento para dia 25"}
+[2025-05-26T13:42:30.601Z] [AGENDAMENTO_CONSULTA] {"user_id":"teste_123","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"consultar_agendamentos","tipo":null,"valor":25,"descricao":"quero marcar um agendamento para dia 25","categoria":"Despesas Fixas","data":"2025-05-26","periodo":{"inicio":"2025-05-26","fim":"2025-05-26"},"similaridade":0.8824579446502011}}
+[2025-05-26T13:42:30.603Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"quero marcar um agendamento para dia 25"}
+[2025-05-26T13:42:30.603Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"quero marcar um agendamento para dia 25"}
+[2025-05-26T13:42:30.605Z] [ROUTER_START] {"user_id":"teste_123","frase":"quais agendamentos eu tenho para esta semana?"}
+[2025-05-26T13:42:30.605Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:30.605Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:30.606Z] [AGENT_START] {"user_id":"teste_123","frase":"quais agendamentos eu tenho para esta semana?"}
+[2025-05-26T13:42:31.630Z] [AGENDAMENTO_CONSULTA] {"user_id":"teste_123","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"consultar_agendamentos","tipo":null,"valor":null,"descricao":"quais agendamentos eu tenho para esta semana?","categoria":"Lazer","data":"2025-05-26","periodo":{"inicio":"2025-05-26","fim":"2025-06-01"},"similaridade":0.9559917063839296}}
+[2025-05-26T13:42:31.632Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"quais agendamentos eu tenho para esta semana?"}
+[2025-05-26T13:42:31.632Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"quais agendamentos eu tenho para esta semana?"}
+[2025-05-26T13:42:31.633Z] [ROUTER_START] {"user_id":"teste_123","frase":"remover um agendamento de consulta"}
+[2025-05-26T13:42:31.634Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:31.634Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:42:31.635Z] [AGENT_START] {"user_id":"teste_123","frase":"remover um agendamento de consulta"}
+[2025-05-26T13:42:33.497Z] [AGENDAMENTO_CONSULTA] {"user_id":"teste_123","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"consultar_agendamentos","tipo":null,"valor":null,"descricao":"remover um agendamento de consulta","categoria":"Saúde","data":"2025-05-26","periodo":null,"similaridade":0.8750815036572434}}
+[2025-05-26T13:42:33.500Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"remover um agendamento de consulta"}
+[2025-05-26T13:42:33.500Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"remover um agendamento de consulta"}
+[2025-05-26T13:49:55.182Z] [ROUTER_START] {"user_id":"teste_123","frase":"gastei 100 no mercado ontem"}
+[2025-05-26T13:49:55.184Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:49:55.184Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:49:55.185Z] [AGENT_START] {"user_id":"teste_123","frase":"gastei 100 no mercado ontem"}
+[2025-05-26T13:49:55.192Z] [REGISTRO_FINANCEIRO] {"user_id":"teste_123","intencao":"registrar_saida","tipo":"saida","valor":100,"descricao":"gastei 100 no mercado ontem","categoria":"Alimentação","data":"2025-05-25","periodo":{"inicio":"2025-05-25","fim":"2025-05-25"},"similaridade":1}
+[2025-05-26T13:49:55.245Z] [ROUTER_START] {"user_id":"teste_123","frase":"recebi 1200 do cliente"}
+[2025-05-26T13:49:55.245Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:49:55.246Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:49:55.247Z] [AGENT_START] {"user_id":"teste_123","frase":"recebi 1200 do cliente"}
+[2025-05-26T13:49:55.250Z] [REGISTRO_FINANCEIRO] {"user_id":"teste_123","intencao":"registrar_entrada","tipo":"entrada","valor":1200,"descricao":"recebi 1200 do cliente","categoria":"Outro","data":"2025-05-26","periodo":null,"similaridade":1}
+[2025-05-26T13:49:55.256Z] [ROUTER_START] {"user_id":"teste_123","frase":"paguei a fatura do cartão hoje"}
+[2025-05-26T13:49:55.256Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:49:55.257Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:49:55.257Z] [AGENT_START] {"user_id":"teste_123","frase":"paguei a fatura do cartão hoje"}
+[2025-05-26T13:49:57.444Z] [AGENT_INTENCAO_ERRO] {"user_id":"teste_123","resultado":{"erro":true,"mensagem":"Qual o valor?","intencao":"registrar_saida","tipo":"saida","valor":null,"descricao":"paguei a fatura do cartão hoje","categoria":"Despesa","data":"2025-05-26","periodo":{"inicio":"2025-05-26","fim":"2025-05-26"},"similaridade":0.9658780800146431}}
+[2025-05-26T13:49:57.446Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"paguei a fatura do cartão hoje"}
+[2025-05-26T13:49:57.451Z] [ROUTER_START] {"user_id":"teste_123","frase":"vendi uma moto por 3500 ontem"}
+[2025-05-26T13:49:57.452Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:49:57.453Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:49:57.453Z] [AGENT_START] {"user_id":"teste_123","frase":"vendi uma moto por 3500 ontem"}
+[2025-05-26T13:49:57.455Z] [REGISTRO_FINANCEIRO] {"user_id":"teste_123","intencao":"registrar_entrada","tipo":"entrada","valor":3500,"descricao":"vendi uma moto por 3500 ontem","categoria":"Outro","data":"2025-05-25","periodo":{"inicio":"2025-05-25","fim":"2025-05-25"},"similaridade":1}
+[2025-05-26T13:49:57.465Z] [ROUTER_START] {"user_id":"teste_123","frase":"quanto tenho de saldo?"}
+[2025-05-26T13:49:57.466Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:49:57.467Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:49:57.468Z] [AGENT_START] {"user_id":"teste_123","frase":"quanto tenho de saldo?"}
+[2025-05-26T13:49:58.518Z] [CONSULTA_SALDO] {"user_id":"teste_123","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T13:49:58.527Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"quanto tenho de saldo?"}
+[2025-05-26T13:49:58.528Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"quanto tenho de saldo?"}
+[2025-05-26T13:49:58.529Z] [ROUTER_START] {"user_id":"teste_123","frase":"me mostra as entradas do mês"}
+[2025-05-26T13:49:58.530Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:49:58.530Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:49:58.530Z] [AGENT_START] {"user_id":"teste_123","frase":"me mostra as entradas do mês"}
+[2025-05-26T13:49:59.569Z] [CONSULTA_ENTRADAS] {"user_id":"teste_123","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T13:49:59.598Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"me mostra as entradas do mês"}
+[2025-05-26T13:49:59.598Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"me mostra as entradas do mês"}
+[2025-05-26T13:49:59.601Z] [ROUTER_START] {"user_id":"teste_123","frase":"me mostra as saídas desse mês"}
+[2025-05-26T13:49:59.601Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:49:59.601Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:49:59.602Z] [AGENT_START] {"user_id":"teste_123","frase":"me mostra as saídas desse mês"}
+[2025-05-26T13:50:02.621Z] [AGENDAMENTO_CONSULTA] {"user_id":"teste_123","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"consultar_agendamentos","tipo":null,"valor":null,"descricao":"me mostra as saídas desse mês","categoria":"Lazer","data":"2025-05-26","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"},"similaridade":0.9186820396606472}}
+[2025-05-26T13:50:02.627Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"me mostra as saídas desse mês"}
+[2025-05-26T13:50:02.628Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"me mostra as saídas desse mês"}
+[2025-05-26T13:50:02.629Z] [ROUTER_START] {"user_id":"teste_123","frase":"qual foi meu maior gasto?"}
+[2025-05-26T13:50:02.630Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:50:02.631Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:50:02.631Z] [AGENT_START] {"user_id":"teste_123","frase":"qual foi meu maior gasto?"}
+[2025-05-26T13:50:03.357Z] [CONSULTA_MAIOR_GASTO] {"user_id":"teste_123","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T13:50:03.361Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"qual foi meu maior gasto?"}
+[2025-05-26T13:50:03.361Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"qual foi meu maior gasto?"}
+[2025-05-26T13:50:03.363Z] [ROUTER_START] {"user_id":"teste_123","frase":"como posso economizar mais?"}
+[2025-05-26T13:50:03.363Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:50:03.364Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:50:03.364Z] [AGENT_START] {"user_id":"teste_123","frase":"como posso economizar mais?"}
+[2025-05-26T13:50:03.793Z] [CONSULTA_MAIOR_GASTO] {"user_id":"teste_123","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T13:50:03.796Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"como posso economizar mais?"}
+[2025-05-26T13:50:03.796Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"como posso economizar mais?"}
+[2025-05-26T13:50:03.798Z] [ROUTER_START] {"user_id":"teste_123","frase":"me ensina a organizar minhas finanças"}
+[2025-05-26T13:50:03.798Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:50:03.799Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:50:03.799Z] [AGENT_START] {"user_id":"teste_123","frase":"me ensina a organizar minhas finanças"}
+[2025-05-26T13:50:04.507Z] [AGENT_INTENCAO_ERRO] {"user_id":"teste_123","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"duvida_uso","tipo":null,"valor":null,"descricao":"me ensina a organizar minhas finanças","categoria":"Educação","data":"2025-05-26","periodo":null,"similaridade":0.8864328432863849}}
+[2025-05-26T13:50:04.509Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"me ensina a organizar minhas finanças"}
+[2025-05-26T13:50:04.511Z] [ROUTER_START] {"user_id":"teste_123","frase":"o que é um extrato?"}
+[2025-05-26T13:50:04.512Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:50:04.512Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:50:04.513Z] [AGENT_START] {"user_id":"teste_123","frase":"o que é um extrato?"}
+[2025-05-26T13:50:04.942Z] [CONSULTA_EXTRATO] {"user_id":"teste_123","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T13:50:04.947Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"o que é um extrato?"}
+[2025-05-26T13:50:04.947Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"o que é um extrato?"}
+[2025-05-26T13:50:04.950Z] [ROUTER_START] {"user_id":"teste_123","frase":"preciso de uma dica financeira"}
+[2025-05-26T13:50:04.951Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:50:04.951Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T13:50:04.952Z] [AGENT_START] {"user_id":"teste_123","frase":"preciso de uma dica financeira"}
+[2025-05-26T22:04:57.919Z] [ROUTER_START] {"user_id":"teste_123","frase":"gastei 100 no mercado ontem"}
+[2025-05-26T22:04:57.923Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:04:57.923Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:04:57.925Z] [AGENT_START] {"user_id":"teste_123","frase":"gastei 100 no mercado ontem"}
+[2025-05-26T22:04:57.947Z] [REGISTRO_FINANCEIRO] {"user_id":"teste_123","intencao":"registrar_saida","tipo":"saida","valor":100,"descricao":"gastei 100 no mercado ontem","categoria":"Alimentação","data":"2025-05-25","periodo":{"inicio":"2025-05-25","fim":"2025-05-25"},"similaridade":1}
+[2025-05-26T22:04:58.030Z] [ROUTER_START] {"user_id":"teste_123","frase":"recebi 1200 do cliente"}
+[2025-05-26T22:04:58.030Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:04:58.031Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:04:58.032Z] [AGENT_START] {"user_id":"teste_123","frase":"recebi 1200 do cliente"}
+[2025-05-26T22:04:58.036Z] [REGISTRO_FINANCEIRO] {"user_id":"teste_123","intencao":"registrar_entrada","tipo":"entrada","valor":1200,"descricao":"recebi 1200 do cliente","categoria":"Outro","data":"2025-05-26","periodo":null,"similaridade":1}
+[2025-05-26T22:04:58.047Z] [ROUTER_START] {"user_id":"teste_123","frase":"paguei a fatura do cartão hoje"}
+[2025-05-26T22:04:58.048Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:04:58.048Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:04:58.049Z] [AGENT_START] {"user_id":"teste_123","frase":"paguei a fatura do cartão hoje"}
+[2025-05-26T22:05:02.886Z] [AGENT_INTENCAO_ERRO] {"user_id":"teste_123","resultado":{"erro":true,"mensagem":"Qual o valor?","intencao":"registrar_saida","tipo":"saida","valor":null,"descricao":"paguei a fatura do cartão hoje","categoria":"Despesa","data":"2025-05-26","periodo":{"inicio":"2025-05-26","fim":"2025-05-26"},"similaridade":0.9658780800146431}}
+[2025-05-26T22:05:02.887Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"paguei a fatura do cartão hoje"}
+[2025-05-26T22:05:02.888Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"teste_123","frase":"paguei a fatura do cartão hoje","error":"agent is not a function"}
+[2025-05-26T22:05:02.888Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"teste_123","frase":"paguei a fatura do cartão hoje","respostaAgent":null}
+[2025-05-26T22:05:04.518Z] [SUPERAGENT_GPT_OK] {"user_id":"teste_123","pergunta":"paguei a fatura do cartão hoje","respostaGPT":"Você pode me informar qual data e valor?"}
+[2025-05-26T22:05:04.521Z] [ROUTER_START] {"user_id":"teste_123","frase":"vendi uma moto por 3500 ontem"}
+[2025-05-26T22:05:04.521Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:04.522Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:04.523Z] [AGENT_START] {"user_id":"teste_123","frase":"vendi uma moto por 3500 ontem"}
+[2025-05-26T22:05:04.524Z] [REGISTRO_FINANCEIRO] {"user_id":"teste_123","intencao":"registrar_entrada","tipo":"entrada","valor":3500,"descricao":"vendi uma moto por 3500 ontem","categoria":"Outro","data":"2025-05-25","periodo":{"inicio":"2025-05-25","fim":"2025-05-25"},"similaridade":1}
+[2025-05-26T22:05:04.533Z] [ROUTER_START] {"user_id":"teste_123","frase":"quanto tenho de saldo?"}
+[2025-05-26T22:05:04.534Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:04.534Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:04.535Z] [AGENT_START] {"user_id":"teste_123","frase":"quanto tenho de saldo?"}
+[2025-05-26T22:05:05.704Z] [CONSULTA_SALDO] {"user_id":"teste_123","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T22:05:05.715Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"quanto tenho de saldo?"}
+[2025-05-26T22:05:05.716Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"quanto tenho de saldo?"}
+[2025-05-26T22:05:05.717Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"teste_123","frase":"quanto tenho de saldo?","error":"agent is not a function"}
+[2025-05-26T22:05:05.717Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"teste_123","frase":"quanto tenho de saldo?","respostaAgent":null}
+[2025-05-26T22:05:07.794Z] [SUPERAGENT_GPT_OK] {"user_id":"teste_123","pergunta":"quanto tenho de saldo?","respostaGPT":"Você pode me informar a conta ou o tipo de saldo que deseja consultar?"}
+[2025-05-26T22:05:07.798Z] [ROUTER_START] {"user_id":"teste_123","frase":"me mostra as entradas do mês"}
+[2025-05-26T22:05:07.798Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:07.799Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:07.800Z] [AGENT_START] {"user_id":"teste_123","frase":"me mostra as entradas do mês"}
+[2025-05-26T22:05:08.535Z] [CONSULTA_ENTRADAS] {"user_id":"teste_123","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T22:05:08.641Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"me mostra as entradas do mês"}
+[2025-05-26T22:05:08.642Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"me mostra as entradas do mês"}
+[2025-05-26T22:05:08.643Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"teste_123","frase":"me mostra as entradas do mês","error":"agent is not a function"}
+[2025-05-26T22:05:08.644Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"teste_123","frase":"me mostra as entradas do mês","respostaAgent":null}
+[2025-05-26T22:05:09.827Z] [SUPERAGENT_GPT_OK] {"user_id":"teste_123","pergunta":"me mostra as entradas do mês","respostaGPT":"Você pode me informar qual mês específico você deseja ver as entradas?"}
+[2025-05-26T22:05:09.831Z] [ROUTER_START] {"user_id":"teste_123","frase":"me mostra as saídas desse mês"}
+[2025-05-26T22:05:09.831Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:09.832Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:09.832Z] [AGENT_START] {"user_id":"teste_123","frase":"me mostra as saídas desse mês"}
+[2025-05-26T22:05:11.334Z] [AGENDAMENTO_CONSULTA] {"user_id":"teste_123","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"consultar_agendamentos","tipo":null,"valor":null,"descricao":"me mostra as saídas desse mês","categoria":"Lazer","data":"2025-05-26","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"},"similaridade":0.9186820396606472}}
+[2025-05-26T22:05:11.339Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"me mostra as saídas desse mês"}
+[2025-05-26T22:05:11.340Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"me mostra as saídas desse mês"}
+[2025-05-26T22:05:11.341Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"teste_123","frase":"me mostra as saídas desse mês","error":"agent is not a function"}
+[2025-05-26T22:05:11.342Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"teste_123","frase":"me mostra as saídas desse mês","respostaAgent":null}
+[2025-05-26T22:05:12.618Z] [SUPERAGENT_GPT_OK] {"user_id":"teste_123","pergunta":"me mostra as saídas desse mês","respostaGPT":"Você pode me informar qual valor e de que mês específico você gostaria de ver as saídas?"}
+[2025-05-26T22:05:12.626Z] [ROUTER_START] {"user_id":"teste_123","frase":"qual foi meu maior gasto?"}
+[2025-05-26T22:05:12.626Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:12.627Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:12.627Z] [AGENT_START] {"user_id":"teste_123","frase":"qual foi meu maior gasto?"}
+[2025-05-26T22:05:13.346Z] [CONSULTA_MAIOR_GASTO] {"user_id":"teste_123","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T22:05:13.351Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"qual foi meu maior gasto?"}
+[2025-05-26T22:05:13.351Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"qual foi meu maior gasto?"}
+[2025-05-26T22:05:13.352Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"teste_123","frase":"qual foi meu maior gasto?","error":"agent is not a function"}
+[2025-05-26T22:05:13.352Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"teste_123","frase":"qual foi meu maior gasto?","respostaAgent":null}
+[2025-05-26T22:05:14.886Z] [SUPERAGENT_GPT_OK] {"user_id":"teste_123","pergunta":"qual foi meu maior gasto?","respostaGPT":"Você pode me informar qual mês específico você deseja verificar o maior gasto?"}
+[2025-05-26T22:05:14.890Z] [ROUTER_START] {"user_id":"teste_123","frase":"como posso economizar mais?"}
+[2025-05-26T22:05:14.890Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:14.891Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:14.892Z] [AGENT_START] {"user_id":"teste_123","frase":"como posso economizar mais?"}
+[2025-05-26T22:05:15.594Z] [CONSULTA_MAIOR_GASTO] {"user_id":"teste_123","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T22:05:15.597Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"como posso economizar mais?"}
+[2025-05-26T22:05:15.598Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"como posso economizar mais?"}
+[2025-05-26T22:05:15.598Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"teste_123","frase":"como posso economizar mais?","error":"agent is not a function"}
+[2025-05-26T22:05:15.599Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"teste_123","frase":"como posso economizar mais?","respostaAgent":null}
+[2025-05-26T22:05:17.318Z] [SUPERAGENT_GPT_OK] {"user_id":"teste_123","pergunta":"como posso economizar mais?","respostaGPT":"- Anote todas as suas despesas para entender para onde seu dinheiro vai.\n- Defina um orçamento mensal e siga-o rigorosamente. \n- Priorize cortar gastos não essenciais."}
+[2025-05-26T22:05:17.322Z] [ROUTER_START] {"user_id":"teste_123","frase":"me ensina a organizar minhas finanças"}
+[2025-05-26T22:05:17.323Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:17.323Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:17.323Z] [AGENT_START] {"user_id":"teste_123","frase":"me ensina a organizar minhas finanças"}
+[2025-05-26T22:05:19.386Z] [AGENT_INTENCAO_ERRO] {"user_id":"teste_123","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"duvida_uso","tipo":null,"valor":null,"descricao":"me ensina a organizar minhas finanças","categoria":"Educação","data":"2025-05-26","periodo":null,"similaridade":0.8864328432863849}}
+[2025-05-26T22:05:19.387Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"me ensina a organizar minhas finanças"}
+[2025-05-26T22:05:19.388Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"teste_123","frase":"me ensina a organizar minhas finanças","error":"agent is not a function"}
+[2025-05-26T22:05:19.389Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"teste_123","frase":"me ensina a organizar minhas finanças","respostaAgent":null}
+[2025-05-26T22:05:21.416Z] [SUPERAGENT_GPT_OK] {"user_id":"teste_123","pergunta":"me ensina a organizar minhas finanças","respostaGPT":"- Categorize suas despesas: essenciais, variáveis e de lazer.\n- Defina metas financeiras claras, como poupança ou investimento.\n- Revise e ajuste seu orçamento mensalmente."}
+[2025-05-26T22:05:21.419Z] [ROUTER_START] {"user_id":"teste_123","frase":"o que é um extrato?"}
+[2025-05-26T22:05:21.419Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:21.420Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:21.420Z] [AGENT_START] {"user_id":"teste_123","frase":"o que é um extrato?"}
+[2025-05-26T22:05:21.902Z] [CONSULTA_EXTRATO] {"user_id":"teste_123","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T22:05:21.905Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"o que é um extrato?"}
+[2025-05-26T22:05:21.905Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"o que é um extrato?"}
+[2025-05-26T22:05:21.906Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"teste_123","frase":"o que é um extrato?","error":"agent is not a function"}
+[2025-05-26T22:05:21.906Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"teste_123","frase":"o que é um extrato?","respostaAgent":null}
+[2025-05-26T22:05:24.089Z] [SUPERAGENT_GPT_OK] {"user_id":"teste_123","pergunta":"o que é um extrato?","respostaGPT":"Um extrato é um documento que detalha todas as transações de uma conta em um período específico, incluindo entradas, saídas e saldo."}
+[2025-05-26T22:05:24.091Z] [ROUTER_START] {"user_id":"teste_123","frase":"preciso de uma dica financeira"}
+[2025-05-26T22:05:24.091Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:24.092Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:24.092Z] [AGENT_START] {"user_id":"teste_123","frase":"preciso de uma dica financeira"}
+[2025-05-26T22:05:25.220Z] [CONSULTA_EXTRATO] {"user_id":"teste_123","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T22:05:25.223Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"preciso de uma dica financeira"}
+[2025-05-26T22:05:25.223Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"preciso de uma dica financeira"}
+[2025-05-26T22:05:25.223Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"teste_123","frase":"preciso de uma dica financeira","error":"agent is not a function"}
+[2025-05-26T22:05:25.223Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"teste_123","frase":"preciso de uma dica financeira","respostaAgent":null}
+[2025-05-26T22:05:26.992Z] [SUPERAGENT_GPT_OK] {"user_id":"teste_123","pergunta":"preciso de uma dica financeira","respostaGPT":"Elimine dívidas de alto custo primeiro para aumentar sua capacidade de poupança."}
+[2025-05-26T22:05:26.994Z] [ROUTER_START] {"user_id":"teste_123","frase":"bom dia!"}
+[2025-05-26T22:05:26.995Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:26.995Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:26.995Z] [AGENT_START] {"user_id":"teste_123","frase":"bom dia!"}
+[2025-05-26T22:05:28.687Z] [SAUDACAO] {"user_id":"teste_123"}
+[2025-05-26T22:05:28.688Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"bom dia!"}
+[2025-05-26T22:05:28.689Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"bom dia!"}
+[2025-05-26T22:05:28.690Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"teste_123","frase":"bom dia!","error":"agent is not a function"}
+[2025-05-26T22:05:28.690Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"teste_123","frase":"bom dia!","respostaAgent":null}
+[2025-05-26T22:05:30.464Z] [SUPERAGENT_GPT_OK] {"user_id":"teste_123","pergunta":"bom dia!","respostaGPT":"Bom dia! Como posso ajudar você hoje?"}
+[2025-05-26T22:05:30.466Z] [ROUTER_START] {"user_id":"teste_123","frase":"obrigado!"}
+[2025-05-26T22:05:30.466Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:30.467Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:30.467Z] [AGENT_START] {"user_id":"teste_123","frase":"obrigado!"}
+[2025-05-26T22:05:31.739Z] [SAUDACAO] {"user_id":"teste_123"}
+[2025-05-26T22:05:31.739Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"obrigado!"}
+[2025-05-26T22:05:31.740Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"obrigado!"}
+[2025-05-26T22:05:31.741Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"teste_123","frase":"obrigado!","error":"agent is not a function"}
+[2025-05-26T22:05:31.741Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"teste_123","frase":"obrigado!","respostaAgent":null}
+[2025-05-26T22:05:33.602Z] [SUPERAGENT_GPT_OK] {"user_id":"teste_123","pergunta":"obrigado!","respostaGPT":"Por nada! Se precisar de mais alguma coisa, estou à disposição."}
+[2025-05-26T22:05:33.605Z] [ROUTER_START] {"user_id":"teste_123","frase":"não entendi como funciona"}
+[2025-05-26T22:05:33.606Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:33.606Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:33.607Z] [AGENT_START] {"user_id":"teste_123","frase":"não entendi como funciona"}
+[2025-05-26T22:05:35.103Z] [AGENT_INTENCAO_ERRO] {"user_id":"teste_123","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"duvidas","tipo":null,"valor":null,"descricao":"não entendi como funciona","categoria":"Transporte","data":"2025-05-26","periodo":null,"similaridade":0.9271437299230633}}
+[2025-05-26T22:05:35.103Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"não entendi como funciona"}
+[2025-05-26T22:05:35.104Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"teste_123","frase":"não entendi como funciona","error":"agent is not a function"}
+[2025-05-26T22:05:35.104Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"teste_123","frase":"não entendi como funciona","respostaAgent":null}
+[2025-05-26T22:05:36.572Z] [SUPERAGENT_GPT_OK] {"user_id":"teste_123","pergunta":"não entendi como funciona","respostaGPT":"Posso ajudar! O que exatamente você gostaria de entender melhor?"}
+[2025-05-26T22:05:36.576Z] [ROUTER_START] {"user_id":"teste_123","frase":"qual o valor?"}
+[2025-05-26T22:05:36.577Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:36.577Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:36.577Z] [AGENT_START] {"user_id":"teste_123","frase":"qual o valor?"}
+[2025-05-26T22:05:38.154Z] [CONSULTA_MAIOR_GASTO] {"user_id":"teste_123","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T22:05:38.157Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"qual o valor?"}
+[2025-05-26T22:05:38.157Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"qual o valor?"}
+[2025-05-26T22:05:38.158Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"teste_123","frase":"qual o valor?","error":"agent is not a function"}
+[2025-05-26T22:05:38.158Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"teste_123","frase":"qual o valor?","respostaAgent":null}
+[2025-05-26T22:05:39.762Z] [SUPERAGENT_GPT_OK] {"user_id":"teste_123","pergunta":"qual o valor?","respostaGPT":"Você pode me informar qual data e valor?"}
+[2025-05-26T22:05:39.766Z] [ROUTER_START] {"user_id":"teste_123","frase":"anota um gasto"}
+[2025-05-26T22:05:39.766Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:39.767Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:39.768Z] [AGENT_START] {"user_id":"teste_123","frase":"anota um gasto"}
+[2025-05-26T22:05:40.277Z] [CONSULTA_SAIDAS] {"user_id":"teste_123","periodo":{"inicio":"2025-01-01","fim":"2025-12-31"}}
+[2025-05-26T22:05:40.279Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"anota um gasto"}
+[2025-05-26T22:05:40.279Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"anota um gasto"}
+[2025-05-26T22:05:40.280Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"teste_123","frase":"anota um gasto","error":"agent is not a function"}
+[2025-05-26T22:05:40.280Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"teste_123","frase":"anota um gasto","respostaAgent":null}
+[2025-05-26T22:05:42.084Z] [SUPERAGENT_GPT_OK] {"user_id":"teste_123","pergunta":"anota um gasto","respostaGPT":"Claro, preciso que você me forneça a data, o valor e uma breve descrição do gasto para registrar."}
+[2025-05-26T22:05:42.088Z] [ROUTER_START] {"user_id":"teste_123","frase":"registre uma entrada"}
+[2025-05-26T22:05:42.088Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:42.089Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:42.089Z] [AGENT_START] {"user_id":"teste_123","frase":"registre uma entrada"}
+[2025-05-26T22:05:43.231Z] [AGENT_INTENCAO_ERRO] {"user_id":"teste_123","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"duvida_uso","tipo":null,"valor":null,"descricao":"registre uma entrada","categoria":"Despesa","data":"2025-05-26","periodo":null,"similaridade":0.8647794254651012}}
+[2025-05-26T22:05:43.231Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"registre uma entrada"}
+[2025-05-26T22:05:43.232Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"teste_123","frase":"registre uma entrada","error":"agent is not a function"}
+[2025-05-26T22:05:43.233Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"teste_123","frase":"registre uma entrada","respostaAgent":null}
+[2025-05-26T22:05:44.945Z] [SUPERAGENT_GPT_OK] {"user_id":"teste_123","pergunta":"registre uma entrada","respostaGPT":"Para registrar a entrada, por favor, informe a data, o valor e de onde vem essa receita."}
+[2025-05-26T22:05:44.948Z] [ROUTER_START] {"user_id":"teste_123","frase":"quero marcar um agendamento para dia 25"}
+[2025-05-26T22:05:44.949Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:44.950Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:44.950Z] [AGENT_START] {"user_id":"teste_123","frase":"quero marcar um agendamento para dia 25"}
+[2025-05-26T22:05:46.538Z] [AGENDAMENTO_CONSULTA] {"user_id":"teste_123","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"consultar_agendamentos","tipo":null,"valor":25,"descricao":"quero marcar um agendamento para dia 25","categoria":"Despesas Fixas","data":"2025-05-26","periodo":{"inicio":"2025-05-26","fim":"2025-05-26"},"similaridade":0.8824579446502011}}
+[2025-05-26T22:05:46.541Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"quero marcar um agendamento para dia 25"}
+[2025-05-26T22:05:46.542Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"quero marcar um agendamento para dia 25"}
+[2025-05-26T22:05:46.544Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"teste_123","frase":"quero marcar um agendamento para dia 25","error":"agent is not a function"}
+[2025-05-26T22:05:46.545Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"teste_123","frase":"quero marcar um agendamento para dia 25","respostaAgent":null}
+[2025-05-26T22:05:47.944Z] [SUPERAGENT_GPT_OK] {"user_id":"teste_123","pergunta":"quero marcar um agendamento para dia 25","respostaGPT":"Eu posso agendar para você. Qual é o horário e a descrição do agendamento?"}
+[2025-05-26T22:05:47.948Z] [ROUTER_START] {"user_id":"teste_123","frase":"quais agendamentos eu tenho para esta semana?"}
+[2025-05-26T22:05:47.949Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:47.949Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:47.949Z] [AGENT_START] {"user_id":"teste_123","frase":"quais agendamentos eu tenho para esta semana?"}
+[2025-05-26T22:05:49.821Z] [AGENDAMENTO_CONSULTA] {"user_id":"teste_123","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"consultar_agendamentos","tipo":null,"valor":null,"descricao":"quais agendamentos eu tenho para esta semana?","categoria":"Lazer","data":"2025-05-26","periodo":{"inicio":"2025-05-26","fim":"2025-06-01"},"similaridade":0.9559917063839296}}
+[2025-05-26T22:05:49.824Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"quais agendamentos eu tenho para esta semana?"}
+[2025-05-26T22:05:49.825Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"quais agendamentos eu tenho para esta semana?"}
+[2025-05-26T22:05:49.826Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"teste_123","frase":"quais agendamentos eu tenho para esta semana?","error":"agent is not a function"}
+[2025-05-26T22:05:49.826Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"teste_123","frase":"quais agendamentos eu tenho para esta semana?","respostaAgent":null}
+[2025-05-26T22:05:51.208Z] [SUPERAGENT_GPT_OK] {"user_id":"teste_123","pergunta":"quais agendamentos eu tenho para esta semana?","respostaGPT":"Você pode me informar a data de início da semana para que eu verifique seus agendamentos?"}
+[2025-05-26T22:05:51.211Z] [ROUTER_START] {"user_id":"teste_123","frase":"remover um agendamento de consulta"}
+[2025-05-26T22:05:51.211Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:51.212Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:05:51.212Z] [AGENT_START] {"user_id":"teste_123","frase":"remover um agendamento de consulta"}
+[2025-05-26T22:05:52.245Z] [AGENDAMENTO_CONSULTA] {"user_id":"teste_123","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"consultar_agendamentos","tipo":null,"valor":null,"descricao":"remover um agendamento de consulta","categoria":"Saúde","data":"2025-05-26","periodo":null,"similaridade":0.8750815036572434}}
+[2025-05-26T22:05:52.247Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"remover um agendamento de consulta"}
+[2025-05-26T22:05:52.248Z] [SUPERAGENT_START] {"user_id":"teste_123","frase":"remover um agendamento de consulta"}
+[2025-05-26T22:05:52.249Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"teste_123","frase":"remover um agendamento de consulta","error":"agent is not a function"}
+[2025-05-26T22:05:52.250Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"teste_123","frase":"remover um agendamento de consulta","respostaAgent":null}
+[2025-05-26T22:05:54.185Z] [SUPERAGENT_GPT_OK] {"user_id":"teste_123","pergunta":"remover um agendamento de consulta","respostaGPT":"Para remover o agendamento, preciso que você me informe a data e o horário da consulta."}
+[2025-05-26T22:38:18.474Z] [ROUTER_START] {"user_id":"553299642181","frase":"gastei 120 no mercado hoje"}
+[2025-05-26T22:38:18.476Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:18.478Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:18.479Z] [AGENT_START] {"user_id":"553299642181","frase":"gastei 120 no mercado hoje"}
+[2025-05-26T22:38:18.484Z] [REGISTRO_FINANCEIRO] {"user_id":"553299642181","intencao":"registrar_saida","tipo":"saida","valor":120,"descricao":"gastei 120 no mercado hoje","categoria":"Alimentação","data":"2025-05-26","periodo":{"inicio":"2025-05-26","fim":"2025-05-26"},"similaridade":1}
+[2025-05-26T22:38:18.578Z] [ROUTER_START] {"user_id":"553299642181","frase":"paguei 99,90 de internet ontem"}
+[2025-05-26T22:38:18.579Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:18.580Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:18.581Z] [AGENT_START] {"user_id":"553299642181","frase":"paguei 99,90 de internet ontem"}
+[2025-05-26T22:38:18.587Z] [REGISTRO_FINANCEIRO] {"user_id":"553299642181","intencao":"registrar_saida","tipo":"saida","valor":99.9,"descricao":"paguei 99,90 de internet ontem","categoria":"Outro","data":"2025-05-25","periodo":{"inicio":"2025-05-25","fim":"2025-05-25"},"similaridade":1}
+[2025-05-26T22:38:18.599Z] [ROUTER_START] {"user_id":"553299642181","frase":"recebi 3.500 do cliente Carlos mês passado"}
+[2025-05-26T22:38:18.601Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:18.602Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:18.602Z] [AGENT_START] {"user_id":"553299642181","frase":"recebi 3.500 do cliente Carlos mês passado"}
+[2025-05-26T22:38:18.606Z] [REGISTRO_FINANCEIRO] {"user_id":"553299642181","intencao":"registrar_entrada","tipo":"entrada","valor":3.5,"descricao":"recebi 3.500 do cliente Carlos mês passado","categoria":"Outro","data":"2025-05-26","periodo":{"inicio":"2025-04-01","fim":"2025-04-30"},"similaridade":1}
+[2025-05-26T22:38:18.614Z] [ROUTER_START] {"user_id":"553299642181","frase":"ganhei 800 reais de comissão em março"}
+[2025-05-26T22:38:18.615Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:18.616Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:18.617Z] [AGENT_START] {"user_id":"553299642181","frase":"ganhei 800 reais de comissão em março"}
+[2025-05-26T22:38:18.621Z] [REGISTRO_FINANCEIRO] {"user_id":"553299642181","intencao":"registrar_entrada","tipo":"entrada","valor":800,"descricao":"ganhei 800 reais de comissão em março","categoria":"Renda","data":"2025-05-26","periodo":null,"similaridade":1}
+[2025-05-26T22:38:18.630Z] [ROUTER_START] {"user_id":"553299642181","frase":"foi creditado 1000 de salário agora"}
+[2025-05-26T22:38:18.631Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:18.632Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:18.633Z] [AGENT_START] {"user_id":"553299642181","frase":"foi creditado 1000 de salário agora"}
+[2025-05-26T22:38:20.688Z] [REGISTRO_FINANCEIRO] {"user_id":"553299642181","intencao":"registrar_entrada","tipo":"entrada","valor":1000,"descricao":"foi creditado 1000 de salário agora","categoria":"Receita","data":"2025-05-26","periodo":null,"similaridade":0.8816954993240969}
+[2025-05-26T22:38:20.699Z] [ROUTER_START] {"user_id":"553299642181","frase":"qual foi o meu saldo em abril?"}
+[2025-05-26T22:38:20.700Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:20.701Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:20.701Z] [AGENT_START] {"user_id":"553299642181","frase":"qual foi o meu saldo em abril?"}
+[2025-05-26T22:38:21.360Z] [CONSULTA_SALDO] {"user_id":"553299642181","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T22:38:21.370Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"qual foi o meu saldo em abril?"}
+[2025-05-26T22:38:21.371Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"qual foi o meu saldo em abril?"}
+[2025-05-26T22:38:21.372Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"qual foi o meu saldo em abril?","error":"agent is not a function"}
+[2025-05-26T22:38:21.372Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"qual foi o meu saldo em abril?","respostaAgent":null}
+[2025-05-26T22:38:23.685Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"qual foi o meu saldo em abril?","respostaGPT":"Você pode me informar qual data específica e valor de onde quer verificar?"}
+[2025-05-26T22:38:23.689Z] [ROUTER_START] {"user_id":"553299642181","frase":"quanto recebi no mês de março?"}
+[2025-05-26T22:38:23.689Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:23.690Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:23.691Z] [AGENT_START] {"user_id":"553299642181","frase":"quanto recebi no mês de março?"}
+[2025-05-26T22:38:24.474Z] [CONSULTA_ENTRADAS] {"user_id":"553299642181","periodo":{"inicio":"2025-03-01","fim":"2025-03-31"}}
+[2025-05-26T22:38:24.562Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"quanto recebi no mês de março?"}
+[2025-05-26T22:38:24.562Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"quanto recebi no mês de março?"}
+[2025-05-26T22:38:24.563Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"quanto recebi no mês de março?","error":"agent is not a function"}
+[2025-05-26T22:38:24.563Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"quanto recebi no mês de março?","respostaAgent":null}
+[2025-05-26T22:38:26.547Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"quanto recebi no mês de março?","respostaGPT":"Você pode me informar qual categoria ou fonte de receita deseja consultar o valor recebido?"}
+[2025-05-26T22:38:26.551Z] [ROUTER_START] {"user_id":"553299642181","frase":"quais foram minhas despesas do mês passado?"}
+[2025-05-26T22:38:26.552Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:26.553Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:26.554Z] [AGENT_START] {"user_id":"553299642181","frase":"quais foram minhas despesas do mês passado?"}
+[2025-05-26T22:38:27.372Z] [CONSULTA_SAIDAS] {"user_id":"553299642181","periodo":{"inicio":"2025-04-01","fim":"2025-04-30"}}
+[2025-05-26T22:38:27.375Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"quais foram minhas despesas do mês passado?"}
+[2025-05-26T22:38:27.376Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"quais foram minhas despesas do mês passado?"}
+[2025-05-26T22:38:27.377Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"quais foram minhas despesas do mês passado?","error":"agent is not a function"}
+[2025-05-26T22:38:27.377Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"quais foram minhas despesas do mês passado?","respostaAgent":null}
+[2025-05-26T22:38:28.711Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"quais foram minhas despesas do mês passado?","respostaGPT":"Você pode me informar quais categorias de despesas deseja consultar e em qual valor aproximado?"}
+[2025-05-26T22:38:28.723Z] [ROUTER_START] {"user_id":"553299642181","frase":"quero saber minhas saídas de fevereiro"}
+[2025-05-26T22:38:28.725Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:28.726Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:28.727Z] [AGENT_START] {"user_id":"553299642181","frase":"quero saber minhas saídas de fevereiro"}
+[2025-05-26T22:38:29.320Z] [CONSULTA_SAIDAS] {"user_id":"553299642181","periodo":{"inicio":"2025-02-01","fim":"2025-02-28"}}
+[2025-05-26T22:38:29.326Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"quero saber minhas saídas de fevereiro"}
+[2025-05-26T22:38:29.328Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"quero saber minhas saídas de fevereiro"}
+[2025-05-26T22:38:29.330Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"quero saber minhas saídas de fevereiro","error":"agent is not a function"}
+[2025-05-26T22:38:29.332Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"quero saber minhas saídas de fevereiro","respostaAgent":null}
+[2025-05-26T22:38:31.064Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"quero saber minhas saídas de fevereiro","respostaGPT":"Você pode me informar quais categorias de saídas deseja consultar?"}
+[2025-05-26T22:38:31.076Z] [ROUTER_START] {"user_id":"553299642181","frase":"saldo do ano passado"}
+[2025-05-26T22:38:31.078Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:31.079Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:31.082Z] [AGENT_START] {"user_id":"553299642181","frase":"saldo do ano passado"}
+[2025-05-26T22:38:31.927Z] [CONSULTA_SALDO] {"user_id":"553299642181","periodo":{"inicio":"2025-01-01","fim":"2025-12-31"}}
+[2025-05-26T22:38:31.937Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"saldo do ano passado"}
+[2025-05-26T22:38:31.939Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"saldo do ano passado"}
+[2025-05-26T22:38:31.941Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"saldo do ano passado","error":"agent is not a function"}
+[2025-05-26T22:38:31.943Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"saldo do ano passado","respostaAgent":null}
+[2025-05-26T22:38:33.207Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"saldo do ano passado","respostaGPT":"Você pode me informar qual data específica e valor de onde quer verificar o saldo?"}
+[2025-05-26T22:38:33.217Z] [ROUTER_START] {"user_id":"553299642181","frase":"quanto tenho de saldo"}
+[2025-05-26T22:38:33.220Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:33.221Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:33.222Z] [AGENT_START] {"user_id":"553299642181","frase":"quanto tenho de saldo"}
+[2025-05-26T22:38:36.249Z] [CONSULTA_SALDO] {"user_id":"553299642181","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T22:38:36.260Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"quanto tenho de saldo"}
+[2025-05-26T22:38:36.260Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"quanto tenho de saldo"}
+[2025-05-26T22:38:36.263Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"quanto tenho de saldo","error":"agent is not a function"}
+[2025-05-26T22:38:36.265Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"quanto tenho de saldo","respostaAgent":null}
+[2025-05-26T22:38:37.819Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"quanto tenho de saldo","respostaGPT":"Você pode me informar qual data específica e a conta que deseja consultar o saldo?"}
+[2025-05-26T22:38:37.866Z] [ROUTER_START] {"user_id":"553299642181","frase":"me mostra as entredas do mes"}
+[2025-05-26T22:38:37.871Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:37.874Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:37.875Z] [AGENT_START] {"user_id":"553299642181","frase":"me mostra as entredas do mes"}
+[2025-05-26T22:38:38.838Z] [CONSULTA_ENTRADAS] {"user_id":"553299642181","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T22:38:38.846Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"me mostra as entredas do mes"}
+[2025-05-26T22:38:38.848Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"me mostra as entredas do mes"}
+[2025-05-26T22:38:38.852Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"me mostra as entredas do mes","error":"agent is not a function"}
+[2025-05-26T22:38:38.854Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"me mostra as entredas do mes","respostaAgent":null}
+[2025-05-26T22:38:40.682Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"me mostra as entredas do mes","respostaGPT":"Você pode me informar qual mês específico você quer verificar?"}
+[2025-05-26T22:38:40.686Z] [ROUTER_START] {"user_id":"553299642181","frase":"me mostra as saídas desse mês"}
+[2025-05-26T22:38:40.687Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:40.688Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:40.688Z] [AGENT_START] {"user_id":"553299642181","frase":"me mostra as saídas desse mês"}
+[2025-05-26T22:38:42.428Z] [AGENDAMENTO_CONSULTA] {"user_id":"553299642181","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"consultar_agendamentos","tipo":null,"valor":null,"descricao":"me mostra as saídas desse mês","categoria":"Lazer","data":"2025-05-26","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"},"similaridade":0.9186820396606472}}
+[2025-05-26T22:38:42.438Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"me mostra as saídas desse mês"}
+[2025-05-26T22:38:42.438Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"me mostra as saídas desse mês"}
+[2025-05-26T22:38:42.439Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"me mostra as saídas desse mês","error":"agent is not a function"}
+[2025-05-26T22:38:42.440Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"me mostra as saídas desse mês","respostaAgent":null}
+[2025-05-26T22:38:43.666Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"me mostra as saídas desse mês","respostaGPT":"Você pode me informar qual a categoria ou valor específico que está procurando?"}
+[2025-05-26T22:38:43.671Z] [ROUTER_START] {"user_id":"553299642181","frase":"qual foi meu maior gasto?"}
+[2025-05-26T22:38:43.672Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:43.672Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:43.673Z] [AGENT_START] {"user_id":"553299642181","frase":"qual foi meu maior gasto?"}
+[2025-05-26T22:38:44.494Z] [CONSULTA_MAIOR_GASTO] {"user_id":"553299642181","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T22:38:44.500Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"qual foi meu maior gasto?"}
+[2025-05-26T22:38:44.501Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"qual foi meu maior gasto?"}
+[2025-05-26T22:38:44.502Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"qual foi meu maior gasto?","error":"agent is not a function"}
+[2025-05-26T22:38:44.503Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"qual foi meu maior gasto?","respostaAgent":null}
+[2025-05-26T22:38:45.674Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"qual foi meu maior gasto?","respostaGPT":"Você pode me informar qual período específico você quer verificar?"}
+[2025-05-26T22:38:45.678Z] [ROUTER_START] {"user_id":"553299642181","frase":"quais contas eu tenho para pagar esse mês?"}
+[2025-05-26T22:38:45.679Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:45.680Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:45.680Z] [AGENT_START] {"user_id":"553299642181","frase":"quais contas eu tenho para pagar esse mês?"}
+[2025-05-26T22:38:46.842Z] [CONSULTA_SALDO] {"user_id":"553299642181","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T22:38:46.847Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"quais contas eu tenho para pagar esse mês?"}
+[2025-05-26T22:38:46.847Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"quais contas eu tenho para pagar esse mês?"}
+[2025-05-26T22:38:46.848Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"quais contas eu tenho para pagar esse mês?","error":"agent is not a function"}
+[2025-05-26T22:38:46.848Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"quais contas eu tenho para pagar esse mês?","respostaAgent":null}
+[2025-05-26T22:38:48.256Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"quais contas eu tenho para pagar esse mês?","respostaGPT":"Você pode me informar o valor ou a categoria das contas que deseja verificar?"}
+[2025-05-26T22:38:48.260Z] [ROUTER_START] {"user_id":"553299642181","frase":"quais recebimentos estão agendados para o próximo mês?"}
+[2025-05-26T22:38:48.261Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:48.261Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:48.262Z] [AGENT_START] {"user_id":"553299642181","frase":"quais recebimentos estão agendados para o próximo mês?"}
+[2025-05-26T22:38:49.199Z] [CONSULTA_ENTRADAS] {"user_id":"553299642181","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T22:38:49.203Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"quais recebimentos estão agendados para o próximo mês?"}
+[2025-05-26T22:38:49.204Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"quais recebimentos estão agendados para o próximo mês?"}
+[2025-05-26T22:38:49.205Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"quais recebimentos estão agendados para o próximo mês?","error":"agent is not a function"}
+[2025-05-26T22:38:49.206Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"quais recebimentos estão agendados para o próximo mês?","respostaAgent":null}
+[2025-05-26T22:38:50.324Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"quais recebimentos estão agendados para o próximo mês?","respostaGPT":"Você pode me informar a data ou o valor específico dos recebimentos que está buscando?"}
+[2025-05-26T22:38:50.328Z] [ROUTER_START] {"user_id":"553299642181","frase":"me mostra os compromissos a vencer"}
+[2025-05-26T22:38:50.328Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:50.330Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:50.330Z] [AGENT_START] {"user_id":"553299642181","frase":"me mostra os compromissos a vencer"}
+[2025-05-26T22:38:51.181Z] [AGENDAMENTO_CONSULTA] {"user_id":"553299642181","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"consultar_agendamentos","tipo":null,"valor":null,"descricao":"me mostra os compromissos a vencer","categoria":"Lazer","data":"2025-05-26","periodo":null,"similaridade":0.9387607826568698}}
+[2025-05-26T22:38:51.185Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"me mostra os compromissos a vencer"}
+[2025-05-26T22:38:51.185Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"me mostra os compromissos a vencer"}
+[2025-05-26T22:38:51.186Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"me mostra os compromissos a vencer","error":"agent is not a function"}
+[2025-05-26T22:38:51.187Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"me mostra os compromissos a vencer","respostaAgent":null}
+[2025-05-26T22:38:52.349Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"me mostra os compromissos a vencer","respostaGPT":"Você pode me informar qual o período ou categoria dos compromissos que deseja verificar?"}
+[2025-05-26T22:38:52.354Z] [ROUTER_START] {"user_id":"553299642181","frase":"tem alguma conta agendada para semana que vem?"}
+[2025-05-26T22:38:52.355Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:52.355Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:52.355Z] [AGENT_START] {"user_id":"553299642181","frase":"tem alguma conta agendada para semana que vem?"}
+[2025-05-26T22:38:53.456Z] [AGENDAMENTO_REGISTRAR] {"user_id":"553299642181","resultado":{"erro":true,"mensagem":"Qual o valor?","intencao":"registrar_agendamento","tipo":"saida","valor":null,"descricao":"tem alguma conta agendada para semana que vem?","categoria":"Despesa","data":"2025-05-26","periodo":{"inicio":"2025-05-26","fim":"2025-06-01"},"similaridade":0.9149352767125758}}
+[2025-05-26T22:38:53.456Z] [AGENDAMENTO_ERRO_CAMPOS] {"user_id":"553299642181","resultado":{"erro":true,"mensagem":"Qual o valor?","intencao":"registrar_agendamento","tipo":"saida","valor":null,"descricao":"tem alguma conta agendada para semana que vem?","categoria":"Despesa","data":"2025-05-26","periodo":{"inicio":"2025-05-26","fim":"2025-06-01"},"similaridade":0.9149352767125758,"data_vencimento":"2025-05-26"}}
+[2025-05-26T22:38:53.457Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"tem alguma conta agendada para semana que vem?"}
+[2025-05-26T22:38:53.458Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"tem alguma conta agendada para semana que vem?"}
+[2025-05-26T22:38:53.459Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"tem alguma conta agendada para semana que vem?","error":"agent is not a function"}
+[2025-05-26T22:38:53.459Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"tem alguma conta agendada para semana que vem?","respostaAgent":null}
+[2025-05-26T22:38:54.744Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"tem alguma conta agendada para semana que vem?","respostaGPT":"Você pode me informar a data ou o valor específico para eu verificar?"}
+[2025-05-26T22:38:54.749Z] [ROUTER_START] {"user_id":"553299642181","frase":"qual valor total das contas fixas para o próximo mês?"}
+[2025-05-26T22:38:54.749Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:54.750Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:54.751Z] [AGENT_START] {"user_id":"553299642181","frase":"qual valor total das contas fixas para o próximo mês?"}
+[2025-05-26T22:38:55.353Z] [CONSULTA_SALDO] {"user_id":"553299642181","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T22:38:55.359Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"qual valor total das contas fixas para o próximo mês?"}
+[2025-05-26T22:38:55.360Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"qual valor total das contas fixas para o próximo mês?"}
+[2025-05-26T22:38:55.360Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"qual valor total das contas fixas para o próximo mês?","error":"agent is not a function"}
+[2025-05-26T22:38:55.361Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"qual valor total das contas fixas para o próximo mês?","respostaAgent":null}
+[2025-05-26T22:38:56.752Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"qual valor total das contas fixas para o próximo mês?","respostaGPT":"Você pode me informar quais são as contas fixas que você tem para o próximo mês?"}
+[2025-05-26T22:38:56.757Z] [ROUTER_START] {"user_id":"553299642181","frase":"quais agendamentos eu tenho para os próximos 30 dias?"}
+[2025-05-26T22:38:56.757Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:56.758Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:56.759Z] [AGENT_START] {"user_id":"553299642181","frase":"quais agendamentos eu tenho para os próximos 30 dias?"}
+[2025-05-26T22:38:57.886Z] [AGENDAMENTO_CONSULTA] {"user_id":"553299642181","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"consultar_agendamentos","tipo":null,"valor":30,"descricao":"quais agendamentos eu tenho para os próximos 30 dias?","categoria":"Despesas Fixas","data":"2025-05-26","periodo":null,"similaridade":0.9092977406149253}}
+[2025-05-26T22:38:57.889Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"quais agendamentos eu tenho para os próximos 30 dias?"}
+[2025-05-26T22:38:57.890Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"quais agendamentos eu tenho para os próximos 30 dias?"}
+[2025-05-26T22:38:57.892Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"quais agendamentos eu tenho para os próximos 30 dias?","error":"agent is not a function"}
+[2025-05-26T22:38:57.892Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"quais agendamentos eu tenho para os próximos 30 dias?","respostaAgent":null}
+[2025-05-26T22:38:59.374Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"quais agendamentos eu tenho para os próximos 30 dias?","respostaGPT":"Você pode especificar se está buscando compromissos pessoais, profissionais ou algum outro tipo específico de agendamento?"}
+[2025-05-26T22:38:59.377Z] [ROUTER_START] {"user_id":"553299642181","frase":"existe algum valor a receber este mês?"}
+[2025-05-26T22:38:59.378Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:59.378Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:38:59.379Z] [AGENT_START] {"user_id":"553299642181","frase":"existe algum valor a receber este mês?"}
+[2025-05-26T22:39:00.558Z] [CONSULTA_ENTRADAS] {"user_id":"553299642181","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T22:39:00.562Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"existe algum valor a receber este mês?"}
+[2025-05-26T22:39:00.562Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"existe algum valor a receber este mês?"}
+[2025-05-26T22:39:00.563Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"existe algum valor a receber este mês?","error":"agent is not a function"}
+[2025-05-26T22:39:00.564Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"existe algum valor a receber este mês?","respostaAgent":null}
+[2025-05-26T22:39:01.795Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"existe algum valor a receber este mês?","respostaGPT":"Sim. Você pode me informar qual cliente ou fonte de receita estamos verificando?"}
+[2025-05-26T22:39:01.798Z] [ROUTER_START] {"user_id":"553299642181","frase":"quais pagamentos futuros estão registrados?"}
+[2025-05-26T22:39:01.799Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:01.799Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:01.799Z] [AGENT_START] {"user_id":"553299642181","frase":"quais pagamentos futuros estão registrados?"}
+[2025-05-26T22:39:02.599Z] [CONSULTA_SAIDAS] {"user_id":"553299642181","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T22:39:02.603Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"quais pagamentos futuros estão registrados?"}
+[2025-05-26T22:39:02.604Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"quais pagamentos futuros estão registrados?"}
+[2025-05-26T22:39:02.605Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"quais pagamentos futuros estão registrados?","error":"agent is not a function"}
+[2025-05-26T22:39:02.605Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"quais pagamentos futuros estão registrados?","respostaAgent":null}
+[2025-05-26T22:39:04.170Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"quais pagamentos futuros estão registrados?","respostaGPT":"Você pode me informar se está procurando por pagamentos pessoais, profissionais ou uma categoria específica?"}
+[2025-05-26T22:39:04.176Z] [ROUTER_START] {"user_id":"553299642181","frase":"quero registrar um compromisso de pagamento de 500 reais para dia 10 de junho"}
+[2025-05-26T22:39:04.177Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:04.178Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:04.178Z] [AGENT_START] {"user_id":"553299642181","frase":"quero registrar um compromisso de pagamento de 500 reais para dia 10 de junho"}
+[2025-05-26T22:39:05.095Z] [AGENDAMENTO_REGISTRAR] {"user_id":"553299642181","resultado":{"intencao":"registrar_agendamento","tipo":"saida","valor":500,"descricao":"quero registrar um compromisso de pagamento de 500 reais para dia 10 de junho","categoria":"Despesas Fixas","data":"2025-06-10","data_vencimento":"2025-05-26","periodo":{"inicio":"2025-05-26","fim":"2025-05-26"},"similaridade":0.8743831112746233}}
+[2025-05-26T22:39:05.108Z] [ROUTER_START] {"user_id":"553299642181","frase":"agendar recebimento de 800 do cliente Rafael para o dia 12/06"}
+[2025-05-26T22:39:05.109Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:05.110Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:05.110Z] [AGENT_START] {"user_id":"553299642181","frase":"agendar recebimento de 800 do cliente Rafael para o dia 12/06"}
+[2025-05-26T22:39:06.395Z] [REGISTRO_FINANCEIRO] {"user_id":"553299642181","intencao":"registrar_entrada","tipo":"entrada","valor":800,"descricao":"agendar recebimento de 800 do cliente Rafael para o dia 12/06","categoria":"Receita","data":"2025-06-12","periodo":{"inicio":"2025-05-26","fim":"2025-05-26"},"similaridade":0.886453554934063}
+[2025-05-26T22:39:06.405Z] [ROUTER_START] {"user_id":"553299642181","frase":"adicionar conta de luz para vencer em 25 de junho no valor de 230 reais"}
+[2025-05-26T22:39:06.406Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:06.406Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:06.407Z] [AGENT_START] {"user_id":"553299642181","frase":"adicionar conta de luz para vencer em 25 de junho no valor de 230 reais"}
+[2025-05-26T22:39:06.408Z] [REGISTRO_FINANCEIRO] {"user_id":"553299642181","intencao":"registrar_saida","tipo":"saida","valor":25,"descricao":"adicionar conta de luz para vencer em 25 de junho no valor de 230 reais","categoria":"Outro","data":"2025-06-25","periodo":{"inicio":"2025-06-25","fim":"2025-06-25"},"similaridade":1}
+[2025-05-26T22:39:06.413Z] [ROUTER_START] {"user_id":"553299642181","frase":"anotar aluguel de 1200 reais para o próximo mês"}
+[2025-05-26T22:39:06.414Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:06.414Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:06.414Z] [AGENT_START] {"user_id":"553299642181","frase":"anotar aluguel de 1200 reais para o próximo mês"}
+[2025-05-26T22:39:06.415Z] [REGISTRO_FINANCEIRO] {"user_id":"553299642181","intencao":"registrar_saida","tipo":"saida","valor":1200,"descricao":"anotar aluguel de 1200 reais para o próximo mês","categoria":"Despesas Fixas","data":"2025-05-26","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"},"similaridade":1}
+[2025-05-26T22:39:06.422Z] [ROUTER_START] {"user_id":"553299642181","frase":"qual foi meu maior gasto em março?"}
+[2025-05-26T22:39:06.423Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:06.423Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:06.424Z] [AGENT_START] {"user_id":"553299642181","frase":"qual foi meu maior gasto em março?"}
+[2025-05-26T22:39:07.143Z] [CONSULTA_SAIDAS] {"user_id":"553299642181","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T22:39:07.147Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"qual foi meu maior gasto em março?"}
+[2025-05-26T22:39:07.147Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"qual foi meu maior gasto em março?"}
+[2025-05-26T22:39:07.148Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"qual foi meu maior gasto em março?","error":"agent is not a function"}
+[2025-05-26T22:39:07.149Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"qual foi meu maior gasto em março?","respostaAgent":null}
+[2025-05-26T22:39:08.441Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"qual foi meu maior gasto em março?","respostaGPT":"Você pode me informar qual categoria de gasto devemos analisar em março?"}
+[2025-05-26T22:39:08.444Z] [ROUTER_START] {"user_id":"553299642181","frase":"me mostra o maior valor recebido no ano"}
+[2025-05-26T22:39:08.444Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:08.444Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:08.445Z] [AGENT_START] {"user_id":"553299642181","frase":"me mostra o maior valor recebido no ano"}
+[2025-05-26T22:39:08.852Z] [CONSULTA_MAIOR_ENTRADA] {"user_id":"553299642181","periodo":{"inicio":"2025-01-01","fim":"2025-12-31"}}
+[2025-05-26T22:39:08.854Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"me mostra o maior valor recebido no ano"}
+[2025-05-26T22:39:08.854Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"me mostra o maior valor recebido no ano"}
+[2025-05-26T22:39:08.855Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"me mostra o maior valor recebido no ano","error":"agent is not a function"}
+[2025-05-26T22:39:08.856Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"me mostra o maior valor recebido no ano","respostaAgent":null}
+[2025-05-26T22:39:10.292Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"me mostra o maior valor recebido no ano","respostaGPT":"Você pode me informar qual a fonte ou categoria de receita que devemos verificar?"}
+[2025-05-26T22:39:10.295Z] [ROUTER_START] {"user_id":"553299642181","frase":"qual a maior despesa do semestre?"}
+[2025-05-26T22:39:10.296Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:10.297Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:10.297Z] [AGENT_START] {"user_id":"553299642181","frase":"qual a maior despesa do semestre?"}
+[2025-05-26T22:39:10.789Z] [CONSULTA_MAIOR_GASTO] {"user_id":"553299642181","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T22:39:10.792Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"qual a maior despesa do semestre?"}
+[2025-05-26T22:39:10.792Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"qual a maior despesa do semestre?"}
+[2025-05-26T22:39:10.793Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"qual a maior despesa do semestre?","error":"agent is not a function"}
+[2025-05-26T22:39:10.793Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"qual a maior despesa do semestre?","respostaAgent":null}
+[2025-05-26T22:39:12.306Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"qual a maior despesa do semestre?","respostaGPT":"R$ 1.200. Isso corresponde ao pagamento de aluguel em maio."}
+[2025-05-26T22:39:12.311Z] [ROUTER_START] {"user_id":"553299642181","frase":"qual categoria teve mais gastos este mês?"}
+[2025-05-26T22:39:12.312Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:12.312Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:12.313Z] [AGENT_START] {"user_id":"553299642181","frase":"qual categoria teve mais gastos este mês?"}
+[2025-05-26T22:39:13.044Z] [CONSULTA_SAIDAS] {"user_id":"553299642181","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T22:39:13.049Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"qual categoria teve mais gastos este mês?"}
+[2025-05-26T22:39:13.050Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"qual categoria teve mais gastos este mês?"}
+[2025-05-26T22:39:13.051Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"qual categoria teve mais gastos este mês?","error":"agent is not a function"}
+[2025-05-26T22:39:13.052Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"qual categoria teve mais gastos este mês?","respostaAgent":null}
+[2025-05-26T22:39:14.984Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"qual categoria teve mais gastos este mês?","respostaGPT":"Você pode me informar o mês específico que gostaria de analisar?"}
+[2025-05-26T22:39:14.988Z] [ROUTER_START] {"user_id":"553299642181","frase":"quero ver tudo que gastei recentemente"}
+[2025-05-26T22:39:14.989Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:14.990Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:14.992Z] [AGENT_START] {"user_id":"553299642181","frase":"quero ver tudo que gastei recentemente"}
+[2025-05-26T22:39:15.498Z] [CONSULTA_SAIDAS] {"user_id":"553299642181","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T22:39:15.503Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"quero ver tudo que gastei recentemente"}
+[2025-05-26T22:39:15.503Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"quero ver tudo que gastei recentemente"}
+[2025-05-26T22:39:15.504Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"quero ver tudo que gastei recentemente","error":"agent is not a function"}
+[2025-05-26T22:39:15.504Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"quero ver tudo que gastei recentemente","respostaAgent":null}
+[2025-05-26T22:39:16.724Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"quero ver tudo que gastei recentemente","respostaGPT":"Você pode me informar qual a data de início para essa análise?"}
+[2025-05-26T22:39:16.727Z] [ROUTER_START] {"user_id":"553299642181","frase":"tem como mostrar os meus recebimentos dos últimos 15 dias?"}
+[2025-05-26T22:39:16.727Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:16.728Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:16.729Z] [AGENT_START] {"user_id":"553299642181","frase":"tem como mostrar os meus recebimentos dos últimos 15 dias?"}
+[2025-05-26T22:39:17.193Z] [CONSULTA_ENTRADAS] {"user_id":"553299642181","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T22:39:17.197Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"tem como mostrar os meus recebimentos dos últimos 15 dias?"}
+[2025-05-26T22:39:17.198Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"tem como mostrar os meus recebimentos dos últimos 15 dias?"}
+[2025-05-26T22:39:17.199Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"tem como mostrar os meus recebimentos dos últimos 15 dias?","error":"agent is not a function"}
+[2025-05-26T22:39:17.199Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"tem como mostrar os meus recebimentos dos últimos 15 dias?","respostaAgent":null}
+[2025-05-26T22:39:18.467Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"tem como mostrar os meus recebimentos dos últimos 15 dias?","respostaGPT":"Sim. Você pode me informar qual a data de início?"}
+[2025-05-26T22:39:18.470Z] [ROUTER_START] {"user_id":"553299642181","frase":"quanto entrou e saiu essa semana?"}
+[2025-05-26T22:39:18.471Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:18.472Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:18.472Z] [AGENT_START] {"user_id":"553299642181","frase":"quanto entrou e saiu essa semana?"}
+[2025-05-26T22:39:18.994Z] [CONSULTA_ENTRADAS] {"user_id":"553299642181","periodo":{"inicio":"2025-05-26","fim":"2025-06-01"}}
+[2025-05-26T22:39:18.997Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"quanto entrou e saiu essa semana?"}
+[2025-05-26T22:39:18.998Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"quanto entrou e saiu essa semana?"}
+[2025-05-26T22:39:18.999Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"quanto entrou e saiu essa semana?","error":"agent is not a function"}
+[2025-05-26T22:39:18.999Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"quanto entrou e saiu essa semana?","respostaAgent":null}
+[2025-05-26T22:39:20.517Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"quanto entrou e saiu essa semana?","respostaGPT":"Você pode me informar qual a data de início desta semana que deseja analisar?"}
+[2025-05-26T22:39:20.522Z] [ROUTER_START] {"user_id":"553299642181","frase":"resumo de entradas e saídas de maio"}
+[2025-05-26T22:39:20.522Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:20.523Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:20.524Z] [AGENT_START] {"user_id":"553299642181","frase":"resumo de entradas e saídas de maio"}
+[2025-05-26T22:39:21.029Z] [CONSULTA_ENTRADAS] {"user_id":"553299642181","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T22:39:21.035Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"resumo de entradas e saídas de maio"}
+[2025-05-26T22:39:21.035Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"resumo de entradas e saídas de maio"}
+[2025-05-26T22:39:21.037Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"resumo de entradas e saídas de maio","error":"agent is not a function"}
+[2025-05-26T22:39:21.038Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"resumo de entradas e saídas de maio","respostaAgent":null}
+[2025-05-26T22:39:23.894Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"resumo de entradas e saídas de maio","respostaGPT":"Você pode me informar o valor total das entradas e saídas que deseja analisar em maio?"}
+[2025-05-26T22:39:23.898Z] [ROUTER_START] {"user_id":"553299642181","frase":"o que preciso pagar até o fim do mês?"}
+[2025-05-26T22:39:23.899Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:23.900Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:23.901Z] [AGENT_START] {"user_id":"553299642181","frase":"o que preciso pagar até o fim do mês?"}
+[2025-05-26T22:39:24.817Z] [CONSULTA_SALDO] {"user_id":"553299642181","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T22:39:24.822Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"o que preciso pagar até o fim do mês?"}
+[2025-05-26T22:39:24.823Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"o que preciso pagar até o fim do mês?"}
+[2025-05-26T22:39:24.824Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"o que preciso pagar até o fim do mês?","error":"agent is not a function"}
+[2025-05-26T22:39:24.824Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"o que preciso pagar até o fim do mês?","respostaAgent":null}
+[2025-05-26T22:39:26.145Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"o que preciso pagar até o fim do mês?","respostaGPT":"Sim. Você pode me informar a data atual e quais compromissos de pagamento possivelmente já registrados?"}
+[2025-05-26T22:39:26.149Z] [ROUTER_START] {"user_id":"553299642181","frase":"tenho algum pagamento atrasado?"}
+[2025-05-26T22:39:26.150Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:26.151Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:26.152Z] [AGENT_START] {"user_id":"553299642181","frase":"tenho algum pagamento atrasado?"}
+[2025-05-26T22:39:26.772Z] [CONSULTA_SALDO] {"user_id":"553299642181","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T22:39:26.778Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"tenho algum pagamento atrasado?"}
+[2025-05-26T22:39:26.778Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"tenho algum pagamento atrasado?"}
+[2025-05-26T22:39:26.779Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"tenho algum pagamento atrasado?","error":"agent is not a function"}
+[2025-05-26T22:39:26.780Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"tenho algum pagamento atrasado?","respostaAgent":null}
+[2025-05-26T22:39:28.083Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"tenho algum pagamento atrasado?","respostaGPT":"Você pode me informar qual data gostaria que eu verificasse?"}
+[2025-05-26T22:39:28.085Z] [ROUTER_START] {"user_id":"553299642181","frase":"como está minha situação financeira esse mês?"}
+[2025-05-26T22:39:28.086Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:28.086Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:28.087Z] [AGENT_START] {"user_id":"553299642181","frase":"como está minha situação financeira esse mês?"}
+[2025-05-26T22:39:28.544Z] [CONSULTA_SALDO] {"user_id":"553299642181","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T22:39:28.550Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"como está minha situação financeira esse mês?"}
+[2025-05-26T22:39:28.550Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"como está minha situação financeira esse mês?"}
+[2025-05-26T22:39:28.551Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"como está minha situação financeira esse mês?","error":"agent is not a function"}
+[2025-05-26T22:39:28.552Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"como está minha situação financeira esse mês?","respostaAgent":null}
+[2025-05-26T22:39:29.983Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"como está minha situação financeira esse mês?","respostaGPT":"Para te ajudar melhor, me informe por favor os valores de entradas e saídas registradas até agora neste mês."}
+[2025-05-26T22:39:29.987Z] [ROUTER_START] {"user_id":"553299642181","frase":"qual meu saldo consolidado até agora?"}
+[2025-05-26T22:39:29.988Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:29.989Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:29.990Z] [AGENT_START] {"user_id":"553299642181","frase":"qual meu saldo consolidado até agora?"}
+[2025-05-26T22:39:31.165Z] [CONSULTA_SALDO] {"user_id":"553299642181","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T22:39:31.171Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"qual meu saldo consolidado até agora?"}
+[2025-05-26T22:39:31.172Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"qual meu saldo consolidado até agora?"}
+[2025-05-26T22:39:31.173Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"qual meu saldo consolidado até agora?","error":"agent is not a function"}
+[2025-05-26T22:39:31.174Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"qual meu saldo consolidado até agora?","respostaAgent":null}
+[2025-05-26T22:39:32.588Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"qual meu saldo consolidado até agora?","respostaGPT":"Você pode me informar o valor total de suas entradas e saídas até o momento?"}
+[2025-05-26T22:39:32.592Z] [ROUTER_START] {"user_id":"553299642181","frase":"bom dia"}
+[2025-05-26T22:39:32.593Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:32.594Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:32.595Z] [AGENT_START] {"user_id":"553299642181","frase":"bom dia"}
+[2025-05-26T22:39:33.517Z] [SAUDACAO] {"user_id":"553299642181"}
+[2025-05-26T22:39:33.518Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"bom dia"}
+[2025-05-26T22:39:33.518Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"bom dia"}
+[2025-05-26T22:39:33.519Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"bom dia","error":"agent is not a function"}
+[2025-05-26T22:39:33.520Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"bom dia","respostaAgent":null}
+[2025-05-26T22:39:34.765Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"bom dia","respostaGPT":"Bom dia. Como posso ajudar você hoje?"}
+[2025-05-26T22:39:34.768Z] [ROUTER_START] {"user_id":"553299642181","frase":"anota aí"}
+[2025-05-26T22:39:34.769Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:34.769Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:34.771Z] [AGENT_START] {"user_id":"553299642181","frase":"anota aí"}
+[2025-05-26T22:39:35.674Z] [AGENDAMENTO_REGISTRAR] {"user_id":"553299642181","resultado":{"erro":true,"mensagem":"Qual o valor?","intencao":"registrar_agendamento","tipo":"saida","valor":null,"descricao":"anota aí","categoria":"Despesa","data":"2025-05-26","periodo":{"inicio":"2025-01-01","fim":"2025-12-31"},"similaridade":0.8300682016800953}}
+[2025-05-26T22:39:35.676Z] [AGENDAMENTO_ERRO_CAMPOS] {"user_id":"553299642181","resultado":{"erro":true,"mensagem":"Qual o valor?","intencao":"registrar_agendamento","tipo":"saida","valor":null,"descricao":"anota aí","categoria":"Despesa","data":"2025-05-26","periodo":{"inicio":"2025-01-01","fim":"2025-12-31"},"similaridade":0.8300682016800953,"data_vencimento":"2025-01-01"}}
+[2025-05-26T22:39:35.679Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"anota aí"}
+[2025-05-26T22:39:35.680Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"anota aí"}
+[2025-05-26T22:39:35.684Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"anota aí","error":"agent is not a function"}
+[2025-05-26T22:39:35.685Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"anota aí","respostaAgent":null}
+[2025-05-26T22:39:37.274Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"anota aí","respostaGPT":"Claro. Posso registrar uma entrada, saída ou algo específico?"}
+[2025-05-26T22:39:37.289Z] [ROUTER_START] {"user_id":"553299642181","frase":"me ajuda com as contas"}
+[2025-05-26T22:39:37.293Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:37.294Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:37.300Z] [AGENT_START] {"user_id":"553299642181","frase":"me ajuda com as contas"}
+[2025-05-26T22:39:38.175Z] [AGENDAMENTO_CONSULTA] {"user_id":"553299642181","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"consultar_agendamentos","tipo":null,"valor":null,"descricao":"me ajuda com as contas","categoria":"Despesa","data":"2025-05-26","periodo":null,"similaridade":0.8803415661597114}}
+[2025-05-26T22:39:38.181Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"me ajuda com as contas"}
+[2025-05-26T22:39:38.183Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"me ajuda com as contas"}
+[2025-05-26T22:39:38.186Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"me ajuda com as contas","error":"agent is not a function"}
+[2025-05-26T22:39:38.188Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"me ajuda com as contas","respostaAgent":null}
+[2025-05-26T22:39:39.189Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"me ajuda com as contas","respostaGPT":"Sim. Do que você precisa exatamente?"}
+[2025-05-26T22:39:39.196Z] [ROUTER_START] {"user_id":"553299642181","frase":"tem como lançar uma saída?"}
+[2025-05-26T22:39:39.198Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:39.200Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:39.201Z] [AGENT_START] {"user_id":"553299642181","frase":"tem como lançar uma saída?"}
+[2025-05-26T22:39:40.130Z] [AGENT_INTENCAO_ERRO] {"user_id":"553299642181","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"duvida_uso","tipo":null,"valor":null,"descricao":"tem como lançar uma saída?","categoria":"Receita","data":"2025-05-26","periodo":null,"similaridade":0.8565108200727523}}
+[2025-05-26T22:39:40.132Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"tem como lançar uma saída?"}
+[2025-05-26T22:39:40.134Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"tem como lançar uma saída?","error":"agent is not a function"}
+[2025-05-26T22:39:40.134Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"tem como lançar uma saída?","respostaAgent":null}
+[2025-05-26T22:39:41.294Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"tem como lançar uma saída?","respostaGPT":"Sim. Informe o valor, a data e a descrição da saída."}
+[2025-05-26T22:39:41.300Z] [ROUTER_START] {"user_id":"553299642181","frase":"registra uma entrada qualquer"}
+[2025-05-26T22:39:41.301Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:41.303Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:41.305Z] [AGENT_START] {"user_id":"553299642181","frase":"registra uma entrada qualquer"}
+[2025-05-26T22:39:42.320Z] [AGENT_INTENCAO_ERRO] {"user_id":"553299642181","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"duvida_uso","tipo":null,"valor":null,"descricao":"registra uma entrada qualquer","categoria":"Despesa","data":"2025-05-26","periodo":null,"similaridade":0.8524657741527664}}
+[2025-05-26T22:39:42.322Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"registra uma entrada qualquer"}
+[2025-05-26T22:39:42.324Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"registra uma entrada qualquer","error":"agent is not a function"}
+[2025-05-26T22:39:42.326Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"registra uma entrada qualquer","respostaAgent":null}
+[2025-05-26T22:39:44.679Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"registra uma entrada qualquer","respostaGPT":"Preciso do valor, data e descrição da entrada para registrar. Você pode me passar essas informações?"}
+[2025-05-26T22:39:44.686Z] [ROUTER_START] {"user_id":"553299642181","frase":"me explica como funciona"}
+[2025-05-26T22:39:44.689Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:44.691Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:44.694Z] [AGENT_START] {"user_id":"553299642181","frase":"me explica como funciona"}
+[2025-05-26T22:39:46.737Z] [AGENT_INTENCAO_ERRO] {"user_id":"553299642181","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"duvida_uso","tipo":null,"valor":null,"descricao":"me explica como funciona","categoria":"Saúde","data":"2025-05-26","periodo":null,"similaridade":0.8473476225693821}}
+[2025-05-26T22:39:46.740Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"me explica como funciona"}
+[2025-05-26T22:39:46.744Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"me explica como funciona","error":"agent is not a function"}
+[2025-05-26T22:39:46.746Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"me explica como funciona","respostaAgent":null}
+[2025-05-26T22:39:49.101Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"me explica como funciona","respostaGPT":"Para lançar uma entrada, siga estes passos:\n\n1. Informe o valor da entrada.\n2. Informe a data da entrada.\n3. Descreva brevemente o que é. \n\nSe precisar, estou aqui para ajudar."}
+[2025-05-26T22:39:49.131Z] [ROUTER_START] {"user_id":"553299642181","frase":"quero um extrato detalhado"}
+[2025-05-26T22:39:49.136Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:49.140Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:49.147Z] [AGENT_START] {"user_id":"553299642181","frase":"quero um extrato detalhado"}
+[2025-05-26T22:39:50.623Z] [CONSULTA_EXTRATO] {"user_id":"553299642181","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-26T22:39:50.630Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"quero um extrato detalhado"}
+[2025-05-26T22:39:50.630Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"quero um extrato detalhado"}
+[2025-05-26T22:39:50.631Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"quero um extrato detalhado","error":"agent is not a function"}
+[2025-05-26T22:39:50.634Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"quero um extrato detalhado","respostaAgent":null}
+[2025-05-26T22:39:52.155Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"quero um extrato detalhado","respostaGPT":"Informe o período do extrato que você deseja. Assim, posso ajudar melhor."}
+[2025-05-26T22:39:52.166Z] [ROUTER_START] {"user_id":"553299642181","frase":"não entendi como faço para lançar um gasto futuro"}
+[2025-05-26T22:39:52.169Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:52.171Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:52.173Z] [AGENT_START] {"user_id":"553299642181","frase":"não entendi como faço para lançar um gasto futuro"}
+[2025-05-26T22:39:53.396Z] [AGENT_INTENCAO_ERRO] {"user_id":"553299642181","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"duvida_uso","tipo":null,"valor":null,"descricao":"não entendi como faço para lançar um gasto futuro","categoria":"Despesa","data":"2025-05-26","periodo":null,"similaridade":0.875973148283532}}
+[2025-05-26T22:39:53.398Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"não entendi como faço para lançar um gasto futuro"}
+[2025-05-26T22:39:53.400Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"não entendi como faço para lançar um gasto futuro","error":"agent is not a function"}
+[2025-05-26T22:39:53.402Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"não entendi como faço para lançar um gasto futuro","respostaAgent":null}
+[2025-05-26T22:39:55.271Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"não entendi como faço para lançar um gasto futuro","respostaGPT":"Para lançar um gasto futuro:\n\n1. Informe o valor do gasto.\n2. Defina a data futura.\n3. Descreva o gasto planejado. \n\nExecutado isso, seu gasto futuro será registrado."}
+[2025-05-26T22:39:55.284Z] [ROUTER_START] {"user_id":"553299642181","frase":"registre uma despesa"}
+[2025-05-26T22:39:55.287Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:55.288Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:55.292Z] [AGENT_START] {"user_id":"553299642181","frase":"registre uma despesa"}
+[2025-05-26T22:39:56.812Z] [AGENT_INTENCAO_ERRO] {"user_id":"553299642181","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"duvida_uso","tipo":null,"valor":null,"descricao":"registre uma despesa","categoria":"Despesa","data":"2025-05-26","periodo":null,"similaridade":0.9211538404073759}}
+[2025-05-26T22:39:56.815Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"registre uma despesa"}
+[2025-05-26T22:39:56.818Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"registre uma despesa","error":"agent is not a function"}
+[2025-05-26T22:39:56.822Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"registre uma despesa","respostaAgent":null}
+[2025-05-26T22:39:58.091Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"registre uma despesa","respostaGPT":"Preciso do valor, data e descrição da despesa para registrar. Pode me passar essas informações?"}
+[2025-05-26T22:39:58.109Z] [ROUTER_START] {"user_id":"553299642181","frase":"me diga o valor do aluguel"}
+[2025-05-26T22:39:58.114Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:58.115Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:39:58.119Z] [AGENT_START] {"user_id":"553299642181","frase":"me diga o valor do aluguel"}
+[2025-05-26T22:39:59.559Z] [AGENT_INTENCAO_ERRO] {"user_id":"553299642181","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"editar_registro","tipo":null,"valor":null,"descricao":"me diga o valor do aluguel","categoria":"Despesas Fixas","data":"2025-05-26","periodo":null,"similaridade":0.9092394502397313}}
+[2025-05-26T22:39:59.561Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"me diga o valor do aluguel"}
+[2025-05-26T22:39:59.565Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"me diga o valor do aluguel","error":"agent is not a function"}
+[2025-05-26T22:39:59.567Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"me diga o valor do aluguel","respostaAgent":null}
+[2025-05-26T22:40:00.770Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"me diga o valor do aluguel","respostaGPT":"Você pode me informar qual data e valor?"}
+[2025-05-26T22:40:00.774Z] [ROUTER_START] {"user_id":"553299642181","frase":"tem algum registro de conta de energia?"}
+[2025-05-26T22:40:00.775Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:40:00.776Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:40:00.777Z] [AGENT_START] {"user_id":"553299642181","frase":"tem algum registro de conta de energia?"}
+[2025-05-26T22:40:01.909Z] [AGENT_INTENCAO_ERRO] {"user_id":"553299642181","resultado":{"erro":true,"mensagem":"Qual o valor?","intencao":"registrar_saida","tipo":"saida","valor":null,"descricao":"tem algum registro de conta de energia?","categoria":"Contas","data":"2025-05-26","periodo":null,"similaridade":0.8608554320133371}}
+[2025-05-26T22:40:01.912Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"tem algum registro de conta de energia?"}
+[2025-05-26T22:40:01.915Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"tem algum registro de conta de energia?","error":"agent is not a function"}
+[2025-05-26T22:40:01.917Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"tem algum registro de conta de energia?","respostaAgent":null}
+[2025-05-26T22:40:03.098Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"tem algum registro de conta de energia?","respostaGPT":"Sim. Para detalhes, preciso saber o período que você deseja consultar."}
+[2025-05-26T22:40:03.111Z] [ROUTER_START] {"user_id":"553299642181","frase":"excluir meu ultimo registro"}
+[2025-05-26T22:40:03.114Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:40:03.116Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T22:40:03.118Z] [AGENT_START] {"user_id":"553299642181","frase":"excluir meu ultimo registro"}
+[2025-05-26T22:40:04.246Z] [AGENT_INTENCAO_ERRO] {"user_id":"553299642181","resultado":{"erro":true,"mensagem":"Qual o tipo do lançamento? (entrada ou saída)","intencao":"deletar_registro","tipo":null,"valor":null,"descricao":"excluir meu ultimo registro","categoria":"Receita","data":"2025-05-26","periodo":null,"similaridade":0.8646807685508127}}
+[2025-05-26T22:40:04.249Z] [SUPERAGENT_START] {"user_id":"553299642181","frase":"excluir meu ultimo registro"}
+[2025-05-26T22:40:04.251Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"553299642181","frase":"excluir meu ultimo registro","error":"agent is not a function"}
+[2025-05-26T22:40:04.254Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"553299642181","frase":"excluir meu ultimo registro","respostaAgent":null}
+[2025-05-26T22:40:05.653Z] [SUPERAGENT_GPT_OK] {"user_id":"553299642181","pergunta":"excluir meu ultimo registro","respostaGPT":"Confirme qual registro específico você deseja excluir, mencionando o tipo ou categoria para evitar erros."}
+[2025-05-26T23:30:13.978Z] [ROUTER_START] {"user_id":"553299642181","frase":"quero registrar um compromisso de pagamento de 500 reais para dia 10 de junho"}
+[2025-05-26T23:30:13.980Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T23:30:13.980Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T23:30:13.981Z] [AGENT_START] {"user_id":"553299642181","frase":"quero registrar um compromisso de pagamento de 500 reais para dia 10 de junho"}
+[2025-05-26T23:30:16.017Z] [AGENDAMENTO_REGISTRAR] {"user_id":"553299642181","resultado":{"intencao":"registrar_agendamento","tipo":"saida","valor":500,"descricao":"quero registrar um compromisso de pagamento de 500 reais para dia 10 de junho","categoria":"Despesas Fixas","data":"2025-06-10","data_vencimento":"2025-05-26","periodo":{"inicio":"2025-05-26","fim":"2025-05-26"},"similaridade":0.8743831112746233}}
+[2025-05-26T23:30:16.058Z] [ROUTER_START] {"user_id":"553299642181","frase":"agendar recebimento de 800 do cliente Rafael para o dia 12/06"}
+[2025-05-26T23:30:16.059Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T23:30:16.060Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T23:30:16.061Z] [AGENT_START] {"user_id":"553299642181","frase":"agendar recebimento de 800 do cliente Rafael para o dia 12/06"}
+[2025-05-26T23:30:19.299Z] [REGISTRO_FINANCEIRO] {"user_id":"553299642181","intencao":"registrar_entrada","tipo":"entrada","valor":800,"descricao":"agendar recebimento de 800 do cliente Rafael para o dia 12/06","categoria":"Receita","data":"2025-06-12","periodo":{"inicio":"2025-05-26","fim":"2025-05-26"},"similaridade":0.886453554934063}
+[2025-05-26T23:30:19.309Z] [ROUTER_START] {"user_id":"553299642181","frase":"adicionar conta de luz para vencer em 25 de junho no valor de 230 reais"}
+[2025-05-26T23:30:19.310Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T23:30:19.310Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T23:30:19.311Z] [AGENT_START] {"user_id":"553299642181","frase":"adicionar conta de luz para vencer em 25 de junho no valor de 230 reais"}
+[2025-05-26T23:30:19.312Z] [REGISTRO_FINANCEIRO] {"user_id":"553299642181","intencao":"registrar_saida","tipo":"saida","valor":230,"descricao":"adicionar conta de luz para vencer em 25 de junho no valor de 230 reais","categoria":"Outro","data":"2025-06-25","periodo":{"inicio":"2025-06-25","fim":"2025-06-25"},"similaridade":1}
+[2025-05-26T23:30:19.317Z] [ROUTER_START] {"user_id":"553299642181","frase":"anotar aluguel de 1200 reais para o próximo mês"}
+[2025-05-26T23:30:19.318Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T23:30:19.318Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-26T23:30:19.318Z] [AGENT_START] {"user_id":"553299642181","frase":"anotar aluguel de 1200 reais para o próximo mês"}
+[2025-05-26T23:30:19.319Z] [REGISTRO_FINANCEIRO] {"user_id":"553299642181","intencao":"registrar_saida","tipo":"saida","valor":120,"descricao":"anotar aluguel de 1200 reais para o próximo mês","categoria":"Despesas Fixas","data":"2025-05-26","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"},"similaridade":1}
+[2025-05-27T00:03:58.730Z] [ROUTER_START] {"user_id":"553299642181","frase":"quero registrar um compromisso de pagamento de 500 reais para dia 10 de junho"}
+[2025-05-27T00:03:58.732Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-27T00:03:58.733Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-27T00:03:58.735Z] [AGENT_START] {"user_id":"553299642181","frase":"quero registrar um compromisso de pagamento de 500 reais para dia 10 de junho"}
+[2025-05-27T00:04:00.954Z] [ROUTER_START] {"user_id":"553299642181","frase":"agendar recebimento de 800 do cliente Rafael para o dia 12/06"}
+[2025-05-27T00:04:00.955Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-27T00:04:00.956Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-27T00:04:00.957Z] [AGENT_START] {"user_id":"553299642181","frase":"agendar recebimento de 800 do cliente Rafael para o dia 12/06"}
+[2025-05-27T00:04:02.725Z] [ROUTER_START] {"user_id":"553299642181","frase":"adicionar conta de luz para vencer em 25 de junho no valor de 230 reais"}
+[2025-05-27T00:04:02.726Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-27T00:04:02.727Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-27T00:04:02.728Z] [AGENT_START] {"user_id":"553299642181","frase":"adicionar conta de luz para vencer em 25 de junho no valor de 230 reais"}
+[2025-05-27T00:04:02.739Z] [ROUTER_START] {"user_id":"553299642181","frase":"anotar aluguel de 1200 reais para o próximo mês"}
+[2025-05-27T00:04:02.740Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-27T00:04:02.741Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-27T00:04:02.742Z] [AGENT_START] {"user_id":"553299642181","frase":"anotar aluguel de 1200 reais para o próximo mês"}
+[2025-05-27T00:04:16.564Z] [ROUTER_START] {"user_id":"553299642181","frase":"quero registrar um compromisso de pagamento de 500 reais para dia 10 de junho"}
+[2025-05-27T00:04:16.566Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-27T00:04:16.567Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-27T00:04:16.568Z] [AGENT_START] {"user_id":"553299642181","frase":"quero registrar um compromisso de pagamento de 500 reais para dia 10 de junho"}
+[2025-05-27T00:04:19.120Z] [ROUTER_START] {"user_id":"553299642181","frase":"anotar aluguel de 1200 reais para o próximo mês"}
+[2025-05-27T00:04:19.121Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-27T00:04:19.122Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-27T00:04:19.122Z] [AGENT_START] {"user_id":"553299642181","frase":"anotar aluguel de 1200 reais para o próximo mês"}
+[2025-05-27T00:05:15.521Z] [ROUTER_START] {"user_id":"553299642181","frase":"quero registrar um compromisso de pagamento de 500 reais para dia 10 de junho"}
+[2025-05-27T00:05:15.526Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-27T00:05:15.526Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-27T00:05:15.527Z] [AGENT_START] {"user_id":"553299642181","frase":"quero registrar um compromisso de pagamento de 500 reais para dia 10 de junho"}
+[2025-05-27T00:05:17.354Z] [ROUTER_START] {"user_id":"553299642181","frase":"anotar aluguel de 1200 reais para o próximo mês"}
+[2025-05-27T00:05:17.354Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-27T00:05:17.355Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-27T00:05:17.355Z] [AGENT_START] {"user_id":"553299642181","frase":"anotar aluguel de 1200 reais para o próximo mês"}

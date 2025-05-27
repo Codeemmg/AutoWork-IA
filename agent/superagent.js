@@ -1,16 +1,15 @@
 const fs = require('fs');
 const path = require('path');
 const { OpenAI } = require('openai');
-const agent = require('./agent'); // Seu agent.js já validado
+const { logEvent } = require('./logs');
+const agent = require('./agent');
+require('dotenv').config();
 
-// Configure sua OpenAI Key aqui ou por .env
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-// Caminho para salvar histórico (pode depois migrar para banco)
 const MEMORY_PATH = path.resolve(__dirname, 'memory');
 if (!fs.existsSync(MEMORY_PATH)) fs.mkdirSync(MEMORY_PATH);
 
-// Carrega/salva memória
 function getMemory(user_id) {
     const memFile = path.join(MEMORY_PATH, `${user_id}.json`);
     if (fs.existsSync(memFile)) {
@@ -21,126 +20,166 @@ function getMemory(user_id) {
 
 function saveMemory(user_id, memory) {
     const memFile = path.join(MEMORY_PATH, `${user_id}.json`);
-    fs.writeFileSync(memFile, JSON.stringify(memory.slice(-10), null, 2)); // Mantém só os últimos 10 turnos
+    fs.writeFileSync(memFile, JSON.stringify(memory.slice(-10), null, 2));
 }
 
-// SuperAgent Conversacional
-async function superagent(user_id, frase) {
+async function superagent(user_id, frase, resultadoParcial = null) {
     let debugLog = [];
-    // Primeiro tenta usar seu agent.js clássico (registro/consulta)
-    const respostaAgent = await agent(user_id, frase, debugLog);
+    logEvent('SUPERAGENT_START', { user_id, frase });
 
-    // Roteamento inteligente para conversação
-    const intencao = respostaAgent.resultado && respostaAgent.resultado.intencao;
-    const fraseLower = frase.toLowerCase();
-    const ehDuvidaOuEnsino = (
-        fraseLower.startsWith('como') ||
-        fraseLower.includes('me ensina') ||
-        fraseLower.includes('ajuda') ||
-        fraseLower.startsWith('o que é') ||
-        fraseLower.includes('explica') ||
-        fraseLower.includes('tutorial') ||
-        intencao === 'erro_ou_duvida' ||
-        intencao === 'saudacao'
-    );
+    // 1️⃣ Tenta resolver pelo agent.js
+    let respostaAgent;
+    try {
+        respostaAgent = await agent(user_id, frase, debugLog);
+    } catch (e) {
+        logEvent('SUPERAGENT_AGENT_ERROR', { user_id, frase, error: e.message });
+        respostaAgent = null;
+    }
+    logEvent('SUPERAGENT_AGENT_RESPONSE', { user_id, frase, respostaAgent });
 
-    const respostaEhPrompt = (
-        /^qual o tipo/i.test(respostaAgent.resposta) ||
-        /^qual o valor/i.test(respostaAgent.resposta) ||
-        /^qual a descrição/i.test(respostaAgent.resposta)
-    );
+    // 2️⃣ Decide se precisa acionar o GPT
+    let intencao = respostaAgent && respostaAgent.resultado && respostaAgent.resultado.intencao;
+    let respostaEhPrompt =
+        respostaAgent && respostaAgent.resposta &&
+        (
+            /^qual o tipo/i.test(respostaAgent.resposta) ||
+            /^qual o valor/i.test(respostaAgent.resposta) ||
+            /^qual a descrição/i.test(respostaAgent.resposta)
+        );
 
-    const naoEntendeu = (
+    let ehDuvidaOuEnsino = false;
+    if (frase) {
+        let fraseLower = frase.toLowerCase();
+        ehDuvidaOuEnsino = (
+            fraseLower.startsWith('como') ||
+            fraseLower.includes('me ensina') ||
+            fraseLower.includes('ajuda') ||
+            fraseLower.startsWith('o que é') ||
+            fraseLower.includes('explica') ||
+            fraseLower.includes('tutorial') ||
+            intencao === 'erro_ou_duvida' ||
+            intencao === 'saudacao'
+        );
+    }
+
+    let naoEntendeu =
         ehDuvidaOuEnsino ||
         respostaEhPrompt ||
         !intencao ||
-        /^não entendi/i.test(respostaAgent.resposta)
-    );
+        (respostaAgent && respostaAgent.resposta && /^não entendi/i.test(respostaAgent.resposta));
 
-    // Recupera memória do usuário
-    let memory = getMemory(user_id);
-
-    // Se o agent respondeu normalmente (registro/consulta etc.), salva e retorna
-    if (!naoEntendeu) {
-        memory.push({ role: 'user', content: frase });
-        memory.push({ role: 'assistant', content: respostaAgent.resposta });
-        saveMemory(user_id, memory);
-        return respostaAgent.resposta;
+    // 3️⃣ NOVO BLOCO: Se a intenção é consulta e faltou parâmetro (ex: mês), tenta responder com defaults
+    const INTENCOES_DEFAULT_PERIODO = [
+        "consultar_saldo",
+        "consultar_entradas",
+        "consultar_saidas",
+        "consultar_maior_gasto"
+    ];
+    // Se a intenção foi reconhecida e é de consulta, tenta responder com o agent para o mês atual
+    if (
+        intencao &&
+        INTENCOES_DEFAULT_PERIODO.includes(intencao) &&
+        (
+            !respostaAgent.resposta ||
+            /^você pode me informar/i.test(respostaAgent.resposta)
+        )
+    ) {
+        // Força agent a assumir período default, se não já assumiu internamente
+        // (Seu agent já assume mês atual se não vier período!)
+        const respostaAgentPadrao = await agent(user_id, frase, debugLog);
+        if (
+            respostaAgentPadrao &&
+            respostaAgentPadrao.resposta &&
+            !/^Você pode me informar/i.test(respostaAgentPadrao.resposta) // Evita loop de pergunta
+        ) {
+            memoryPush(user_id, frase, respostaAgentPadrao.resposta); // registra na memória
+            logEvent('SUPERAGENT_AGENT_DEFAULT_OK', { user_id, resposta: respostaAgentPadrao.resposta });
+            return {
+                resposta: respostaAgentPadrao.resposta,
+                intencao_detectada: respostaAgentPadrao.intencao_detectada || intencao,
+                similaridade: "-",
+                quem_atendeu: "superagent"
+            };
+        }
     }
 
-    // ==== PROMPT DO SUPERAGENT (empresa x produto + exemplos + boas práticas) ====
+    // 4️⃣ Memória do usuário
+    let memory = getMemory(user_id);
+
+    // 5️⃣ Se o agent respondeu bem (qualquer intenção), registra e retorna
+    if (respostaAgent && !naoEntendeu) {
+        memoryPush(user_id, frase, respostaAgent.resposta);
+        logEvent('SUPERAGENT_AGENT_OK', { user_id, resposta: respostaAgent.resposta });
+        return {
+            resposta: respostaAgent.resposta,
+            intencao_detectada: respostaAgent.intencao_detectada ||
+                (respostaAgent.resultado && respostaAgent.resultado.intencao) ||
+                "acao",
+            similaridade: respostaAgent.similaridade !== undefined
+                ? respostaAgent.similaridade
+                : (respostaAgent.resultado && respostaAgent.resultado.similaridade !== undefined
+                    ? respostaAgent.resultado.similaridade
+                    : "-"),
+            quem_atendeu: "superagent"
+        };
+    }
+
+    // 6️⃣ Se não entendeu, chama o GPT
     const systemPrompt = `
-Você é o SuperAssistente do Meu Gestor — o produto financeiro do ecossistema AutoWork IA.
+Você é o SuperAssistente do Meu Gestor — seu papel é representar o criador do sistema em cada resposta.  
+Responda como se fosse ele, com objetividade, clareza e comando.  
+Seu tom é prático, humano, inteligente e confiável.
 
-Sobre o ECOSSISTEMA:
-- **AutoWork IA** é a empresa-mãe. Ela desenvolve soluções inovadoras de automação para pequenos e médios negócios.
-- **Meu Gestor** é um dos produtos do ecossistema AutoWork IA, focado em automação de gastos, controle de despesas e educação financeira.
+REGRAS:
+- Fale de forma simples, curta e direta.
+- Nunca se apresente. Nunca diga que é um assistente ou IA.
+- Se a pergunta for sim/não → responda com "Sim" ou "Não" primeiro. Detalhe só se o usuário pedir.
+- Se for tutorial ou explicação de uso → use até 3 passos, em tópicos.
+- Se o usuário quiser detalhes → só traga mais se ele pedir ("detalhe", "explique", "quero saber mais").
+- Se a pergunta estiver vaga → pergunte de volta com clareza: “Você pode me informar qual data e valor?”
+- Se a dúvida for sobre valores → sempre comece com o número (ex: “R$ 250”).
+- Se for um registro (entrada, saída, agendamento) → confirme se todas as informações foram enviadas antes de registrar.
+- Se não souber a resposta → diga com sinceridade e oriente a procurar o suporte.
+- Nunca explique sobre o sistema, AutoWork IA ou ecossistema — exceto se o usuário perguntar diretamente.
 
-REGRAS DE OURO:
-- Fale com linguagem clara, objetiva, amigável e inspiradora.
-- Dê exemplos do dia a dia usando as funções do *Meu Gestor* (registre despesas, agende contas, peça extratos, etc).
-- Ao explicar funcionalidades, lembre de mencionar que fazem parte do produto Meu Gestor, dentro do ecossistema AutoWork IA.
-- Se a frase do usuário for vaga, sempre peça os detalhes que faltam (valor, data, tipo, etc) de forma educada.
-- Se o usuário não entender, explique de novo com paciência e clareza.
-- Ofereça suporte extra (WhatsApp, vídeo, manual) se perceber insegurança.
-- Se o usuário não souber o que perguntar, faça sugestões de perguntas úteis.
-- Se o usuário estiver perdido, explique o passo a passo e reforce que ele pode contar com você.
-
-
-BOAS PRÁTICAS DO ATENDIMENTO:
-- Seja humano, próximo e motivador, mas sempre preciso.
-- Nunca deixe pergunta sem resposta. Se não souber, direcione ao suporte do AutoWork IA.
-- Promova funcionalidades: “Sabia que você pode agendar contas fixas?”
-- Ensine sempre que puder dicas de educação financeira, controle de despesas, como usar categorias, reservas e automações.
-- Use o nome do usuário e faça referência ao histórico quando possível.
-- Analise os registros e personalize as sugestões sempre que puder.
-- Nunca critique ou julgue o usuário — seja sempre positivo.
-
-
-EXEMPLOS DE ATENDIMENTO (SIGA ESSE PADRÃO):
-
-Usuário: Quero registrar uma venda de 300 reais feita hoje.
-IA: Ótimo! Para registrar essa venda, basta dizer “recebi 300 de venda hoje”. Sempre que receber um pagamento, é só avisar desse jeito! Quer saber como ver seu extrato depois? 😊
-
-Usuário: Como faço para agendar aluguel todo mês?
-IA: É super simples! Diga “agendar aluguel de 1200 todo dia 5”. Assim, o Meu Gestor vai sempre lembrar desse compromisso para você e avisar quando chegar a data. Quer que eu agende agora?
-
-Usuário: Me mostra o extrato desse mês.
-IA: Aqui está seu extrato do mês! Entradas, saídas, saldo atual — tudo detalhado. Se quiser ver só as entradas, só pedir: “entradas desse mês”. Você pode filtrar por categoria também!
-
-Usuário: Não estou conseguindo usar direito…
-IA: Fique tranquilo! Me diga o que você quer fazer, que eu te ensino o passo a passo. Se preferir, posso te enviar um vídeo curto ou nosso manual por WhatsApp. Quer tentar registrar uma despesa juntos?
-
-Usuário: Preciso economizar, gasto muito com cartão…
-IA: Ótimo que você já está atento! Sugiro categorizar seus gastos, assim você entende onde pode cortar. Quer que eu te ajude a separar as despesas por categoria? E lembre-se: usar o extrato semanal ajuda a controlar o cartão!
-
-Usuário: Posso agendar recebimento também?
-IA: Pode sim! Diga “agendar recebimento de 500 reais dia 15”, por exemplo, para lembrar um valor que vai entrar. O Meu Gestor te avisa quando chegar a data — ótimo para quem tem clientes que pagam parcelado!
-
-Usuário: O que é o Meu Gestor? O que é a AutoWork IA?
-IA: O Meu Gestor é o seu assistente pessoal de finanças, criado pela AutoWork IA, uma empresa que desenvolve soluções inteligentes de automação para negócios. Com o Meu Gestor, você automatiza registros, agenda contas, consulta extratos e recebe dicas para evoluir sua gestão financeira!
-
-Seu papel é ser consultor, treinador e braço direito do usuário, **ajudando-o a melhorar sua gestão financeira com o Meu Gestor, produto do ecossistema AutoWork IA!**
+A cada resposta, atue como o criador do sistema responderia: direto ao ponto, com inteligência real, como se estivesse falando com um cliente importante.
 `;
 
-    // Adiciona histórico na memória da conversa
     const messages = [
         { role: 'system', content: systemPrompt },
         ...memory.slice(-8),
         { role: 'user', content: frase }
     ];
 
-    const gptResponse = await openai.chat.completions.create({
-        model: 'gpt-4o', // ou 'gpt-3.5-turbo'
-        messages
-    });
+    let respostaGPT = null;
+    try {
+        const gptResponse = await openai.chat.completions.create({
+            model: 'gpt-4o',
+            messages
+        });
+        respostaGPT = gptResponse.choices[0].message.content.trim();
+        logEvent('SUPERAGENT_GPT_OK', { user_id, pergunta: frase, respostaGPT });
+    } catch (error) {
+        respostaGPT = "Não consegui analisar sua dúvida agora. Por favor, tente novamente ou peça suporte.";
+        logEvent('SUPERAGENT_GPT_ERROR', { user_id, frase, error: error.message });
+    }
 
-    const respostaGPT = gptResponse.choices[0].message.content.trim();
+    memoryPush(user_id, frase, respostaGPT);
+
+    return {
+        resposta: respostaGPT,
+        intencao_detectada: "duvida_uso",
+        similaridade: "-",
+        quem_atendeu: "superagent"
+    };
+}
+
+// Função auxiliar para registrar memória sem repetir código
+function memoryPush(user_id, frase, resposta) {
+    let memory = getMemory(user_id);
     memory.push({ role: 'user', content: frase });
-    memory.push({ role: 'assistant', content: respostaGPT });
+    memory.push({ role: 'assistant', content: resposta });
     saveMemory(user_id, memory);
-
-    return respostaGPT;
 }
 
 module.exports = superagent;

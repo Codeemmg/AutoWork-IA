@@ -1,0 +1,42 @@
+[
+  {
+    "role": "user",
+    "content": "não entendi como faço para lançar um gasto futuro"
+  },
+  {
+    "role": "assistant",
+    "content": "Para lançar um gasto futuro:\n\n1. Informe o valor do gasto.\n2. Defina a data futura.\n3. Descreva o gasto planejado. \n\nExecutado isso, seu gasto futuro será registrado."
+  },
+  {
+    "role": "user",
+    "content": "registre uma despesa"
+  },
+  {
+    "role": "assistant",
+    "content": "Preciso do valor, data e descrição da despesa para registrar. Pode me passar essas informações?"
+  },
+  {
+    "role": "user",
+    "content": "me diga o valor do aluguel"
+  },
+  {
+    "role": "assistant",
+    "content": "Você pode me informar qual data e valor?"
+  },
+  {
+    "role": "user",
+    "content": "tem algum registro de conta de energia?"
+  },
+  {
+    "role": "assistant",
+    "content": "Sim. Para detalhes, preciso saber o período que você deseja consultar."
+  },
+  {
+    "role": "user",
+    "content": "excluir meu ultimo registro"
+  },
+  {
+    "role": "assistant",
+    "content": "Confirme qual registro específico você deseja excluir, mencionando o tipo ou categoria para evitar erros."
+  }
+]

@@ -1,0 +1,375 @@
+=== INICIANDO TESTES AUTOWORK IA ===
+
+
+[1] 📌 Registro de entrada atual
+Frase: recebi 1200 de salário hoje
+Resposta: ✅ Registro salvo: *recebi 1200 de salário hoje* — R$1200
+↪️ Intenção: registrar_entrada
+↪️ Valor: 1200
+↪️ Data: 2025-05-23
+↪️ Debug: inicio_interpretar > interpretação_direta > fim_interpretar > periodo_personalizado
+
+[2] 📌 Registro de saída atual
+Frase: paguei 350 de aluguel hoje
+Resposta: ✅ Registro salvo: *paguei 350 de aluguel hoje* — R$350
+↪️ Intenção: registrar_saida
+↪️ Valor: 350
+↪️ Data: 2025-05-23
+↪️ Debug: inicio_interpretar > interpretação_direta > fim_interpretar > periodo_personalizado
+
+[3] 📌 Registro de entrada antiga
+Frase: recebi 500 de cliente dia 11/05/2025
+Resposta: ✅ Registro salvo: *recebi 500 de cliente dia 11/05/2025* — R$500
+↪️ Intenção: registrar_entrada
+↪️ Valor: 500
+↪️ Data: 2025-05-11
+↪️ Debug: inicio_interpretar > interpretação_direta > fim_interpretar > periodo_personalizado
+
+[4] 📌 Registro de saída antiga
+Frase: gastei 200 no mercado dia 09/05/2025
+Resposta: ✅ Registro salvo: *gastei 200 no mercado dia 09/05/2025* — R$200
+↪️ Intenção: registrar_saida
+↪️ Valor: 200
+↪️ Data: 2025-05-09
+↪️ Debug: inicio_interpretar > interpretação_direta > fim_interpretar > periodo_personalizado
+
+[5] 📌 Registro de entrada futura
+Frase: vou receber 700 de comissão dia 31/05/2025
+Resposta: ✅ Agendamento salvo: *vou receber 700 de comissão dia 31/05/2025* em 2025-05-31 (entrada — R$700.00)
+↪️ Intenção: registrar_agendamento
+↪️ Valor: 700
+↪️ Data: 2025-05-31
+↪️ Debug: inicio_interpretar > categoria_classificada > dados_extraidos > fim_interpretar > periodo_personalizado > registro_agendamento
+
+[6] 📌 Registro de saída futura
+Frase: preciso pagar 450 de cartão dia 02/06/2025
+Resposta: ✅ Agendamento salvo: *preciso pagar 450 de cartão dia 02/06/2025* em 2025-06-02 (saida — R$450.00)
+↪️ Intenção: registrar_agendamento
+↪️ Valor: 450
+↪️ Data: 2025-06-02
+↪️ Debug: inicio_interpretar > interpretação_direta_forçada_agendamento > periodo_personalizado > registro_agendamento
+
+[7] 📌 Saldo mês atual
+Frase: saldo desse mês
+Resposta: 📊 *Resumo Financeiro*
+📅 De 2025-05-01 até 2025-05-31
+
+💸 *Saídas*
+📌 Alimentação:
+📅 08/05/2025 • gastei 200 no mercado dia 08/05/2025 - R$ 200.00
+📅 09/05/2025 • gastei 200 no mercado dia 09/05/2025 - R$ 200.00
+📅 09/05/2025 • gastei 200 no mercado dia 09/05/2025 - R$ 200.00
+📅 21/05/2025 • paguei 25,90 no mercado - R$ 25.90
+
+📌 Despesa:
+📅 21/05/2025 • registra compra no mercado no valor de 140 - R$ 140.00
+
+📌 Despesas Fixas:
+📅 10/05/2025 • paguei 1500 de  aluguel dia 10 de maio  - R$ 1500.00
+📅 21/05/2025 • paguei 1220 de aluguel 05 de abril - R$ 1220.00
+📅 21/05/2025 • tenho que pagar um boleto de 2000 daqui a 5 dias - R$ 2000.00
+📅 21/05/2025 • me lembre de pagar o boleto do santander de 1500 reais daq a 8 dias - R$ 1500.00
+📅 22/05/2025 • paguei 350 de aluguel hoje - R$ 350.00
+📅 23/05/2025 • paguei 350 de aluguel hoje - R$ 350.00
+📅 23/05/2025 • paguei 350 de aluguel hoje - R$ 350.00
+
+📌 Impostos:
+📅 21/05/2025 • paguei 45000 de imposto - R$ 45000.00
+📅 21/05/2025 • paguei 450 de imposto 07 de abril - R$ 450.00
+📅 21/05/2025 • paguei 590 de imposto 5 de março - R$ 590.00
+
+📌 Outro:
+📅 17/05/2025 • paguei 290 de internet no dia 17 - R$ 290.00
+📅 20/05/2025 • paguei ontem o servente 125 - R$ 125.00
+📅 20/05/2025 • paguei 95 ontem - R$ 95.00
+📅 21/05/2025 • paguei 19 no pix - R$ 19.00
+📅 21/05/2025 • paguei 200 no posto - R$ 200.00
+📅 21/05/2025 • comprei um carro de 120000 - R$ 120000.00
+
+💵 Total: R$ 174804.90
+
+
+↪️ Intenção: consultar_saidas
+↪️ Data: 2025-05-23
+↪️ Debug: inicio_interpretar > dados_extraidos > lancamento_incompleto > periodo_personalizado
+
+[8] 📌 Saldo mês anterior
+Frase: saldo do mês passado
+Resposta: 📊 *Resumo do período:*
+➕ Entradas: R$ 200.00
+➖ Saídas: R$ 2850.00
+🔴 Saldo: R$ -2650.00
+↪️ Intenção: consultar_saldo
+↪️ Data: 2025-05-23
+↪️ Debug: inicio_interpretar > dados_extraidos > lancamento_incompleto > periodo_personalizado > consultar_saldo
+
+[9] 📌 Saldo dos últimos 7 dias
+Frase: saldo do período de 16/05/2025 a 23/05/2025
+Resposta: 📊 *Resumo do período:*
+➕ Entradas: R$ 0.00
+➖ Saídas: R$ 0.00
+⚠️ Saldo: R$ 0.00
+↪️ Intenção: consultar_saldo
+↪️ Valor: 16
+↪️ Data: 2025-05-16
+↪️ Debug: inicio_interpretar > dados_extraidos > lancamento_incompleto > periodo_personalizado > consultar_saldo
+
+[10] 📌 Extrato mês atual
+Frase: extrato desse mês
+Resposta: 📊 *Resumo Financeiro*
+📅 De 2025-05-01 até 2025-05-31
+
+💰 *Entradas*
+📌 Despesa:
+📅 21/05/2025 • comissão 298,75 - R$ 298.75
+
+📌 Outro:
+📅 10/05/2025 • recebi 500 de cliente dia 10/05/2025 - R$ 500.00
+📅 11/05/2025 • recebi 500 de cliente dia 11/05/2025 - R$ 500.00
+📅 11/05/2025 • recebi 500 de cliente dia 11/05/2025 - R$ 500.00
+📅 20/05/2025 • recebi 290 ontem - R$ 290.00
+📅 21/05/2025 • ganhei 100 - R$ 100.00
+📅 21/05/2025 • recebi 300 hoje - R$ 300.00
+
+📌 Receita:
+📅 30/05/2025 • vou receber 700 de comissão dia 30/05/2025 - R$ 700.00
+📅 31/05/2025 • vou receber 700 de comissão dia 31/05/2025 - R$ 700.00
+
+📌 Renda:
+📅 21/05/2025 • recebi 200000 de comissão - R$ 200000.00
+📅 21/05/2025 • recebi 4000 de comissão mes passado - R$ 4000.00
+📅 21/05/2025 • recebi 200 de comissão 05 de abril - R$ 200.00
+📅 21/05/2025 • recebi 4000 de comissão mes passado - R$ 4000.00
+📅 21/05/2025 • recebi 290 de comissão 05 de abril - R$ 290.00
+📅 22/05/2025 • recebi 1200 de salário hoje - R$ 1200.00
+📅 23/05/2025 • recebi 1200 de salário hoje - R$ 1200.00
+📅 23/05/2025 • recebi 1200 de salário hoje - R$ 1200.00
+
+💵 Total: R$ 215978.75
+
+💸 *Saídas*
+📌 Alimentação:
+📅 08/05/2025 • gastei 200 no mercado dia 08/05/2025 - R$ 200.00
+📅 09/05/2025 • gastei 200 no mercado dia 09/05/2025 - R$ 200.00
+📅 09/05/2025 • gastei 200 no mercado dia 09/05/2025 - R$ 200.00
+📅 21/05/2025 • paguei 25,90 no mercado - R$ 25.90
+
+📌 Despesa:
+📅 21/05/2025 • registra compra no mercado no valor de 140 - R$ 140.00
+
+📌 Despesas Fixas:
+📅 10/05/2025 • paguei 1500 de  aluguel dia 10 de maio  - R$ 1500.00
+📅 21/05/2025 • paguei 1220 de aluguel 05 de abril - R$ 1220.00
+📅 21/05/2025 • tenho que pagar um boleto de 2000 daqui a 5 dias - R$ 2000.00
+📅 21/05/2025 • me lembre de pagar o boleto do santander de 1500 reais daq a 8 dias - R$ 1500.00
+📅 22/05/2025 • paguei 350 de aluguel hoje - R$ 350.00
+📅 23/05/2025 • paguei 350 de aluguel hoje - R$ 350.00
+📅 23/05/2025 • paguei 350 de aluguel hoje - R$ 350.00
+
+📌 Impostos:
+📅 21/05/2025 • paguei 45000 de imposto - R$ 45000.00
+📅 21/05/2025 • paguei 450 de imposto 07 de abril - R$ 450.00
+📅 21/05/2025 • paguei 590 de imposto 5 de março - R$ 590.00
+
+📌 Outro:
+📅 17/05/2025 • paguei 290 de internet no dia 17 - R$ 290.00
+📅 20/05/2025 • paguei ontem o servente 125 - R$ 125.00
+📅 20/05/2025 • paguei 95 ontem - R$ 95.00
+📅 21/05/2025 • paguei 19 no pix - R$ 19.00
+📅 21/05/2025 • paguei 200 no posto - R$ 200.00
+📅 21/05/2025 • comprei um carro de 120000 - R$ 120000.00
+
+💵 Total: R$ 174804.90
+
+📌 *Saldo Final:* R$ 41173.85
+
+↪️ Intenção: consultar_extrato
+↪️ Data: 2025-05-23
+↪️ Debug: inicio_interpretar > dados_extraidos > lancamento_incompleto > periodo_personalizado
+
+[11] 📌 Extrato mês passado
+Frase: extrato do mês passado
+Resposta: 📊 *Resumo Financeiro*
+📅 De 2025-04-01 até 2025-04-30
+
+💰 *Entradas*
+📌 Renda:
+📅 05/04/2025 • recebi 200 de comissão 05 de abril - R$ 200.00
+
+💵 Total: R$ 200.00
+
+💸 *Saídas*
+📌 Despesas Fixas:
+📅 05/04/2025 • paguei 1200 de aluguel dia 05 de abril - R$ 1200.00
+
+📌 Impostos:
+📅 05/04/2025 • paguei 1200 de imposto dia 05 de abril - R$ 1200.00
+📅 07/04/2025 • paguei 450 de imposto dia 07 de abril - R$ 450.00
+
+💵 Total: R$ 2850.00
+
+📌 *Saldo Final:* R$ -2650.00
+
+↪️ Intenção: consultar_extrato
+↪️ Data: 2025-05-23
+↪️ Debug: inicio_interpretar > dados_extraidos > lancamento_incompleto > periodo_personalizado
+
+[12] 📌 Extrato dos últimos 7 dias
+Frase: extrato do período de 16/05/2025 a 23/05/2025
+Resposta: 📭 Nenhum registro encontrado no período.
+↪️ Intenção: consultar_extrato
+↪️ Valor: 16
+↪️ Data: 2025-05-16
+↪️ Debug: inicio_interpretar > dados_extraidos > lancamento_incompleto > periodo_personalizado
+
+[13] 📌 Extrato de hoje
+Frase: extrato do dia
+Resposta: 📊 *Resumo Financeiro*
+📅 De 2025-05-23 até 2025-05-23
+
+💰 *Entradas*
+📌 Renda:
+📅 23/05/2025 • recebi 1200 de salário hoje - R$ 1200.00
+📅 23/05/2025 • recebi 1200 de salário hoje - R$ 1200.00
+
+💵 Total: R$ 2400.00
+
+💸 *Saídas*
+📌 Despesas Fixas:
+📅 23/05/2025 • paguei 350 de aluguel hoje - R$ 350.00
+📅 23/05/2025 • paguei 350 de aluguel hoje - R$ 350.00
+
+💵 Total: R$ 700.00
+
+📌 *Saldo Final:* R$ 1700.00
+
+↪️ Intenção: consultar_extrato
+↪️ Data: 2025-05-23
+↪️ Debug: inicio_interpretar > dados_extraidos > lancamento_incompleto > periodo_personalizado
+
+[14] 📌 Entradas do mês
+Frase: entradas desse mês
+Resposta: 📊 *Resumo Financeiro*
+📅 De 2025-05-01 até 2025-05-31
+
+💰 *Entradas*
+📌 Despesa:
+📅 21/05/2025 • comissão 298,75 - R$ 298.75
+
+📌 Outro:
+📅 10/05/2025 • recebi 500 de cliente dia 10/05/2025 - R$ 500.00
+📅 11/05/2025 • recebi 500 de cliente dia 11/05/2025 - R$ 500.00
+📅 11/05/2025 • recebi 500 de cliente dia 11/05/2025 - R$ 500.00
+📅 20/05/2025 • recebi 290 ontem - R$ 290.00
+📅 21/05/2025 • ganhei 100 - R$ 100.00
+📅 21/05/2025 • recebi 300 hoje - R$ 300.00
+
+📌 Receita:
+📅 30/05/2025 • vou receber 700 de comissão dia 30/05/2025 - R$ 700.00
+📅 31/05/2025 • vou receber 700 de comissão dia 31/05/2025 - R$ 700.00
+
+📌 Renda:
+📅 21/05/2025 • recebi 200000 de comissão - R$ 200000.00
+📅 21/05/2025 • recebi 4000 de comissão mes passado - R$ 4000.00
+📅 21/05/2025 • recebi 200 de comissão 05 de abril - R$ 200.00
+📅 21/05/2025 • recebi 4000 de comissão mes passado - R$ 4000.00
+📅 21/05/2025 • recebi 290 de comissão 05 de abril - R$ 290.00
+📅 22/05/2025 • recebi 1200 de salário hoje - R$ 1200.00
+📅 23/05/2025 • recebi 1200 de salário hoje - R$ 1200.00
+📅 23/05/2025 • recebi 1200 de salário hoje - R$ 1200.00
+
+💵 Total: R$ 215978.75
+
+
+↪️ Intenção: consultar_entradas
+↪️ Data: 2025-05-23
+↪️ Debug: inicio_interpretar > dados_extraidos > lancamento_incompleto > periodo_personalizado
+
+[15] 📌 Saídas do mês
+Frase: saídas desse mês
+Resposta: 📊 *Resumo Financeiro*
+📅 De 2025-05-01 até 2025-05-31
+
+💸 *Saídas*
+📌 Alimentação:
+📅 08/05/2025 • gastei 200 no mercado dia 08/05/2025 - R$ 200.00
+📅 09/05/2025 • gastei 200 no mercado dia 09/05/2025 - R$ 200.00
+📅 09/05/2025 • gastei 200 no mercado dia 09/05/2025 - R$ 200.00
+📅 21/05/2025 • paguei 25,90 no mercado - R$ 25.90
+
+📌 Despesa:
+📅 21/05/2025 • registra compra no mercado no valor de 140 - R$ 140.00
+
+📌 Despesas Fixas:
+📅 10/05/2025 • paguei 1500 de  aluguel dia 10 de maio  - R$ 1500.00
+📅 21/05/2025 • paguei 1220 de aluguel 05 de abril - R$ 1220.00
+📅 21/05/2025 • tenho que pagar um boleto de 2000 daqui a 5 dias - R$ 2000.00
+📅 21/05/2025 • me lembre de pagar o boleto do santander de 1500 reais daq a 8 dias - R$ 1500.00
+📅 22/05/2025 • paguei 350 de aluguel hoje - R$ 350.00
+📅 23/05/2025 • paguei 350 de aluguel hoje - R$ 350.00
+📅 23/05/2025 • paguei 350 de aluguel hoje - R$ 350.00
+
+📌 Impostos:
+📅 21/05/2025 • paguei 45000 de imposto - R$ 45000.00
+📅 21/05/2025 • paguei 450 de imposto 07 de abril - R$ 450.00
+📅 21/05/2025 • paguei 590 de imposto 5 de março - R$ 590.00
+
+📌 Outro:
+📅 17/05/2025 • paguei 290 de internet no dia 17 - R$ 290.00
+📅 20/05/2025 • paguei ontem o servente 125 - R$ 125.00
+📅 20/05/2025 • paguei 95 ontem - R$ 95.00
+📅 21/05/2025 • paguei 19 no pix - R$ 19.00
+📅 21/05/2025 • paguei 200 no posto - R$ 200.00
+📅 21/05/2025 • comprei um carro de 120000 - R$ 120000.00
+
+💵 Total: R$ 174804.90
+
+
+↪️ Intenção: consultar_saidas
+↪️ Data: 2025-05-23
+↪️ Debug: inicio_interpretar > dados_extraidos > lancamento_incompleto > periodo_personalizado
+
+[16] 📌 Entradas mês passado
+Frase: entradas do mês passado
+Resposta: 📊 *Resumo Financeiro*
+📅 De 2025-04-01 até 2025-04-30
+
+💰 *Entradas*
+📌 Renda:
+📅 05/04/2025 • recebi 200 de comissão 05 de abril - R$ 200.00
+
+💵 Total: R$ 200.00
+
+
+↪️ Intenção: consultar_entradas
+↪️ Data: 2025-05-23
+↪️ Debug: inicio_interpretar > dados_extraidos > lancamento_incompleto > periodo_personalizado
+
+[17] 📌 Saídas mês passado
+Frase: saídas do mês passado
+Resposta: 📊 *Resumo Financeiro*
+📅 De 2025-04-01 até 2025-04-30
+
+💰 *Entradas*
+📌 Renda:
+📅 05/04/2025 • recebi 200 de comissão 05 de abril - R$ 200.00
+
+💵 Total: R$ 200.00
+
+💸 *Saídas*
+📌 Despesas Fixas:
+📅 05/04/2025 • paguei 1200 de aluguel dia 05 de abril - R$ 1200.00
+
+📌 Impostos:
+📅 05/04/2025 • paguei 1200 de imposto dia 05 de abril - R$ 1200.00
+📅 07/04/2025 • paguei 450 de imposto dia 07 de abril - R$ 450.00
+
+💵 Total: R$ 2850.00
+
+📌 *Saldo Final:* R$ -2650.00
+
+↪️ Intenção: consultar_extrato
+↪️ Data: 2025-05-23
+↪️ Debug: inicio_interpretar > dados_extraidos > lancamento_incompleto > periodo_personalizado
+
+=== FIM DOS TESTES ===
