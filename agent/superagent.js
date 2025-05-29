@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { OpenAI } = require('openai');
 const { logEvent } = require('./logs');
+const { logDebug } = require('../tools/logger'); // NOVO LOG IMPORTADO!
 require('dotenv').config();
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
@@ -10,7 +11,6 @@ const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 const MEMORY_PATH = path.resolve(__dirname, 'memory');
 if (!fs.existsSync(MEMORY_PATH)) fs.mkdirSync(MEMORY_PATH);
 
-// Funções de memória de conversa
 function getMemory(user_id) {
     const memFile = path.join(MEMORY_PATH, `${user_id}.json`);
     if (fs.existsSync(memFile)) {
@@ -29,6 +29,15 @@ function saveMemory(user_id, memory) {
  */
 async function superagent(user_id, frase, resultado = null, debugLog = []) {
     logEvent('SUPERAGENT_START', { user_id, frase, resultado });
+
+    // LOG INICIAL DO SUPERAGENT
+    logDebug({
+        etapa: 'superagent_inicio',
+        user_id,
+        frase,
+        resultado,
+        debugLog
+    });
 
     // 1️⃣ Monta o prompt do sistema
     const systemPrompt = `
@@ -69,14 +78,45 @@ A cada resposta, atue como o criador do sistema responderia: direto ao ponto, co
         });
         respostaGPT = gptResponse.choices[0].message.content.trim();
         logEvent('SUPERAGENT_GPT_OK', { user_id, pergunta: frase, respostaGPT });
+
+        // LOG SUCESSO DO GPT
+        logDebug({
+            etapa: 'superagent_gpt_sucesso',
+            user_id,
+            frase,
+            respostaGPT,
+            resultado,
+            debugLog
+        });
+
     } catch (error) {
         respostaGPT = "Não consegui analisar sua dúvida agora. Por favor, tente novamente ou peça suporte.";
         logEvent('SUPERAGENT_GPT_ERROR', { user_id, frase, error: error.message });
+
+        // LOG ERRO DO GPT
+        logDebug({
+            etapa: 'superagent_gpt_erro',
+            user_id,
+            frase,
+            erro: error.message,
+            resultado,
+            debugLog
+        });
     }
 
     memory.push({ role: 'user', content: frase });
     memory.push({ role: 'assistant', content: respostaGPT });
     saveMemory(user_id, memory);
+
+    // LOG FINAL DA RESPOSTA
+    logDebug({
+        etapa: 'superagent_fim',
+        user_id,
+        frase,
+        respostaGPT,
+        resultado,
+        debugLog
+    });
 
     return {
         tipo: 'texto',

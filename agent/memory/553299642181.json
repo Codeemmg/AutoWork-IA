@@ -1,22 +1,6 @@
 [
   {
     "role": "user",
-    "content": "oi"
-  },
-  {
-    "role": "assistant",
-    "content": "Oi! Como posso ajudar você hoje?"
-  },
-  {
-    "role": "user",
-    "content": "perfeito! obrigado"
-  },
-  {
-    "role": "assistant",
-    "content": "Por nada! Se precisar de algo, estou à disposição."
-  },
-  {
-    "role": "user",
     "content": "boa noite"
   },
   {
@@ -38,5 +22,21 @@
   {
     "role": "assistant",
     "content": "Fico à disposição se precisar de mais alguma coisa."
+  },
+  {
+    "role": "user",
+    "content": "boa noite"
+  },
+  {
+    "role": "assistant",
+    "content": "Boa noite! Como posso ajudar você hoje?"
+  },
+  {
+    "role": "user",
+    "content": "boa noite"
+  },
+  {
+    "role": "assistant",
+    "content": "Boa noite! Há algo que você gostaria de saber ou fazer?"
   }
 ]

@@ -167,5 +167,260 @@
         "motivo": "saudacao"
       }
     ]
+  },
+  {
+    "dataHora": "2025-05-29T02:01:44.418Z",
+    "frase": "boa noite",
+    "resposta": "Boa noite! Como posso ajudar você hoje?",
+    "intencao": "duvida_uso",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "superagent",
+    "resultado": {},
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "boa noite"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "boa noite"
+      },
+      {
+        "etapa": "intencao_social_detectada",
+        "intencao": "saudacao"
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "superagent",
+        "motivo": "saudacao"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T02:01:55.342Z",
+    "frase": "hoje gastei 500 no mercado",
+    "resposta": "✅ Registro salvo!\n🆔 Código: *RR6N2K*\n📅 28/05/2025\n💰 Tipo: Saída\n📝 Descrição: hoje gastei 500 no mercado\n🏷️ Categoria: Alimentação\n📌 Valor: R$ 500.00",
+    "intencao": "registrar_saida",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "registrar_saida",
+      "tipo": "saida",
+      "valor": 500,
+      "descricao": "hoje gastei 500 no mercado",
+      "categoria": "Alimentação",
+      "data": "2025-05-28",
+      "periodo": {
+        "inicio": "2025-05-28",
+        "fim": "2025-05-28"
+      },
+      "similaridade": 1,
+      "codigo": "RR6N2K"
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "hoje gastei 500 no mercado"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "hoje gastei 500 no mercado"
+      },
+      {
+        "etapa": "categoria_classificada",
+        "categoria": "Alimentação"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 500,
+        "descricao": "hoje gastei 500 no mercado",
+        "categoria": "Alimentação",
+        "data": "2025-05-28",
+        "periodo": {
+          "inicio": "2025-05-28",
+          "fim": "2025-05-28"
+        },
+        "similaridade": 1
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 500,
+        "descricao": "hoje gastei 500 no mercado",
+        "categoria": "Alimentação",
+        "data": "2025-05-28",
+        "periodo": {
+          "inicio": "2025-05-28",
+          "fim": "2025-05-28"
+        },
+        "similaridade": 1
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "registrar_saida"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T02:04:40.527Z",
+    "frase": "me mande o extrato de hoje",
+    "resposta": "📊 *Resumo Financeiro*\n📅 De 2025-05-28 até 2025-05-28\n\n💰 *Entradas*\n📌 Receita:\n📅 28/05/2025 • recebi 300 hoje  - R$ 300.00\n\n💵 Total: R$ 300.00\n\n💸 *Saídas*\n📌 Alimentação:\n📅 28/05/2025 • comprei 4 reais de pão - R$ 4.00\n📅 28/05/2025 • comprei 3 reais de pão - R$ 3.00\n📅 28/05/2025 • hoje gastei 500 no mercado - R$ 500.00\n\n📌 Despesa:\n📅 28/05/2025 • paguei 200 de imposto hoje - R$ 200.00\n\n📌 Outro:\n📅 28/05/2025 • comprei 3 camisas por 120 reais hoje - R$ 120.00\n\n💵 Total: R$ 827.00\n\n📌 *Saldo Final:* R$ -527.00\n",
+    "intencao": "consultar_extrato",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "consultar_extrato",
+      "tipo": null,
+      "valor": null,
+      "descricao": "me mande o extrato de hoje",
+      "categoria": null,
+      "data": "2025-05-28",
+      "periodo": {
+        "inicio": "2025-05-28",
+        "fim": "2025-05-28"
+      },
+      "similaridade": 0.9337830266762803
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "me mande o extrato de hoje"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "me mande o extrato de hoje"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "consultar_extrato",
+        "tipo": null,
+        "valor": null,
+        "descricao": "me mande o extrato de hoje",
+        "categoria": null,
+        "data": "2025-05-28",
+        "periodo": {
+          "inicio": "2025-05-28",
+          "fim": "2025-05-28"
+        },
+        "similaridade": 0.9337830266762803
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "consultar_extrato",
+        "tipo": null,
+        "valor": null,
+        "descricao": "me mande o extrato de hoje",
+        "categoria": null,
+        "data": "2025-05-28",
+        "periodo": {
+          "inicio": "2025-05-28",
+          "fim": "2025-05-28"
+        },
+        "similaridade": 0.9337830266762803
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "consultar_extrato"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T13:12:00.070Z",
+    "frase": "boa noite",
+    "resposta": "Boa noite! Há algo que você gostaria de saber ou fazer?",
+    "intencao": "duvida_uso",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "superagent",
+    "resultado": {},
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "boa noite"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "boa noite"
+      },
+      {
+        "etapa": "intencao_social_detectada",
+        "intencao": "saudacao"
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "superagent",
+        "motivo": "saudacao"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T13:12:11.161Z",
+    "frase": "comprei 400 reais de carne para um churrasco",
+    "resposta": "✅ Registro salvo!\n🆔 Código: *NQTW72*\n📅 29/05/2025\n💰 Tipo: Saída\n📝 Descrição: comprei 400 reais de carne para um churrasco\n🏷️ Categoria: Alimentação\n📌 Valor: R$ 400.00",
+    "intencao": "registrar_saida",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "registrar_saida",
+      "tipo": "saida",
+      "valor": 400,
+      "descricao": "comprei 400 reais de carne para um churrasco",
+      "categoria": "Alimentação",
+      "data": "2025-05-29",
+      "periodo": null,
+      "similaridade": 1,
+      "codigo": "NQTW72"
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "comprei 400 reais de carne para um churrasco"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "comprei 400 reais de carne para um churrasco"
+      },
+      {
+        "etapa": "categoria_classificada",
+        "categoria": "Alimentação"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 400,
+        "descricao": "comprei 400 reais de carne para um churrasco",
+        "categoria": "Alimentação",
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 1
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 400,
+        "descricao": "comprei 400 reais de carne para um churrasco",
+        "categoria": "Alimentação",
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 1
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "registrar_saida"
+      }
+    ]
   }
 ]
