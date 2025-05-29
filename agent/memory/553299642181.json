@@ -1,42 +1,42 @@
 [
   {
     "role": "user",
-    "content": "não entendi como faço para lançar um gasto futuro"
+    "content": "oi"
   },
   {
     "role": "assistant",
-    "content": "Para lançar um gasto futuro:\n\n1. Informe o valor do gasto.\n2. Defina a data futura.\n3. Descreva o gasto planejado. \n\nExecutado isso, seu gasto futuro será registrado."
+    "content": "Oi! Como posso ajudar você hoje?"
   },
   {
     "role": "user",
-    "content": "registre uma despesa"
+    "content": "perfeito! obrigado"
   },
   {
     "role": "assistant",
-    "content": "Preciso do valor, data e descrição da despesa para registrar. Pode me passar essas informações?"
+    "content": "Por nada! Se precisar de algo, estou à disposição."
   },
   {
     "role": "user",
-    "content": "me diga o valor do aluguel"
+    "content": "boa noite"
   },
   {
     "role": "assistant",
-    "content": "Você pode me informar qual data e valor?"
+    "content": "Boa noite! Precisa de alguma ajuda?"
   },
   {
     "role": "user",
-    "content": "tem algum registro de conta de energia?"
+    "content": "extrato"
   },
   {
     "role": "assistant",
-    "content": "Sim. Para detalhes, preciso saber o período que você deseja consultar."
+    "content": "Você pode me informar qual data e valor específico você gostaria de consultar no extrato?"
   },
   {
     "role": "user",
-    "content": "excluir meu ultimo registro"
+    "content": "ok"
   },
   {
     "role": "assistant",
-    "content": "Confirme qual registro específico você deseja excluir, mencionando o tipo ou categoria para evitar erros."
+    "content": "Fico à disposição se precisar de mais alguma coisa."
   }
 ]

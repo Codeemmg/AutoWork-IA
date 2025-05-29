@@ -1,7 +1,10 @@
 const readline = require("readline");
-const agent = require("../agent/agent"); // Use o agent.js centralizador
-
+const { routeMessage } = require("../agent/roteador");
+const { saveInteractionLog } = require("../agent/logs");
 const USER_ID = 553299642181;
+
+// Gerenciamento de contexto pendente por usuário (simula memória de sessão)
+const contextoPendentePorUsuario = {};
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -19,26 +22,39 @@ async function perguntar() {
     }
 
     const debugLog = [];
+    let quemChamou = 'roteador';
+    let quemRespondeu = 'desconhecido';
+    let resposta;
+
+    // Recupera o contexto pendente do usuário, se houver
+    const contexto = contextoPendentePorUsuario[USER_ID] || null;
+
     try {
       debugLog.push({ etapa: "mensagem_recebida", frase });
 
-      // Chama o agent.js centralizador (garante sempre Promise)
-      let resposta;
-      try {
-        resposta = await agent(USER_ID, frase, debugLog);
-      } catch (agentErr) {
-        debugLog.push({ etapa: "erro_agent", mensagem: agentErr.message });
-        resposta = { resposta: "❌ Erro interno do assistente (agent.js)", erro: agentErr.message };
+      // Passa o contexto pendente como argumento extra ao routeMessage
+      resposta = await routeMessage(USER_ID, frase, debugLog, contexto);
+
+      // Decide quem respondeu (agent ou superagent)
+      quemRespondeu = resposta.quem_atendeu || (
+        resposta.resultado && resposta.resultado.intencao ? 'agent' : 'superagent'
+      );
+
+      // Atualiza o contexto pendente com base na resposta do agent
+      if (resposta.contextoPendente) {
+        contextoPendentePorUsuario[USER_ID] = resposta.contextoPendente;
+      } else {
+        contextoPendentePorUsuario[USER_ID] = null;
       }
 
-      // Exibe os logs detalhados de fluxo
+      // Exibe logs no terminal
       console.log("\n====== LOG DE FLUXO ======");
       debugLog.forEach((log, idx) => {
         console.log(`Etapa ${idx + 1}:`, log);
       });
       console.log("====== FIM DO LOG ======\n");
 
-      // Mostra resposta final de forma robusta
+      // Mostra resposta
       if (resposta && typeof resposta === "object" && "resposta" in resposta) {
         console.log("🤖 IA:", resposta.resposta);
       } else if (typeof resposta === "string") {
@@ -46,6 +62,19 @@ async function perguntar() {
       } else {
         console.log("🤖 IA: (sem resposta do agent)");
       }
+
+      // Salva interação no log único do dia
+      const logData = {
+        dataHora: new Date().toISOString(),
+        frase,
+        resposta: resposta.resposta || resposta,
+        intencao: resposta.resultado?.intencao || resposta.intencao_detectada || '-',
+        quem_chamou: quemChamou,
+        quem_respondeu: quemRespondeu,
+        resultado: resposta.resultado || {},
+        debugLog
+      };
+      saveInteractionLog(logData);
 
     } catch (err) {
       debugLog.push({ etapa: "erro_geral", mensagem: err.message });

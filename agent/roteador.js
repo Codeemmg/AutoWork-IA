@@ -1,51 +1,50 @@
 // roteador.js
-const { INTENT_THRESHOLD, FALLBACK_THRESHOLD } = require('./config');
-const { logEvent } = require('./logs');
+const interpretarMensagemIA = require('../tools/interpretarMensagemIA');
 const agent = require('./agent');
 const superagent = require('./superagent');
-require('dotenv').config();
+const { logEvent } = require('./logs');
 
-// Função de roteamento principal
-async function routeMessage(user_id, frase) {
-    logEvent('ROUTER_START', { user_id, frase });
+// Lista de intenções sociais/conversa
+const INTENCOES_SOCIAIS = [
+    'saudacao',
+    'agradecimento',
+    'erro_ou_duvida',
+    'conversa_social',
+    'frase_vaga'
+];
 
-    // 1. Detectar intenção e similaridade
-    const { intencao, similaridade } = await detectarIntencao(frase);
+// Função principal do roteador
+async function routeMessage(user_id, frase, debugLog = [], contextoPendente = null) {
+    debugLog.push({ etapa: "inicio_roteador", frase });
 
-    logEvent('INTENTION_DETECTED', { intencao, similaridade });
-
-    if (similaridade >= INTENT_THRESHOLD) {
-        logEvent('ROUTE_DECISION', { rota: 'agent', intencao, similaridade });
-        const resposta = await agent(user_id, frase);
-
-        // Fallback contextual: verifica se o agent respondeu erro de dados obrigatórios
-        if (
-            !resposta || resposta === 'undefined' ||
-            (resposta.resultado && resposta.resultado.erro && (
-                resposta.resultado.mensagem === "Qual o valor?" ||
-                resposta.resultado.mensagem === "Qual o tipo do lançamento? (entrada ou saída)" ||
-                resposta.resultado.mensagem.startsWith("❌ Faltam informações obrigatórias")
-            ))
-        ) {
-            logEvent('FALLBACK_TO_SUPERAGENT', { motivo: 'Agent sem dado crítico', intencao, frase });
-            return await superagent(user_id, frase);
-        }
-
-        return resposta;
-    } else if (similaridade >= FALLBACK_THRESHOLD) {
-        logEvent('ROUTE_DECISION', { rota: 'superagent', intencao, similaridade });
-        return await superagent(user_id, frase);
-    } else {
-        logEvent('ROUTE_DECISION', { rota: 'nenhuma', intencao, similaridade });
-        return "Desculpe, não entendi seu comando. Pode reformular?";
+    // Se houver contexto pendente, ele é passado para o agent.
+    let respostaAgent;
+    try {
+        respostaAgent = await agent(user_id, frase, debugLog, contextoPendente);
+    } catch (err) {
+        debugLog.push({ etapa: "erro_agent", mensagem: err.message });
+        logEvent('ROTEADOR_AGENT_ERROR', { user_id, frase, err: err.message });
+        return await superagent(user_id, frase, null, debugLog);
     }
-}
 
-// Simulação da função de detecção de intenção (use sua real!)
-async function detectarIntencao(frase) {
-    // ...chamar seu modelo de embeddings ou IA
-    // Simulação:
-    return { intencao: "consultar_saldo", similaridade: 0.92 }; // Exemplo
+    // Fallback universal: Se faltar qualquer campo ou erro de preenchimento
+    if (respostaAgent?.erro && respostaAgent?.faltaCampo) {
+        debugLog.push({ etapa: "fallback_superagent", motivo: respostaAgent.conteudo || respostaAgent.resposta });
+        logEvent('ROTEADOR_FALLBACK_SUPERAGENT', { user_id, frase, motivo: respostaAgent.conteudo || respostaAgent.resposta });
+        // Passa o contexto completo para o superagent
+        return await superagent(user_id, frase, respostaAgent, debugLog);
+    }
+
+    // Se for intenção social ou vaga, encaminha para o superagent
+    if (respostaAgent?.resultado?.intencao && INTENCOES_SOCIAIS.includes(respostaAgent.resultado.intencao)) {
+        debugLog.push({ etapa: "roteador_decisao", para: "superagent", motivo: respostaAgent.resultado.intencao });
+        logEvent('ROTEADOR_SUPERAGENT', { user_id, frase, intencao: respostaAgent.resultado.intencao });
+        return await superagent(user_id, frase, respostaAgent, debugLog);
+    }
+
+    debugLog.push({ etapa: "roteador_decisao", para: "agent", intencao: respostaAgent?.resultado?.intencao || "desconhecida" });
+    logEvent('ROTEADOR_AGENT', { user_id, frase, intencao: respostaAgent?.resultado?.intencao });
+    return respostaAgent;
 }
 
 module.exports = { routeMessage };

@@ -1,0 +1,10 @@
+[
+  {
+    "role": "user",
+    "content": "quero saber meu saldo"
+  },
+  {
+    "role": "assistant",
+    "content": "Para ajudar melhor, preciso saber a data e o valor que você gostaria de consultar."
+  }
+]

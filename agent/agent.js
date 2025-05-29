@@ -1,6 +1,4 @@
 const { logEvent } = require('./logs');
-const superagent = require('./superagent');
-
 const interpretarMensagemIA = require('../tools/interpretarMensagemIA');
 const registerSale = require('../tools/registerSale');
 const gerarResumoCompleto = require('../tools/gerarResumoCompleto');
@@ -8,7 +6,11 @@ const consultarSaldo = require('../tools/consultarSaldo');
 const consultartopGasto = require('../tools/consultarTopGasto');
 const consultarTopEntradas = require('../tools/consultarTopEntradas');
 const motorConsultivo = require('../tools/motorConsultivo');
+const deleteSale = require('../tools/deleteSale');
+const editSale = require('../tools/editSale');
 const consultarSaldoAcumulado = require('../tools/consultarSaldoAcumulado');
+const getSaleByCode = require('../tools/getSaleByCode');
+const getLastSale = require('../tools/getLastSale');
 const moment = require('moment');
 
 // AGENDAMENTOS
@@ -19,215 +21,335 @@ const removeAgendamento = require('../agendamentos/removeAgendamento');
 const rotinaAgendamento = require('../agendamentos/rotinaAgendamento');
 const lembreteAgendamento = require('../agendamentos/lembreteAgendamento');
 
-/**
- * Função central do AutoWork IA — pronta para qualquer interface!
- * @param {string} user_id - identificador único do usuário (ex: número WhatsApp)
- * @param {string} frase - mensagem do usuário
- * @param {array} debugLog - (opcional) array para log detalhado do fluxo
- * @returns {object} resposta final formatada
- */
-async function agent(user_id, frase, debugLog = []) {
-  logEvent('AGENT_START', { user_id, frase });
+async function agent(user_id, frase, debugLog = [], contextoPendente = null) {
+  logEvent('AGENT_START', { user_id, frase, contextoPendente });
 
-  const resultado = await interpretarMensagemIA(frase, debugLog);
+  let resultado;
 
-  // Período padrão = mês atual, mas se veio um período do interpretador, usa ele!
-  let periodo = {
-    inicio: moment().startOf('month').format('YYYY-MM-DD'),
-    fim: moment().endOf('month').format('YYYY-MM-DD')
-  };
-  if (resultado.periodo && resultado.periodo.inicio && resultado.periodo.fim) {
-    periodo = resultado.periodo;
-    if (debugLog) debugLog.push({ etapa: "periodo_personalizado", periodo });
+  // --- CONTEXTO: Exclusão aguardando código ---
+  if (contextoPendente && contextoPendente.tipo === 'excluir_registro' && contextoPendente.aguardandoCodigo) {
+    const codigoInput = frase.trim().toUpperCase();
+    if (codigoInput === "CANCELAR") {
+      const conteudo = `Exclusão cancelada. O registro não foi excluído.`;
+      return { tipo: 'texto', conteudo, resposta: conteudo, resultado: contextoPendente, debugLog };
+    }
+    const registro = await getSaleByCode(user_id, codigoInput);
+    if (!registro) {
+      const conteudo = `❌ Registro não encontrado para o código: ${codigoInput}\nInforme um código válido ou digite "cancelar".`;
+      return {
+        tipo: 'texto',
+        conteudo,
+        resposta: conteudo,
+        resultado: contextoPendente,
+        debugLog,
+        contextoPendente // Mantém aguardando
+      };
+    }
+    // Achou, pedir confirmação!
+    const conteudo = `Você quer mesmo excluir este registro?\n\n`
+      + `🆔 Código: *${registro.codigo}*\n`
+      + `📝 Descrição: ${registro.descricao}\n`
+      + `🏷️ Categoria: ${registro.categoria}\n`
+      + `💰 Valor: R$ ${parseFloat(registro.valor).toFixed(2)}\n`
+      + `📅 Data: ${registro.data}\n\n`
+      + `Responda *SIM* para confirmar ou *NÃO* para cancelar.`;
+    return {
+      tipo: 'texto',
+      conteudo,
+      resposta: conteudo,
+      resultado: contextoPendente,
+      debugLog,
+      contextoPendente: { tipo: 'excluir_registro', aguardandoConfirmacao: true, codigo: registro.codigo }
+    };
   }
 
-  // FLUXO DE REGISTRO E AGENDAMENTO — COM CHECAGEM DE VALOR E DATA
+  // --- CONTEXTO: Exclusão aguardando confirmação ---
+  if (contextoPendente && contextoPendente.tipo === 'excluir_registro' && contextoPendente.aguardandoConfirmacao && contextoPendente.codigo) {
+    const confirm = frase.trim().toLowerCase();
+    if (["sim", "confirmar", "ok", "excluir", "pode apagar", "yes"].includes(confirm)) {
+      const sucesso = await deleteSale(user_id, contextoPendente.codigo);
+      const conteudo = sucesso
+        ? `✅ Registro ${contextoPendente.codigo} excluído com sucesso!`
+        : `❌ Registro não encontrado ou já foi excluído.`;
+      return { tipo: 'texto', conteudo, resposta: conteudo, resultado: contextoPendente, debugLog };
+    } else if (["não", "nao", "cancelar", "desistir", "parar"].includes(confirm)) {
+      const conteudo = `Exclusão cancelada. O registro não foi excluído.`;
+      return { tipo: 'texto', conteudo, resposta: conteudo, resultado: contextoPendente, debugLog };
+    }
+    const conteudo = `Responda *SIM* para confirmar ou *NÃO* para cancelar.`;
+    return { tipo: 'texto', conteudo, resposta: conteudo, resultado: contextoPendente, debugLog, contextoPendente };
+  }
+
+  // --- CONTEXTO: Exclusão do último registro ---
+  if (contextoPendente && contextoPendente.tipo === 'excluir_ultimo_registro' && contextoPendente.aguardandoConfirmacao && contextoPendente.codigo) {
+    const confirm = frase.trim().toLowerCase();
+    if (["sim", "confirmar", "ok", "excluir", "pode apagar", "yes"].includes(confirm)) {
+      const sucesso = await deleteSale(user_id, contextoPendente.codigo);
+      const conteudo = sucesso
+        ? `✅ Último registro (${contextoPendente.codigo}) excluído com sucesso!`
+        : `❌ Último registro não encontrado ou já foi excluído.`;
+      return { tipo: 'texto', conteudo, resposta: conteudo, resultado: contextoPendente, debugLog };
+    } else if (["não", "nao", "cancelar", "desistir", "parar"].includes(confirm)) {
+      const conteudo = `Exclusão cancelada. O último registro não foi excluído.`;
+      return { tipo: 'texto', conteudo, resposta: conteudo, resultado: contextoPendente, debugLog };
+    }
+    const conteudo = `Responda *SIM* para confirmar ou *NÃO* para cancelar.`;
+    return { tipo: 'texto', conteudo, resposta: conteudo, resultado: contextoPendente, debugLog, contextoPendente };
+  }
+
+  // --- CONTEXTO: Falta campo (valor, data, etc) ---
+  if (contextoPendente && contextoPendente.faltaCampo) {
+    // Padronize as mensagens para cada campo
+    let msg = "";
+    switch (contextoPendente.faltaCampo) {
+      case "valor":
+        msg = "Qual o valor desse lançamento?";
+        break;
+      case "data":
+        msg = "Qual a data para este lançamento?";
+        break;
+      case "categoria":
+        msg = "Qual categoria você deseja informar?";
+        break;
+      default:
+        msg = "Faltou um dado importante, pode informar?";
+    }
+    return {
+      tipo: 'texto',
+      conteudo: msg,
+      resposta: msg,
+      erro: true,
+      faltaCampo: contextoPendente.faltaCampo,
+      contextoPendente
+    };
+  }
+
+  // --- INTERPRETA A INTENÇÃO DA FRASE (fluxo normal) ---
+  if (!contextoPendente) {
+    resultado = await interpretarMensagemIA(frase, debugLog);
+  } else if (!resultado) {
+    resultado = contextoPendente.resultado || {};
+  }
+
+  // --- EXCLUSÃO: Se usuário pedir para apagar, mas não informar o código ---
+  if (resultado.intencao === "deletar_registro" && !resultado.codigo) {
+    const conteudo = `Qual é o código do registro que você deseja apagar?`;
+    return {
+      tipo: 'texto',
+      conteudo,
+      resposta: conteudo,
+      resultado,
+      debugLog,
+      erro: true,
+      faltaCampo: 'codigo',
+      contextoPendente: { tipo: 'excluir_registro', aguardandoCodigo: true }
+    };
+  }
+
+  // --- Exclusão direta por código ---
+  if (resultado.intencao === "deletar_registro" && resultado.codigo) {
+    const registro = await getSaleByCode(user_id, resultado.codigo.toUpperCase());
+    if (!registro) {
+      const conteudo = `❌ Registro não encontrado pelo código informado: ${resultado.codigo.toUpperCase()}`;
+      return { tipo: 'texto', conteudo, resposta: conteudo, resultado, debugLog, erro: true };
+    }
+    const conteudo = `Você quer mesmo excluir este registro?\n\n`
+      + `🆔 Código: *${registro.codigo}*\n`
+      + `📝 Descrição: ${registro.descricao}\n`
+      + `🏷️ Categoria: ${registro.categoria}\n`
+      + `💰 Valor: R$ ${parseFloat(registro.valor).toFixed(2)}\n`
+      + `📅 Data: ${registro.data}\n\n`
+      + `Responda *SIM* para confirmar ou *NÃO* para cancelar.`;
+    return {
+      tipo: 'texto',
+      conteudo,
+      resposta: conteudo,
+      resultado,
+      debugLog,
+      contextoPendente: { tipo: 'excluir_registro', aguardandoConfirmacao: true, codigo: registro.codigo }
+    };
+  }
+
+  // --- Deletar o último registro ---
+  if (resultado.intencao === "deletar_ultimo_registro") {
+    const ultimo = await getLastSale(user_id);
+    if (!ultimo) {
+      const conteudo = "Nenhum registro encontrado para excluir!";
+      return { tipo: 'texto', conteudo, resposta: conteudo, resultado, debugLog, erro: true };
+    }
+    const conteudo = `Você quer mesmo excluir este registro?\n\n`
+      + `🆔 Código: *${ultimo.codigo}*\n`
+      + `📝 Descrição: ${ultimo.descricao}\n`
+      + `🏷️ Categoria: ${ultimo.categoria}\n`
+      + `💰 Valor: R$ ${parseFloat(ultimo.valor).toFixed(2)}\n`
+      + `📅 Data: ${ultimo.data}\n\n`
+      + `Responda *SIM* para confirmar ou *NÃO* para cancelar.`;
+    return {
+      tipo: 'texto',
+      conteudo,
+      resposta: conteudo,
+      resultado,
+      debugLog,
+      contextoPendente: { tipo: 'excluir_ultimo_registro', aguardandoConfirmacao: true, codigo: ultimo.codigo }
+    };
+  }
+
+  // --- EDIÇÃO DE REGISTRO (pode expandir para etapas) ---
+  if (resultado.intencao === "editar_registro" && resultado.codigo) {
+    const updates = {};
+    if (resultado.valor) updates.valor = resultado.valor;
+    if (resultado.categoria) updates.categoria = resultado.categoria;
+    if (resultado.descricao) updates.descricao = resultado.descricao;
+    const sucesso = await editSale(user_id, resultado.codigo.toUpperCase(), updates);
+    const conteudo = sucesso
+      ? `✅ Registro ${resultado.codigo.toUpperCase()} editado com sucesso!`
+      : `❌ Registro não encontrado ou não foi possível editar.`;
+    return { tipo: 'texto', conteudo, resposta: conteudo, resultado, debugLog };
+  }
+
+  // --- REGISTROS FINANCEIROS ---
   if (
-    ["registrar_entrada", "registrar_saida", "registrar_agendamento"].includes(resultado.intencao)
+    ["registrar_entrada", "registrar_saida"].includes(resultado.intencao) &&
+    !resultado.erro
   ) {
-    // 1. Checagem de valor
-    if (!resultado.valor || isNaN(resultado.valor) || resultado.valor <= 0) {
-      // Fallback: Superagent pergunta o valor
-      return {
-        resposta: "Qual o valor para registrar esse lançamento?",
-        resultado,
-        debugLog
-      };
-    }
-
-    // 2. Checagem de data para períodos futuros (“próximo mês” etc.)
-    let dataParaRegistro = resultado.data;
-    if (
-      resultado.periodo &&
-      (resultado.periodo.diaDefault || resultado.periodo.inicio) &&
-      (!resultado.data || resultado.data === "" || resultado.data === undefined)
-    ) {
-      // Se existe sugestão de dia default
-      if (resultado.periodo.diaDefault) {
-        return {
-          resposta: `Quer registrar para o dia ${resultado.periodo.diaDefault.replace(/(\d{4})-(\d{2})-(\d{2})/, "$3/$2/$1")} do próximo mês ou prefere outro dia?`,
-          resultado,
-          debugLog
-        };
-      } else {
-        // Se só tem período, mas não dia, sugere o início do período
-        return {
-          resposta: `Qual dia do ${resultado.periodo.inicio.slice(5,7)}/${resultado.periodo.inicio.slice(0,4)} você quer registrar?`,
-          resultado,
-          debugLog
-        };
-      }
-    }
-
-    // 3. Se valor e data existem, segue registro normal
-    if (resultado.intencao === "registrar_entrada" || resultado.intencao === "registrar_saida") {
-      await registerSale(
-        user_id,
-        resultado.descricao,
-        resultado.valor,
-        resultado.tipo,
-        resultado.categoria,
-        dataParaRegistro,
-        debugLog
-      );
-      return {
-        resposta: `✅ Registro salvo: *${resultado.descricao}* — R$${resultado.valor}`,
-        resultado,
-        debugLog
-      };
-    }
-    if (resultado.intencao === "registrar_agendamento") {
-      const resposta = await registerAgendamento(user_id, resultado, debugLog);
-      return { resposta, resultado, debugLog };
-    }
+    const codigo = await registerSale(
+      user_id,
+      resultado.descricao,
+      resultado.valor,
+      resultado.tipo,
+      resultado.categoria,
+      resultado.data,
+      debugLog
+    );
+    const conteudo = `✅ Registro salvo!
+🆔 Código: *${codigo}*
+📅 ${new Date().toLocaleDateString('pt-BR')}
+💰 Tipo: ${resultado.tipo === 'entrada' ? 'Entrada' : 'Saída'}
+📝 Descrição: ${resultado.descricao}
+🏷️ Categoria: ${resultado.categoria}
+📌 Valor: R$ ${parseFloat(resultado.valor).toFixed(2)}`;
+    return {
+      tipo: 'texto',
+      conteudo,
+      resposta: conteudo,
+      resultado: { ...resultado, codigo },
+      debugLog
+    };
   }
 
-  // CONSULTAS DE EXTRATO, ENTRADAS, SAÍDAS
+  // --- AGENDAMENTOS ---
+  if (resultado.intencao === "registrar_agendamento" && !resultado.erro) {
+    const resposta = await registerAgendamento(user_id, resultado, debugLog);
+    return { tipo: 'texto', conteudo: resposta, resposta, resultado, debugLog };
+  }
+  if (resultado.intencao === "consultar_agendamentos") {
+    const resposta = await getAgendamentos(user_id, resultado, debugLog);
+    return { tipo: 'texto', conteudo: resposta, resposta, resultado, debugLog };
+  }
+  if (resultado.intencao === "editar_agendamento") {
+    const resposta = await updateAgendamento(user_id, resultado, debugLog);
+    return { tipo: 'texto', conteudo: resposta, resposta, resultado, debugLog };
+  }
+  if (resultado.intencao === "remover_agendamento") {
+    const resposta = await removeAgendamento(user_id, resultado, debugLog);
+    return { tipo: 'texto', conteudo: resposta, resposta: resultado, debugLog };
+  }
+  if (resultado.intencao === "lembrete_agendamento") {
+    const resposta = await lembreteAgendamento(user_id, resultado, debugLog);
+    return { tipo: 'texto', conteudo: resposta, resposta: conteudo, resultado, debugLog };
+  }
+  if (resultado.intencao === "rotina_agendamento") {
+    const resposta = await rotinaAgendamento(user_id, resultado, debugLog);
+    return { tipo: 'texto', conteudo: resposta, resposta: conteudo, resultado, debugLog };
+  }
+
+  // --- CONSULTAS ---
   if (
     resultado.intencao === "consultar_extrato" ||
     resultado.intencao === "consultar_extrato_periodo"
   ) {
-    logEvent('CONSULTA_EXTRATO', { user_id, periodo });
-    const texto = await gerarResumoCompleto(user_id, periodo, null);
-    return { resposta: texto, resultado, debugLog };
+    // Se faltar período, envie mensagem clara:
+    if (!resultado.periodo || !resultado.periodo.inicio || !resultado.periodo.fim) {
+      const conteudo = "⚠️ Período inválido ou não informado. Por favor, especifique uma data inicial e final.";
+      return {
+        tipo: 'texto',
+        conteudo,
+        resposta: conteudo,
+        resultado,
+        debugLog,
+        erro: true,
+        faltaCampo: 'periodo'
+      };
+    }
+    const texto = await gerarResumoCompleto(user_id, resultado.periodo, null);
+    return { tipo: 'texto', conteudo: texto, resposta: texto, resultado, debugLog };
   }
   if (resultado.intencao === "consultar_entradas") {
-    logEvent('CONSULTA_ENTRADAS', { user_id, periodo });
-    const texto = await gerarResumoCompleto(user_id, periodo, "entradas");
-    return { resposta: texto, resultado, debugLog };
+    const texto = await gerarResumoCompleto(user_id, resultado.periodo, "entradas");
+    return { tipo: 'texto', conteudo: texto, resposta: texto, resultado, debugLog };
   }
   if (resultado.intencao === "consultar_saidas") {
-    logEvent('CONSULTA_SAIDAS', { user_id, periodo });
-    const texto = await gerarResumoCompleto(user_id, periodo, "saidas");
-    return { resposta: texto, resultado, debugLog };
+    const texto = await gerarResumoCompleto(user_id, resultado.periodo, "saidas");
+    return { tipo: 'texto', conteudo: texto, resposta: texto, resultado, debugLog };
   }
-
-  // CONSULTA DE SALDO (com saldo acumulado do mês anterior)
   if (
     resultado.intencao === "consultar_saldo" ||
     resultado.intencao === "consultar_saldo_periodo"
   ) {
-    logEvent('CONSULTA_SALDO', { user_id, periodo });
-    const inicioMes = moment().startOf('month').format('YYYY-MM-DD');
-    const fimMes = moment().endOf('month').format('YYYY-MM-DD');
-    if (
-      periodo.inicio === inicioMes &&
-      periodo.fim === fimMes
-    ) {
-      const ultimoDiaAnterior = moment(inicioMes).subtract(1, 'day').format('YYYY-MM-DD') + ' 23:59:59';
-      const saldoAcumulado = await consultarSaldoAcumulado(user_id, ultimoDiaAnterior, debugLog);
-      const saldoPeriodo = await consultarSaldo(user_id, periodo, debugLog);
-
-      let resposta = `🔗 *Saldo acumulado até ${moment(inicioMes).subtract(1, 'day').format('DD/MM/YYYY')}:* R$ ${saldoAcumulado.toFixed(2)}\n\n`;
-      resposta += saldoPeriodo;
-
-      return { resposta, resultado, debugLog };
-    } else {
-      const saldo = await consultarSaldo(user_id, periodo, debugLog);
-      return { resposta: saldo, resultado, debugLog };
-    }
+    const saldo = await consultarSaldo(user_id, resultado.periodo, debugLog);
+    return { tipo: 'texto', conteudo: saldo, resposta: saldo, resultado, debugLog };
   }
-
-  // CONSULTA DE MAIOR GASTO
   if (resultado.intencao === "consultar_maior_gasto") {
-    logEvent('CONSULTA_MAIOR_GASTO', { user_id, periodo });
-    const maiorGasto = await consultartopGasto(user_id, periodo, debugLog);
-    return { resposta: maiorGasto, resultado, debugLog };
+    const maiorGasto = await consultartopGasto(user_id, resultado.periodo, debugLog);
+    return { tipo: 'texto', conteudo: maiorGasto, resposta: maiorGasto, resultado, debugLog };
   }
-
-  // CONSULTA DE MAIOR ENTRADA
   if (resultado.intencao === "consultar_maior_entrada") {
-    logEvent('CONSULTA_MAIOR_ENTRADA', { user_id, periodo });
-    const maiorEntrada = await consultarTopEntradas(user_id, periodo, debugLog);
-    return { resposta: maiorEntrada, resultado, debugLog };
+    const maiorEntrada = await consultarTopEntradas(user_id, resultado.periodo, debugLog);
+    return { tipo: 'texto', conteudo: maiorEntrada, resposta: maiorEntrada, resultado, debugLog };
   }
-
-  // SUGESTÕES FINANCEIRAS
   if (resultado.intencao === "dica_financeira") {
-    logEvent('CONSULTA_DICA_FINANCEIRA', { user_id });
     const dica = await motorConsultivo(user_id, debugLog);
-    return { resposta: dica, resultado, debugLog };
+    return { tipo: 'texto', conteudo: dica, resposta: dica, resultado, debugLog };
   }
 
-  // SAUDAÇÕES, ELOGIOS, SOCIAIS
+  // --- SAUDAÇÕES, ELOGIOS, SOCIAIS ---
   if (resultado.intencao === "saudacao") {
-    logEvent('SAUDACAO', { user_id });
-    return { resposta: "Olá! Como posso ajudar você com suas finanças hoje?", resultado, debugLog };
+    const conteudo = "Olá! Como posso ajudar você com suas finanças hoje?";
+    return { tipo: 'texto', conteudo, resposta: conteudo, resultado, debugLog };
   }
   if (resultado.intencao === "agradecimento") {
-    logEvent('AGRADECIMENTO', { user_id });
-    return { resposta: "Disponha! Sempre que precisar, é só chamar.", resultado, debugLog };
+    const conteudo = "Disponha! Sempre que precisar, é só chamar.";
+    return { tipo: 'texto', conteudo, resposta: conteudo, resultado, debugLog };
   }
   if (resultado.intencao === "erro_ou_duvida") {
-    logEvent('SOCIAL_ERRO_DUVIDA', { user_id });
-    return { resposta: "Se precisar de ajuda, pode perguntar qualquer coisa. 😉", resultado, debugLog };
+    const conteudo = "Se precisar de ajuda, pode perguntar qualquer coisa. 😉";
+    return { tipo: 'texto', conteudo, resposta: conteudo, resultado, debugLog };
   }
 
-  // AGENDAMENTOS (NOVOS FLUXOS)
-  if (resultado.intencao === "consultar_agendamentos") {
-    logEvent('AGENDAMENTO_CONSULTA', { user_id, resultado });
-    const resposta = await getAgendamentos(user_id, resultado, debugLog);
-    return { resposta, resultado, debugLog };
-  }
-  if (resultado.intencao === "editar_agendamento") {
-    logEvent('AGENDAMENTO_EDITAR', { user_id, resultado });
-    const resposta = await updateAgendamento(user_id, resultado, debugLog);
-    return { resposta, resultado, debugLog };
-  }
-  if (resultado.intencao === "remover_agendamento") {
-    logEvent('AGENDAMENTO_REMOVER', { user_id, resultado });
-    const resposta = await removeAgendamento(user_id, resultado, debugLog);
-    return { resposta, resultado, debugLog };
-  }
-  if (resultado.intencao === "lembrete_agendamento") {
-    logEvent('AGENDAMENTO_LEMBRETE', { user_id, resultado });
-    const resposta = await lembreteAgendamento(user_id, resultado, debugLog);
-    return { resposta, resultado, debugLog };
-  }
-  if (resultado.intencao === "rotina_agendamento") {
-    logEvent('AGENDAMENTO_ROTINA', { user_id, resultado });
-    const resposta = await rotinaAgendamento(user_id, resultado, debugLog);
-    return { resposta, resultado, debugLog };
-  }
-
-  // INTENÇÃO NÃO RECONHECIDA OU ERRO
+  // --- INTENÇÃO NÃO RECONHECIDA OU ERRO ---
   if (resultado.erro) {
-    logEvent('AGENT_INTENCAO_ERRO', { user_id, resultado });
-    // Fallback real para superagent, se disponível
-    if (superagent && typeof superagent === 'function') {
-      const respostaSuper = await superagent(user_id, frase, resultado);
-      return respostaSuper || { resposta: resultado.mensagem || "Não entendi, tente de outra forma.", resultado, debugLog };
-    }
-    return { resposta: resultado.mensagem || "Não entendi, tente de outra forma.", resultado, debugLog };
+    const conteudo = resultado.mensagem || "Não entendi, tente de outra forma.";
+    return {
+      tipo: 'texto',
+      conteudo,
+      resposta: conteudo,
+      erro: true,
+      faltaCampo: resultado.faltaCampo || null,
+      resultado,
+      debugLog
+    };
   }
 
-  // DEFAULT: Fallback inteligente para superagent
-  logEvent('AGENT_FALLBACK', { user_id, frase, resultado });
-  if (superagent && typeof superagent === 'function') {
-    const respostaSuper = await superagent(user_id, frase, resultado);
-    return respostaSuper || { resposta: "Não entendi, tente reformular a frase.", resultado, debugLog };
-  }
-  return { resposta: "Não entendi, tente reformular a frase.", resultado, debugLog };
+  // --- DEFAULT: Fallback ---
+  const conteudo = "Não entendi, tente reformular a frase.";
+  return {
+    tipo: 'texto',
+    conteudo,
+    resposta: conteudo,
+    erro: true,
+    resultado,
+    debugLog
+  };
 }
 
 module.exports = agent;

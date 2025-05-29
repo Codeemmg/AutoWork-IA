@@ -1,0 +1,171 @@
+[
+  {
+    "dataHora": "2025-05-29T01:40:18.896Z",
+    "frase": "boa noite",
+    "resposta": "Boa noite! Precisa de alguma ajuda?",
+    "intencao": "duvida_uso",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "superagent",
+    "resultado": {},
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "boa noite"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "boa noite"
+      },
+      {
+        "etapa": "intencao_social_detectada",
+        "intencao": "saudacao"
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "superagent",
+        "motivo": "saudacao"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T01:40:40.247Z",
+    "frase": "extrato",
+    "resposta": "Você pode me informar qual data e valor específico você gostaria de consultar no extrato?",
+    "intencao": "duvida_uso",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "superagent",
+    "resultado": {},
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "extrato"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "extrato"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "consultar_extrato",
+        "tipo": null,
+        "valor": null,
+        "descricao": "extrato",
+        "categoria": null,
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 0.9425553140833428
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "consultar_extrato",
+        "tipo": null,
+        "valor": null,
+        "descricao": "extrato",
+        "categoria": null,
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 0.9425553140833428
+      },
+      {
+        "etapa": "fallback_superagent",
+        "motivo": "⚠️ Período inválido ou não informado. Por favor, especifique uma data inicial e final."
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T01:40:58.742Z",
+    "frase": "de hoje",
+    "resposta": "📊 *Resumo Financeiro*\n📅 De 2025-05-28 até 2025-05-28\n\n💰 *Entradas*\n📌 Receita:\n📅 28/05/2025 • recebi 300 hoje  - R$ 300.00\n\n💵 Total: R$ 300.00\n\n",
+    "intencao": "consultar_entradas",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "consultar_entradas",
+      "tipo": null,
+      "valor": null,
+      "descricao": "de hoje",
+      "categoria": null,
+      "data": "2025-05-28",
+      "periodo": {
+        "inicio": "2025-05-28",
+        "fim": "2025-05-28"
+      },
+      "similaridade": 0.8829829338374918
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "de hoje"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "de hoje"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "consultar_entradas",
+        "tipo": null,
+        "valor": null,
+        "descricao": "de hoje",
+        "categoria": null,
+        "data": "2025-05-28",
+        "periodo": {
+          "inicio": "2025-05-28",
+          "fim": "2025-05-28"
+        },
+        "similaridade": 0.8829829338374918
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "consultar_entradas",
+        "tipo": null,
+        "valor": null,
+        "descricao": "de hoje",
+        "categoria": null,
+        "data": "2025-05-28",
+        "periodo": {
+          "inicio": "2025-05-28",
+          "fim": "2025-05-28"
+        },
+        "similaridade": 0.8829829338374918
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "consultar_entradas"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T01:43:41.737Z",
+    "frase": "ok",
+    "resposta": "Fico à disposição se precisar de mais alguma coisa.",
+    "intencao": "duvida_uso",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "superagent",
+    "resultado": {},
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "ok"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "ok"
+      },
+      {
+        "etapa": "intencao_social_detectada",
+        "intencao": "saudacao"
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "superagent",
+        "motivo": "saudacao"
+      }
+    ]
+  }
+]

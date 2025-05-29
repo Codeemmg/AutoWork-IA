@@ -11,12 +11,15 @@ const express = require('express');
 const { default: makeWASocket, useMultiFileAuthState, DisconnectReason } = require('@whiskeysockets/baileys');
 const { Boom } = require('@hapi/boom');
 
-// AGORA O AGENTE INTELIGENTE!
-const agent = require('../agent/roteador'); // ou agent.js/superagent.js conforme seu fluxo
+// AGENTE CENTRAL (roteador.js)
+const agent = require('../agent/roteador');
 
 // ✅ Set para rastrear mensagens já processadas
 const mensagensProcessadas = new Set();
 setInterval(() => mensagensProcessadas.clear(), 10 * 60 * 1000);
+
+// 🔥 NOVO: Memória de contexto por usuário
+const sessions = {}; // <= SESSIONS AQUI!
 
 // 🌐 Servidor para expor QR Code
 const app = express();
@@ -100,9 +103,20 @@ async function startSock() {
     await sock.sendPresenceUpdate('composing', sender);
 
     try {
-      // Chama o AGENTE CENTRAL do AUTOWORK IA!
-      const resultado = await agent(numero, texto, []);
-      let respostaFinal = resultado.resposta || resultado;
+      // NOVO: recupera o contexto pendente desse usuário
+      let contextoPendente = sessions[numero]?.contextoPendente || null;
+
+      // Chama o AGENTE CENTRAL do AUTOWORK IA, passando o contexto!
+      const resultado = await agent.routeMessage(numero, texto, [], contextoPendente);
+
+      // Atualiza ou limpa o contexto da sessão
+      if (resultado && resultado.contextoPendente) {
+        sessions[numero] = { contextoPendente: resultado.contextoPendente };
+      } else {
+        delete sessions[numero];
+      }
+
+      let respostaFinal = resultado.resposta || resultado.conteudo || resultado;
 
       if (respostaFinal) {
         await sock.sendMessage(sender, { text: respostaFinal });

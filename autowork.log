@@ -1219,3 +1219,23 @@
 [2025-05-27T00:05:17.354Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
 [2025-05-27T00:05:17.355Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
 [2025-05-27T00:05:17.355Z] [AGENT_START] {"user_id":"553299642181","frase":"anotar aluguel de 1200 reais para o próximo mês"}
+[2025-05-27T02:58:13.532Z] [AGENT_START] {"user_id":"usuario_teste","frase":"minha frase de teste"}
+[2025-05-27T02:58:15.252Z] [CONSULTA_ENTRADAS] {"user_id":"usuario_teste","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-27T03:00:21.346Z] [ROUTER_START] {"user_id":"usuario_teste","frase":"quero saber meu saldo"}
+[2025-05-27T03:00:21.348Z] [INTENTION_DETECTED] {"intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-27T03:00:21.348Z] [ROUTE_DECISION] {"rota":"agent","intencao":"consultar_saldo","similaridade":0.92}
+[2025-05-27T03:00:21.349Z] [AGENT_START] {"user_id":"usuario_teste","frase":"quero saber meu saldo"}
+[2025-05-27T03:00:22.882Z] [CONSULTA_SALDO] {"user_id":"usuario_teste","periodo":{"inicio":"2025-05-01","fim":"2025-05-31"}}
+[2025-05-27T03:00:22.915Z] [FALLBACK_TO_SUPERAGENT] {"motivo":"Agent sem dado crítico","intencao":"consultar_saldo","frase":"quero saber meu saldo"}
+[2025-05-27T03:00:22.915Z] [SUPERAGENT_START] {"user_id":"usuario_teste","frase":"quero saber meu saldo"}
+[2025-05-27T03:00:22.916Z] [SUPERAGENT_AGENT_ERROR] {"user_id":"usuario_teste","frase":"quero saber meu saldo","error":"agent is not a function"}
+[2025-05-27T03:00:22.916Z] [SUPERAGENT_AGENT_RESPONSE] {"user_id":"usuario_teste","frase":"quero saber meu saldo","respostaAgent":null}
+[2025-05-27T03:00:24.394Z] [SUPERAGENT_GPT_OK] {"user_id":"usuario_teste","pergunta":"quero saber meu saldo","respostaGPT":"Para ajudar melhor, preciso saber a data e o valor que você gostaria de consultar."}
+[2025-05-28T12:42:47.061Z] [ROUTER_START] {"user_id":553299642181,"frase":"bom dia","contextoPendente":[{"etapa":"mensagem_recebida","frase":"bom dia"}]}
+[2025-05-28T12:42:47.066Z] [AGENT_START] {"user_id":553299642181,"frase":"bom dia","contextoPendente":[{"etapa":"mensagem_recebida","frase":"bom dia"}]}
+[2025-05-28T12:43:05.844Z] [ROUTER_START] {"user_id":553299642181,"frase":"comprei 3 camisas por 120 reais hoje","contextoPendente":[{"etapa":"mensagem_recebida","frase":"comprei 3 camisas por 120 reais hoje"}]}
+[2025-05-28T12:43:05.845Z] [AGENT_START] {"user_id":553299642181,"frase":"comprei 3 camisas por 120 reais hoje","contextoPendente":[{"etapa":"mensagem_recebida","frase":"comprei 3 camisas por 120 reais hoje"}]}
+[2025-05-28T13:06:05.276Z] [ROUTER_START] {"user_id":553299642181,"frase":"gostaria de olhar meu extrato da semana","contextoPendente":[{"etapa":"mensagem_recebida","frase":"gostaria de olhar meu extrato da semana"}]}
+[2025-05-28T13:06:05.278Z] [AGENT_START] {"user_id":553299642181,"frase":"gostaria de olhar meu extrato da semana","contextoPendente":[{"etapa":"mensagem_recebida","frase":"gostaria de olhar meu extrato da semana"}]}
+[2025-05-28T13:14:17.553Z] [ROUTER_START] {"user_id":553299642181,"frase":"bom dia","contextoPendente":[{"etapa":"mensagem_recebida","frase":"bom dia"}]}
+[2025-05-28T13:14:17.556Z] [AGENT_START] {"user_id":553299642181,"frase":"bom dia","contextoPendente":[{"etapa":"mensagem_recebida","frase":"bom dia"}]}
