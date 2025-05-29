@@ -13,7 +13,6 @@ const { Boom } = require('@hapi/boom');
 
 // AGENTE CENTRAL (roteador.js)
 const agent = require('../agent/roteador');
-const { logDebug } = require('../tools/logger');
 
 // ✅ Set para rastrear mensagens já processadas
 const mensagensProcessadas = new Set();
