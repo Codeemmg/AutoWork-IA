@@ -1,42 +1,42 @@
 [
   {
     "role": "user",
-    "content": "boa noite"
+    "content": "quero editar o registro NQTW72"
   },
   {
     "role": "assistant",
-    "content": "Boa noite! Precisa de alguma ajuda?"
+    "content": "Você pode me informar qual campo do registro NQTW72 deseja editar?"
   },
   {
     "role": "user",
-    "content": "extrato"
+    "content": "quero editar o meu ultimo registro"
   },
   {
     "role": "assistant",
-    "content": "Você pode me informar qual data e valor específico você gostaria de consultar no extrato?"
+    "content": "Você pode me informar qual campo do último registro deseja editar?"
   },
   {
     "role": "user",
-    "content": "ok"
+    "content": "quero exluir mue ultimo registro"
   },
   {
     "role": "assistant",
-    "content": "Fico à disposição se precisar de mais alguma coisa."
+    "content": "Você pode confirmar se deseja realmente excluir o último registro?"
   },
   {
     "role": "user",
-    "content": "boa noite"
+    "content": "quero exluir o ultimo registro"
   },
   {
     "role": "assistant",
-    "content": "Boa noite! Como posso ajudar você hoje?"
+    "content": "Você pode confirmar se deseja realmente excluir o último registro?"
   },
   {
     "role": "user",
-    "content": "boa noite"
+    "content": "quero editar meu ultimo registro"
   },
   {
     "role": "assistant",
-    "content": "Boa noite! Há algo que você gostaria de saber ou fazer?"
+    "content": "Você pode me informar qual campo do último registro deseja editar?"
   }
 ]

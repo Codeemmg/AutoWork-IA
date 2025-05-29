@@ -16,21 +16,34 @@ const INTENCOES_SOCIAIS = [
   'frase_vaga'
 ];
 
-// Função para extrair valor numérico da frase em PT-BR
 function extrairValor(frase) {
   if (!frase) return null;
   let fraseSemDatas = frase.replace(/\b\d{1,2}\/\d{1,2}(\/\d{2,4})?\b/g, '');
   fraseSemDatas = fraseSemDatas.replace(/\b\d{1,2} de \w+\b/gi, '');
-  const regexValor = /(?:r\$|reais|valor(?: de)?|por|no valor de)?\s*(\d{1,3}(?:\.\d{3})*(?:,\d{2})?|\d+)/gi;
+
+  // Ajuste: pega número inteiro ou decimal após palavras-chave
+  const regexChave = /(por|no valor de|valor|r\$|reais)[^\d]*(\d+(?:[.,]\d{2})?)/gi;
+  let matchChave = regexChave.exec(fraseSemDatas);
+  if (matchChave && matchChave[2]) {
+    let valorBruto = matchChave[2].replace(/\./g, '').replace(',', '.').replace(/\s/g, '');
+    let valorNum = parseFloat(valorBruto);
+    if (!isNaN(valorNum) && valorNum > 0) return valorNum;
+  }
+
+  // Fallback: pega o maior número inteiro ou decimal da frase
+  const regexValor = /(\d+(?:[.,]\d{2})?)/g;
   let matches = [];
   let match;
   while ((match = regexValor.exec(fraseSemDatas)) !== null) {
-    let valorBruto = match[1].replace(/\./g, '').replace(',', '.');
+    let valorBruto = match[1].replace(/\./g, '').replace(',', '.').replace(/\s/g, '');
     let valorNum = parseFloat(valorBruto);
     if (!isNaN(valorNum) && valorNum > 0) matches.push(valorNum);
   }
+
   return matches.length ? Math.max(...matches) : null;
 }
+
+
 
 // Função para extrair o código de um registro da frase
 function extrairCodigo(frase) {
@@ -47,15 +60,45 @@ function extrairCodigo(frase) {
   // Busca por "código xyz123" sem acento
   let matchCodigo4 = texto.match(/codigo\s*([a-z0-9]{4,10})/i);
   if (matchCodigo4) return matchCodigo4[1].toUpperCase();
+  // Alternativa: "registro X123"
+  let matchRegistro = texto.match(/registro\s*([a-z0-9]{4,10})/i);
+  if (matchRegistro) return matchRegistro[1].toUpperCase();
+  return null;
+}
+
+// Função auxiliar para identificar campos editáveis
+function extrairCampoEdicao(frase) {
+  frase = frase.toLowerCase();
+  if (/valor|pre[çc]o|preco|quantia|preço/.test(frase)) return 'valor';
+  if (/categoria|tipo de gasto|classifica[çc][aã]o/.test(frase)) return 'categoria';
+  if (/descri[çc][aã]o|motivo|referente|observa[çc][aã]o/.test(frase)) return 'descricao';
+  return null;
+}
+
+// Função para extrair novo valor da edição
+function extrairNovoValor(frase, campo) {
+  // Para valor, tenta pegar o número normalmente
+  if (campo === 'valor') return extrairValor(frase);
+
+  // Para categoria ou descrição, pega o texto após "para" ou "novo"
+  let match = frase.match(/para ['"]?([^'"]{2,30})['"]?/i);
+  if (match && campo !== 'valor') {
+    return match[1].trim();
+  }
+  // Alternativa: "corrigir descrição do código X para Pão"
+  match = frase.match(/(?:categoria|descri[çc][aã]o)[^\w]{1,10}([^\d]+)$/i);
+  if (match && campo !== 'valor') {
+    return match[1].trim();
+  }
   return null;
 }
 
 // --- Padrão enterprise: Interpretação sempre modular e protegida ---
 async function interpretarMensagemIA(frase, debugLog = []) {
   const fraseNorm = frase.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-  const texto = frase.toLowerCase(); // <-- Definido!
+  const texto = frase.toLowerCase();
 
-  // 1️⃣ Detectar exclusão do último registro logo no início!
+  // 1️⃣ Detectar exclusão do último registro
   if (
     /(apagar|deletar|excluir)/i.test(fraseNorm) &&
     /(meu|o)?\s*ultim[oa]? (registro|lancamento|saida|entrada)/i.test(fraseNorm)
@@ -68,7 +111,58 @@ async function interpretarMensagemIA(frase, debugLog = []) {
     };
   }
 
-  // 2️⃣ Extrai código se houver
+  // 2️⃣ Detectar exclusão de registro específico (por código)
+  if (
+    /(apagar|deletar|excluir)/i.test(fraseNorm) &&
+    /(registro|codigo|c[oó]digo)/i.test(fraseNorm)
+  ) {
+    const codigo = extrairCodigo(frase);
+    if (debugLog) debugLog.push({ etapa: "intencao_especial_detectada", intencao: 'deletar_registro', codigo });
+    return {
+      intencao: 'deletar_registro',
+      codigo,
+      descricao: frase,
+      similaridade: 1,
+      erro: !codigo,
+      faltaCampo: !codigo ? 'codigo' : null,
+    };
+  }
+
+  // 3️⃣ Detectar edição do último registro
+  if (
+    /(editar|corrigir|trocar|alterar|atualizar)/i.test(fraseNorm) &&
+    /(meu|o)?\s*ultim[oa]? (registro|lancamento|saida|entrada)/i.test(fraseNorm)
+  ) {
+    if (debugLog) debugLog.push({ etapa: "intencao_especial_detectada", intencao: 'editar_ultimo_registro' });
+    return {
+      intencao: 'editar_ultimo_registro',
+      descricao: frase,
+      similaridade: 1
+    };
+  }
+
+  // 4️⃣ Detectar edição de registro específico (por código)
+  if (
+    /(editar|corrigir|trocar|alterar|atualizar)/i.test(fraseNorm) &&
+    /(registro|codigo|c[oó]digo)/i.test(fraseNorm)
+  ) {
+    const codigo = extrairCodigo(frase);
+    const campo = extrairCampoEdicao(frase);
+    const novo_valor = campo ? extrairNovoValor(frase, campo) : null;
+    if (debugLog) debugLog.push({ etapa: "intencao_especial_detectada", intencao: 'editar_registro', codigo, campo, novo_valor });
+    return {
+      intencao: 'editar_registro',
+      codigo,
+      campo,
+      novo_valor,
+      descricao: frase,
+      similaridade: 1,
+      erro: !codigo || !campo || novo_valor === null,
+      faltaCampo: !codigo ? 'codigo' : !campo ? 'campo' : novo_valor === null ? 'novo_valor' : null,
+    };
+  }
+
+  // 3️⃣ Extrai código se houver
   const codigo = extrairCodigo(frase);
 
   // Heurísticas rápidas

@@ -422,5 +422,2179 @@
         "intencao": "registrar_saida"
       }
     ]
+  },
+  {
+    "dataHora": "2025-05-29T15:27:50.321Z",
+    "frase": "por favor, me envie o meu extrato desse mes",
+    "resposta": "Para enviar o extrato deste mês, confirme se todas estas informações estão corretas:\n\n1. O período é de 1º de outubro até hoje.\n2. O tipo de extrato, se é detalhado ou resumido.\n3. O formato desejado para o envio.\n\nApós confirmar, posso prosseguir com o envio.",
+    "intencao": "duvida_uso",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "superagent",
+    "resultado": {},
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "por favor, me envie o meu extrato desse mes"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "por favor, me envie o meu extrato desse mes"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "consultar_extrato",
+        "tipo": null,
+        "valor": null,
+        "descricao": "por favor, me envie o meu extrato desse mes",
+        "categoria": null,
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 0.9330677183191214
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "consultar_extrato",
+        "tipo": null,
+        "valor": null,
+        "descricao": "por favor, me envie o meu extrato desse mes",
+        "categoria": null,
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 0.9330677183191214
+      },
+      {
+        "etapa": "fallback_superagent",
+        "motivo": "⚠️ Período inválido ou não informado. Por favor, especifique uma data inicial e final."
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T15:28:26.451Z",
+    "frase": "comprei 4 camisas por 300",
+    "resposta": "✅ Registro salvo!\n🆔 Código: *JDQ0JP*\n📅 29/05/2025\n💰 Tipo: Saída\n📝 Descrição: comprei 4 camisas por 300\n🏷️ Categoria: Compras\n📌 Valor: R$ 300.00",
+    "intencao": "registrar_saida",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "registrar_saida",
+      "tipo": "saida",
+      "valor": 300,
+      "descricao": "comprei 4 camisas por 300",
+      "categoria": "Compras",
+      "data": "2025-05-29",
+      "periodo": null,
+      "similaridade": 1,
+      "codigo": "JDQ0JP"
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "comprei 4 camisas por 300"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "comprei 4 camisas por 300"
+      },
+      {
+        "etapa": "categoria_classificada",
+        "categoria": "Compras"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 300,
+        "descricao": "comprei 4 camisas por 300",
+        "categoria": "Compras",
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 1
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 300,
+        "descricao": "comprei 4 camisas por 300",
+        "categoria": "Compras",
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 1
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "registrar_saida"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T15:28:33.692Z",
+    "frase": "extrato",
+    "resposta": "Você pode me informar qual mês e tipo de extrato precisa?",
+    "intencao": "duvida_uso",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "superagent",
+    "resultado": {},
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "extrato"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "extrato"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "consultar_extrato",
+        "tipo": null,
+        "valor": null,
+        "descricao": "extrato",
+        "categoria": null,
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 0.9425553140833428
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "consultar_extrato",
+        "tipo": null,
+        "valor": null,
+        "descricao": "extrato",
+        "categoria": null,
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 0.9425553140833428
+      },
+      {
+        "etapa": "fallback_superagent",
+        "motivo": "⚠️ Período inválido ou não informado. Por favor, especifique uma data inicial e final."
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T15:29:08.335Z",
+    "frase": "saldo do mes",
+    "resposta": "📊 *Resumo:*\n➕ Entradas: R$ 232412.25\n➖ Saídas: R$ 183224.70\n🟢 Saldo: R$ 49187.55",
+    "intencao": "consultar_saldo",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "consultar_saldo",
+      "tipo": null,
+      "valor": null,
+      "descricao": "saldo do mes",
+      "categoria": null,
+      "data": "2025-05-29",
+      "periodo": null,
+      "similaridade": 0.8763835187286
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "saldo do mes"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "saldo do mes"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "consultar_saldo",
+        "tipo": null,
+        "valor": null,
+        "descricao": "saldo do mes",
+        "categoria": null,
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 0.8763835187286
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "consultar_saldo",
+        "tipo": null,
+        "valor": null,
+        "descricao": "saldo do mes",
+        "categoria": null,
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 0.8763835187286
+      },
+      {
+        "etapa": "consultar_saldo",
+        "entradas": 232412.25,
+        "saidas": 183224.7,
+        "saldo": 49187.54999999999,
+        "periodo": "total"
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "consultar_saldo"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T15:29:17.453Z",
+    "frase": "saldo de ontem",
+    "resposta": "📊 *Resumo Financeiro*\n📅 De 2025-05-28 até 2025-05-28\n\n💸 *Saídas*\n📌 Alimentação:\n📅 28/05/2025 • comprei 4 reais de pão - R$ 4.00\n📅 28/05/2025 • comprei 3 reais de pão - R$ 3.00\n📅 28/05/2025 • hoje gastei 500 no mercado - R$ 500.00\n\n📌 Despesa:\n📅 28/05/2025 • paguei 200 de imposto hoje - R$ 200.00\n\n📌 Outro:\n📅 28/05/2025 • comprei 3 camisas por 120 reais hoje - R$ 120.00\n\n💵 Total: R$ 827.00\n\n",
+    "intencao": "consultar_saidas",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "consultar_saidas",
+      "tipo": null,
+      "valor": null,
+      "descricao": "saldo de ontem",
+      "categoria": null,
+      "data": "2025-05-28",
+      "periodo": {
+        "inicio": "2025-05-28",
+        "fim": "2025-05-28"
+      },
+      "similaridade": 0.9274818658608236
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "saldo de ontem"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "saldo de ontem"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "consultar_saidas",
+        "tipo": null,
+        "valor": null,
+        "descricao": "saldo de ontem",
+        "categoria": null,
+        "data": "2025-05-28",
+        "periodo": {
+          "inicio": "2025-05-28",
+          "fim": "2025-05-28"
+        },
+        "similaridade": 0.9274818658608236
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "consultar_saidas",
+        "tipo": null,
+        "valor": null,
+        "descricao": "saldo de ontem",
+        "categoria": null,
+        "data": "2025-05-28",
+        "periodo": {
+          "inicio": "2025-05-28",
+          "fim": "2025-05-28"
+        },
+        "similaridade": 0.9274818658608236
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "consultar_saidas"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T15:40:33.989Z",
+    "frase": "por favor, me envie o meu extrato desse mes",
+    "resposta": "📊 *Resumo Financeiro*\n📅 De 2025-05-01 até 2025-05-31\n\n💰 *Entradas*\n📌 Despesa:\n📅 21/05/2025 • comissão 298,75 - R$ 298.75\n📅 25/05/2025 • fiz um depósito de 400 - R$ 400.00\n📅 26/05/2025 • fiz um depósito de 400 - R$ 400.00\n\n📌 Outro:\n📅 10/05/2025 • recebi 500 de cliente dia 10/05/2025 - R$ 500.00\n📅 11/05/2025 • recebi 500 de cliente dia 11/05/2025 - R$ 500.00\n📅 11/05/2025 • recebi 500 de cliente dia 11/05/2025 - R$ 500.00\n📅 20/05/2025 • recebi 290 ontem - R$ 290.00\n📅 21/05/2025 • ganhei 100 - R$ 100.00\n📅 21/05/2025 • recebi 300 hoje - R$ 300.00\n📅 23/05/2025 • recebi 2500 do cliente hoje - R$ 2500.00\n📅 25/05/2025 • recebi 2500 do cliente hoje - R$ 2500.00\n📅 25/05/2025 • entrou 2000 na empresa - R$ 2000.00\n📅 25/05/2025 • depositaram 700 na minha conta - R$ 700.00\n📅 25/05/2025 • recebi 100 reais do João - R$ 100.00\n📅 25/05/2025 • entrou um pix de 120 - R$ 120.00\n📅 25/05/2025 • entrou crédito de 90 - R$ 90.00\n📅 25/05/2025 • recebi 30 reais em espécie - R$ 30.00\n📅 26/05/2025 • entrou um pix de 120 - R$ 120.00\n📅 26/05/2025 • entrou 2000 na empresa - R$ 2000.00\n📅 26/05/2025 • recebi 100 reais do João - R$ 100.00\n📅 26/05/2025 • entrou crédito de 90 - R$ 90.00\n📅 26/05/2025 • recebi 30 reais em espécie - R$ 30.00\n📅 26/05/2025 • recebi 3.500 do cliente Carlos mês passado - R$ 3.50\n\n📌 Receita:\n📅 25/05/2025 • acabei de receber 50 reais - R$ 50.00\n📅 26/05/2025 • foi creditado 1000 de salário agora - R$ 1000.00\n📅 28/05/2025 • recebi 300 hoje  - R$ 300.00\n📅 30/05/2025 • vou receber 700 de comissão dia 30/05/2025 - R$ 700.00\n📅 31/05/2025 • vou receber 700 de comissão dia 31/05/2025 - R$ 700.00\n\n📌 Renda:\n📅 21/05/2025 • recebi 200000 de comissão - R$ 200000.00\n📅 21/05/2025 • recebi 4000 de comissão mes passado - R$ 4000.00\n📅 21/05/2025 • recebi 200 de comissão 05 de abril - R$ 200.00\n📅 21/05/2025 • recebi 4000 de comissão mes passado - R$ 4000.00\n📅 21/05/2025 • recebi 290 de comissão 05 de abril - R$ 290.00\n📅 22/05/2025 • recebi 1200 de salário hoje - R$ 1200.00\n📅 23/05/2025 • recebi 1200 de salário hoje - R$ 1200.00\n📅 23/05/2025 • recebi 1200 de salário hoje - R$ 1200.00\n📅 25/05/2025 • ganhei 250 de comissão - R$ 250.00\n📅 26/05/2025 • ganhei 250 de comissão - R$ 250.00\n📅 26/05/2025 • ganhei 800 reais de comissão em março - R$ 800.00\n\n💵 Total: R$ 229812.25\n\n💸 *Saídas*\n📌 Alimentação:\n📅 08/05/2025 • gastei 200 no mercado dia 08/05/2025 - R$ 200.00\n📅 09/05/2025 • gastei 200 no mercado dia 09/05/2025 - R$ 200.00\n📅 09/05/2025 • gastei 200 no mercado dia 09/05/2025 - R$ 200.00\n📅 21/05/2025 • paguei 25,90 no mercado - R$ 25.90\n📅 22/05/2025 • gastei 120 no mercado ontem - R$ 120.00\n📅 24/05/2025 • gastei 120 no mercado ontem - R$ 120.00\n📅 26/05/2025 • gastei 120 no mercado hoje - R$ 120.00\n📅 28/05/2025 • comprei 4 reais de pão - R$ 4.00\n📅 28/05/2025 • comprei 3 reais de pão - R$ 3.00\n📅 28/05/2025 • hoje gastei 500 no mercado - R$ 500.00\n📅 29/05/2025 • comprei 400 reais de carne para um churrasco - R$ 400.00\n\n📌 Compras:\n📅 29/05/2025 • comprei 4 camisas por 300 - R$ 300.00\n\n📌 Despesa:\n📅 21/05/2025 • registra compra no mercado no valor de 140 - R$ 140.00\n📅 28/05/2025 • paguei 200 de imposto hoje - R$ 200.00\n\n📌 Despesas Fixas:\n📅 10/05/2025 • paguei 1500 de  aluguel dia 10 de maio  - R$ 1500.00\n📅 21/05/2025 • paguei 1220 de aluguel 05 de abril - R$ 1220.00\n📅 21/05/2025 • tenho que pagar um boleto de 2000 daqui a 5 dias - R$ 2000.00\n📅 21/05/2025 • me lembre de pagar o boleto do santander de 1500 reais daq a 8 dias - R$ 1500.00\n📅 22/05/2025 • paguei 350 de aluguel hoje - R$ 350.00\n📅 23/05/2025 • paguei 350 de aluguel hoje - R$ 350.00\n📅 23/05/2025 • paguei 350 de aluguel hoje - R$ 350.00\n📅 26/05/2025 • anotar aluguel de 1200 reais para o próximo mês - R$ 1200.00\n📅 26/05/2025 • anotar aluguel de 1200 reais para o próximo mês - R$ 120.00\n📅 27/05/2025 • anotar aluguel de 1200 reais para o próximo mês - R$ 120.00\n📅 27/05/2025 • anotar aluguel de 1200 reais para o próximo mês - R$ 120.00\n📅 27/05/2025 • anotar aluguel de 1200 reais para o próximo mês - R$ 120.00\n\n📌 Impostos:\n📅 21/05/2025 • paguei 45000 de imposto - R$ 45000.00\n📅 21/05/2025 • paguei 450 de imposto 07 de abril - R$ 450.00\n📅 21/05/2025 • paguei 590 de imposto 5 de março - R$ 590.00\n\n📌 Outro:\n📅 17/05/2025 • paguei 290 de internet no dia 17 - R$ 290.00\n📅 20/05/2025 • paguei 95 ontem - R$ 95.00\n📅 20/05/2025 • paguei ontem o servente 125 - R$ 125.00\n📅 21/05/2025 • paguei 19 no pix - R$ 19.00\n📅 21/05/2025 • paguei 200 no posto - R$ 200.00\n📅 21/05/2025 • comprei um carro de 120000 - R$ 120000.00\n📅 25/05/2025 • paguei 99,90 de internet ontem - R$ 99.90\n📅 25/05/2025 • me lembre de pagar a luz dia 8 - R$ 8.00\n📅 25/05/2025 • quero lançar uma saida, paguei 29,90 na lanchonete - R$ 29.90\n📅 28/05/2025 • comprei 3 camisas por 120 reais hoje - R$ 120.00\n\n📌 Saúde e Bem-estar:\n📅 24/05/2025 • paguei academia 90 reais - R$ 90.00\n📅 25/05/2025 • paguei academia 90 reais - R$ 90.00\n\n💵 Total: R$ 178689.70\n\n📌 *Saldo Final:* R$ 51122.55\n",
+    "intencao": "consultar_extrato",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "consultar_extrato",
+      "tipo": null,
+      "valor": null,
+      "descricao": "por favor, me envie o meu extrato desse mes",
+      "categoria": null,
+      "data": "2025-05-29",
+      "periodo": {
+        "inicio": "2025-05-01",
+        "fim": "2025-05-31"
+      },
+      "similaridade": 0.9330677183191214
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "por favor, me envie o meu extrato desse mes"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "por favor, me envie o meu extrato desse mes"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "consultar_extrato",
+        "tipo": null,
+        "valor": null,
+        "descricao": "por favor, me envie o meu extrato desse mes",
+        "categoria": null,
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 0.9330677183191214
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "consultar_extrato",
+        "tipo": null,
+        "valor": null,
+        "descricao": "por favor, me envie o meu extrato desse mes",
+        "categoria": null,
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 0.9330677183191214
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "consultar_extrato"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T15:41:21.318Z",
+    "frase": "extrato",
+    "resposta": "Você pode me informar qual data e valor?",
+    "intencao": "duvida_uso",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "superagent",
+    "resultado": {},
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "extrato"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "extrato"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "consultar_extrato",
+        "tipo": null,
+        "valor": null,
+        "descricao": "extrato",
+        "categoria": null,
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 0.9425553140833428
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "consultar_extrato",
+        "tipo": null,
+        "valor": null,
+        "descricao": "extrato",
+        "categoria": null,
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 0.9425553140833428
+      },
+      {
+        "etapa": "fallback_superagent",
+        "motivo": "⚠️ Período inválido ou não informado. Por favor, especifique uma data inicial e final."
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T15:41:29.706Z",
+    "frase": "de ontem ",
+    "resposta": "📊 *Resumo Financeiro*\n📅 De 2025-05-28 até 2025-05-28\n\n💸 *Saídas*\n📌 Alimentação:\n📅 28/05/2025 • comprei 4 reais de pão - R$ 4.00\n📅 28/05/2025 • comprei 3 reais de pão - R$ 3.00\n📅 28/05/2025 • hoje gastei 500 no mercado - R$ 500.00\n\n📌 Despesa:\n📅 28/05/2025 • paguei 200 de imposto hoje - R$ 200.00\n\n📌 Outro:\n📅 28/05/2025 • comprei 3 camisas por 120 reais hoje - R$ 120.00\n\n💵 Total: R$ 827.00\n\n",
+    "intencao": "consultar_saidas",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "consultar_saidas",
+      "tipo": null,
+      "valor": null,
+      "descricao": "de ontem ",
+      "categoria": null,
+      "data": "2025-05-28",
+      "periodo": {
+        "inicio": "2025-05-28",
+        "fim": "2025-05-28"
+      },
+      "similaridade": 0.9103986146801727
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "de ontem "
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "de ontem "
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "consultar_saidas",
+        "tipo": null,
+        "valor": null,
+        "descricao": "de ontem ",
+        "categoria": null,
+        "data": "2025-05-28",
+        "periodo": {
+          "inicio": "2025-05-28",
+          "fim": "2025-05-28"
+        },
+        "similaridade": 0.9103986146801727
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "consultar_saidas",
+        "tipo": null,
+        "valor": null,
+        "descricao": "de ontem ",
+        "categoria": null,
+        "data": "2025-05-28",
+        "periodo": {
+          "inicio": "2025-05-28",
+          "fim": "2025-05-28"
+        },
+        "similaridade": 0.9103986146801727
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "consultar_saidas"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T15:41:45.936Z",
+    "frase": "saldo de ontem ",
+    "resposta": "📊 *Resumo do período:*\n➕ Entradas: R$ 300.00\n➖ Saídas: R$ 827.00\n🔴 Saldo: R$ -527.00",
+    "intencao": "consultar_saldo",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "consultar_saldo",
+      "tipo": null,
+      "valor": null,
+      "descricao": "saldo de ontem ",
+      "categoria": null,
+      "data": "2025-05-28",
+      "periodo": {
+        "inicio": "2025-05-28",
+        "fim": "2025-05-28"
+      },
+      "similaridade": 0.9300536486468113
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "saldo de ontem "
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "saldo de ontem "
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "consultar_saidas",
+        "tipo": null,
+        "valor": null,
+        "descricao": "saldo de ontem ",
+        "categoria": null,
+        "data": "2025-05-28",
+        "periodo": {
+          "inicio": "2025-05-28",
+          "fim": "2025-05-28"
+        },
+        "similaridade": 0.9300536486468113
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "consultar_saidas",
+        "tipo": null,
+        "valor": null,
+        "descricao": "saldo de ontem ",
+        "categoria": null,
+        "data": "2025-05-28",
+        "periodo": {
+          "inicio": "2025-05-28",
+          "fim": "2025-05-28"
+        },
+        "similaridade": 0.9300536486468113
+      },
+      {
+        "etapa": "consultar_saldo",
+        "entradas": 300,
+        "saidas": 827,
+        "saldo": -527,
+        "periodo": {
+          "inicio": "2025-05-28",
+          "fim": "2025-05-28"
+        }
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "consultar_saldo"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T15:44:03.991Z",
+    "frase": "quero editar meu ultimo registro",
+    "resposta": "Você pode me informar qual campo do registro deseja editar?",
+    "intencao": "duvida_uso",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "superagent",
+    "resultado": {},
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "quero editar meu ultimo registro"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "quero editar meu ultimo registro"
+      },
+      {
+        "etapa": "categoria_classificada",
+        "categoria": "Receita"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "deletar_registro",
+        "tipo": null,
+        "valor": null,
+        "descricao": "quero editar meu ultimo registro",
+        "categoria": "Receita",
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 0.8740564875108144
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "deletar_registro",
+        "tipo": null,
+        "valor": null,
+        "descricao": "quero editar meu ultimo registro",
+        "categoria": "Receita",
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 0.8740564875108144
+      },
+      {
+        "etapa": "fallback_superagent",
+        "motivo": "Qual é o código do registro que você deseja apagar?"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T16:24:18.087Z",
+    "frase": "consigo exluir todos os registros?",
+    "resposta": "Sim. Você quer excluir todos os registros agora? Confirme antes de prosseguir.",
+    "intencao": "duvida_uso",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "superagent",
+    "resultado": {},
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "consigo exluir todos os registros?"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "consigo exluir todos os registros?"
+      },
+      {
+        "etapa": "categoria_classificada",
+        "categoria": "Alimentação"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "deletar_registro",
+        "tipo": null,
+        "valor": null,
+        "descricao": "consigo exluir todos os registros?",
+        "categoria": "Alimentação",
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 0.874117966269653
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "deletar_registro",
+        "tipo": null,
+        "valor": null,
+        "descricao": "consigo exluir todos os registros?",
+        "categoria": "Alimentação",
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 0.874117966269653
+      },
+      {
+        "etapa": "fallback_superagent",
+        "motivo": "Qual é o código do registro que você deseja apagar?"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T17:03:53.934Z",
+    "frase": "quero editar o ultimo registro",
+    "resposta": "Você pode me informar qual campo do último registro deseja editar?",
+    "intencao": "duvida_uso",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "superagent",
+    "resultado": {},
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "quero editar o ultimo registro"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "quero editar o ultimo registro"
+      },
+      {
+        "etapa": "intencao_especial_detectada",
+        "intencao": "editar_registro"
+      },
+      {
+        "etapa": "fallback_superagent",
+        "motivo": "Qual o código do registro que deseja editar?"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T17:04:06.418Z",
+    "frase": "o valor",
+    "resposta": "📈 *Top 5 maiores entradas do mês:*\n\n1. *recebi 200000 de comissão* — R$ 200000.00 em 1 lançamento(s)\n2. *recebi 4000 de comissão mes passado* — R$ 8000.00 em 2 lançamento(s)\n3. *recebi 2500 do cliente hoje* — R$ 5000.00 em 2 lançamento(s)\n4. *entrou 2000 na empresa* — R$ 4000.00 em 2 lançamento(s)\n5. *recebi 1200 de salário hoje* — R$ 3600.00 em 3 lançamento(s)",
+    "intencao": "consultar_maior_entrada",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "consultar_maior_entrada",
+      "tipo": null,
+      "valor": null,
+      "descricao": "o valor",
+      "categoria": null,
+      "data": "2025-05-29",
+      "periodo": null,
+      "similaridade": 0.8740355539422576
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "o valor"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "o valor"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "consultar_maior_entrada",
+        "tipo": null,
+        "valor": null,
+        "descricao": "o valor",
+        "categoria": null,
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 0.8740355539422576
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "consultar_maior_entrada",
+        "tipo": null,
+        "valor": null,
+        "descricao": "o valor",
+        "categoria": null,
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 0.8740355539422576
+      },
+      {
+        "etapa": "periodo_top_entradas",
+        "inicio": "2025-05-01 00:00:00",
+        "fim": "2025-05-31 23:59:59",
+        "periodoLabel": "do mês"
+      },
+      {
+        "etapa": "top_entradas_encontradas",
+        "dados": [
+          {
+            "descricao": "recebi 200000 de comissão",
+            "total": 200000,
+            "quantidade": 1
+          },
+          {
+            "descricao": "recebi 4000 de comissão mes passado",
+            "total": 8000,
+            "quantidade": 2
+          },
+          {
+            "descricao": "recebi 2500 do cliente hoje",
+            "total": 5000,
+            "quantidade": 2
+          },
+          {
+            "descricao": "entrou 2000 na empresa",
+            "total": 4000,
+            "quantidade": 2
+          },
+          {
+            "descricao": "recebi 1200 de salário hoje",
+            "total": 3600,
+            "quantidade": 3
+          }
+        ]
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "consultar_maior_entrada"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T17:05:42.161Z",
+    "frase": "quero editar o registro NQTW72",
+    "resposta": "Você pode me informar qual campo do registro NQTW72 deseja editar?",
+    "intencao": "duvida_uso",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "superagent",
+    "resultado": {},
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "quero editar o registro NQTW72"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "quero editar o registro NQTW72"
+      },
+      {
+        "etapa": "intencao_especial_detectada",
+        "intencao": "editar_registro"
+      },
+      {
+        "etapa": "fallback_superagent",
+        "motivo": "Qual campo você deseja editar? (valor, categoria ou descrição)"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T17:05:49.566Z",
+    "frase": "o valor",
+    "resposta": "📈 *Top 5 maiores entradas do mês:*\n\n1. *recebi 200000 de comissão* — R$ 200000.00 em 1 lançamento(s)\n2. *recebi 4000 de comissão mes passado* — R$ 8000.00 em 2 lançamento(s)\n3. *recebi 2500 do cliente hoje* — R$ 5000.00 em 2 lançamento(s)\n4. *entrou 2000 na empresa* — R$ 4000.00 em 2 lançamento(s)\n5. *recebi 1200 de salário hoje* — R$ 3600.00 em 3 lançamento(s)",
+    "intencao": "consultar_maior_entrada",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "consultar_maior_entrada",
+      "tipo": null,
+      "valor": null,
+      "descricao": "o valor",
+      "categoria": null,
+      "data": "2025-05-29",
+      "periodo": null,
+      "similaridade": 0.8740355539422576
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "o valor"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "o valor"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "consultar_maior_entrada",
+        "tipo": null,
+        "valor": null,
+        "descricao": "o valor",
+        "categoria": null,
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 0.8740355539422576
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "consultar_maior_entrada",
+        "tipo": null,
+        "valor": null,
+        "descricao": "o valor",
+        "categoria": null,
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 0.8740355539422576
+      },
+      {
+        "etapa": "periodo_top_entradas",
+        "inicio": "2025-05-01 00:00:00",
+        "fim": "2025-05-31 23:59:59",
+        "periodoLabel": "do mês"
+      },
+      {
+        "etapa": "top_entradas_encontradas",
+        "dados": [
+          {
+            "descricao": "recebi 200000 de comissão",
+            "total": 200000,
+            "quantidade": 1
+          },
+          {
+            "descricao": "recebi 4000 de comissão mes passado",
+            "total": 8000,
+            "quantidade": 2
+          },
+          {
+            "descricao": "recebi 2500 do cliente hoje",
+            "total": 5000,
+            "quantidade": 2
+          },
+          {
+            "descricao": "entrou 2000 na empresa",
+            "total": 4000,
+            "quantidade": 2
+          },
+          {
+            "descricao": "recebi 1200 de salário hoje",
+            "total": 3600,
+            "quantidade": 3
+          }
+        ]
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "consultar_maior_entrada"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T17:16:56.529Z",
+    "frase": "quero editar o meu ultimo registro",
+    "resposta": "Você pode me informar qual campo do último registro deseja editar?",
+    "intencao": "duvida_uso",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "superagent",
+    "resultado": {},
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "quero editar o meu ultimo registro"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "quero editar o meu ultimo registro"
+      },
+      {
+        "etapa": "intencao_especial_detectada",
+        "intencao": "editar_registro"
+      },
+      {
+        "etapa": "fallback_superagent",
+        "motivo": "📝 *Edição do registro*\n\n🆔 Código: *JDQ0JP*\n📝 Descrição: comprei 4 camisas por 300\n🏷️ Categoria: Compras\n💰 Valor: R$ 300.00\n📅 Data: Thu May 29 2025 12:28:26 GMT-0300 (Horário Padrão de Brasília)\n\nQual campo você deseja editar? (valor, categoria ou descrição)"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T17:21:04.367Z",
+    "frase": "quero exluir mue ultimo registro",
+    "resposta": "Você pode confirmar se deseja realmente excluir o último registro?",
+    "intencao": "duvida_uso",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "superagent",
+    "resultado": {},
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "quero exluir mue ultimo registro"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "quero exluir mue ultimo registro"
+      },
+      {
+        "etapa": "categoria_classificada",
+        "categoria": "Alimentação"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "deletar_registro",
+        "tipo": null,
+        "valor": null,
+        "descricao": "quero exluir mue ultimo registro",
+        "categoria": "Alimentação",
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 0.811705704777049
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "deletar_registro",
+        "tipo": null,
+        "valor": null,
+        "descricao": "quero exluir mue ultimo registro",
+        "categoria": "Alimentação",
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 0.811705704777049
+      },
+      {
+        "etapa": "fallback_superagent",
+        "motivo": "Qual é o código do registro que você deseja apagar?"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T17:32:44.167Z",
+    "frase": "quero exluir o ultimo registro",
+    "resposta": "Você pode confirmar se deseja realmente excluir o último registro?",
+    "intencao": "duvida_uso",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "superagent",
+    "resultado": {},
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "quero exluir o ultimo registro"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "quero exluir o ultimo registro"
+      },
+      {
+        "etapa": "categoria_classificada",
+        "categoria": "Receita"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "deletar_registro",
+        "tipo": null,
+        "valor": null,
+        "descricao": "quero exluir o ultimo registro",
+        "categoria": "Receita",
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 0.8543167472826124
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "deletar_registro",
+        "tipo": null,
+        "valor": null,
+        "descricao": "quero exluir o ultimo registro",
+        "categoria": "Receita",
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 0.8543167472826124
+      },
+      {
+        "etapa": "fallback_superagent",
+        "motivo": "Qual é o código do registro que você deseja apagar?"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T17:33:15.241Z",
+    "frase": "quero excluir o ultimo registro",
+    "resposta": "Você quer mesmo excluir este registro?\n\n🆔 Código: *JDQ0JP*\n📝 Descrição: comprei 4 camisas por 300\n🏷️ Categoria: Compras\n💰 Valor: R$ 300.00\n📅 Data: Thu May 29 2025 12:28:26 GMT-0300 (Horário Padrão de Brasília)\n\nResponda *SIM* para confirmar ou *NÃO* para cancelar.",
+    "intencao": "deletar_ultimo_registro",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "deletar_ultimo_registro",
+      "descricao": "quero excluir o ultimo registro",
+      "similaridade": 1
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "quero excluir o ultimo registro"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "quero excluir o ultimo registro"
+      },
+      {
+        "etapa": "intencao_especial_detectada",
+        "intencao": "deletar_ultimo_registro"
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "deletar_ultimo_registro"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T17:59:57.468Z",
+    "frase": "quero apagar meu ultimo registro",
+    "resposta": "Você quer mesmo excluir este registro?\n\n🆔 Código: *JDQ0JP*\n📝 Descrição: comprei 4 camisas por 300\n🏷️ Categoria: Compras\n💰 Valor: R$ 300.00\n📅 Data: Thu May 29 2025 12:28:26 GMT-0300 (Horário Padrão de Brasília)\n\nResponda *SIM* para confirmar ou *NÃO* para cancelar.",
+    "intencao": "deletar_ultimo_registro",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "deletar_ultimo_registro",
+      "descricao": "quero apagar meu ultimo registro",
+      "similaridade": 1
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "quero apagar meu ultimo registro"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "quero apagar meu ultimo registro"
+      },
+      {
+        "etapa": "intencao_especial_detectada",
+        "intencao": "deletar_ultimo_registro"
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "deletar_ultimo_registro"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T18:01:21.906Z",
+    "frase": "quero apagar meu ultimo registro",
+    "resposta": "Você quer mesmo excluir este registro?\n\n🆔 Código: *JDQ0JP*\n📝 Descrição: comprei 4 camisas por 300\n🏷️ Categoria: Compras\n💰 Valor: R$ 300.00\n📅 Data: Thu May 29 2025 12:28:26 GMT-0300 (Horário Padrão de Brasília)\n\nResponda *SIM* para confirmar ou *NÃO* para cancelar.",
+    "intencao": "deletar_ultimo_registro",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "deletar_ultimo_registro",
+      "descricao": "quero apagar meu ultimo registro",
+      "similaridade": 1
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "quero apagar meu ultimo registro"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "quero apagar meu ultimo registro"
+      },
+      {
+        "etapa": "intencao_especial_detectada",
+        "intencao": "deletar_ultimo_registro"
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "deletar_ultimo_registro"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T18:01:24.952Z",
+    "frase": "sim",
+    "resposta": "✅ Último registro (JDQ0JP) excluído com sucesso!",
+    "intencao": "-",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "superagent",
+    "resultado": {
+      "tipo": "excluir_ultimo_registro",
+      "aguardandoConfirmacao": true,
+      "codigo": "JDQ0JP"
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "sim"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "sim"
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "desconhecida"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T18:02:02.759Z",
+    "frase": "quero apagar meu ultimo registro",
+    "resposta": "Você quer mesmo excluir este registro?\n\n🆔 Código: *NQTW72*\n📝 Descrição: comprei 400 reais de carne para um churrasco\n🏷️ Categoria: Alimentação\n💰 Valor: R$ 400.00\n📅 Data: Thu May 29 2025 10:12:11 GMT-0300 (Horário Padrão de Brasília)\n\nResponda *SIM* para confirmar ou *NÃO* para cancelar.",
+    "intencao": "deletar_ultimo_registro",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "deletar_ultimo_registro",
+      "descricao": "quero apagar meu ultimo registro",
+      "similaridade": 1
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "quero apagar meu ultimo registro"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "quero apagar meu ultimo registro"
+      },
+      {
+        "etapa": "intencao_especial_detectada",
+        "intencao": "deletar_ultimo_registro"
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "deletar_ultimo_registro"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T18:02:08.518Z",
+    "frase": "sim",
+    "resposta": "✅ Último registro (NQTW72) excluído com sucesso!",
+    "intencao": "-",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "superagent",
+    "resultado": {
+      "tipo": "excluir_ultimo_registro",
+      "aguardandoConfirmacao": true,
+      "codigo": "NQTW72"
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "sim"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "sim"
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "desconhecida"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T18:02:17.932Z",
+    "frase": "quero editar meu ultimo registro",
+    "resposta": "Não entendi, tente reformular a frase.",
+    "intencao": "editar_ultimo_registro",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "editar_ultimo_registro",
+      "descricao": "quero editar meu ultimo registro",
+      "similaridade": 1
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "quero editar meu ultimo registro"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "quero editar meu ultimo registro"
+      },
+      {
+        "etapa": "intencao_especial_detectada",
+        "intencao": "editar_ultimo_registro"
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "editar_ultimo_registro"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T18:12:10.053Z",
+    "frase": "quero editar meu ultimo registro",
+    "resposta": "Você pode me informar qual campo do último registro deseja editar?",
+    "intencao": "duvida_uso",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "superagent",
+    "resultado": {},
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "quero editar meu ultimo registro"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "quero editar meu ultimo registro"
+      },
+      {
+        "etapa": "intencao_especial_detectada",
+        "intencao": "editar_ultimo_registro"
+      },
+      {
+        "etapa": "fallback_superagent",
+        "motivo": "📝 *Edição do último registro*\n\n🆔 Código: *RR6N2K*\n📝 Descrição: hoje gastei 500 no mercado\n🏷️ Categoria: Alimentação\n💰 Valor: R$ 500.00\n📅 Data: Wed May 28 2025 23:01:55 GMT-0300 (Horário Padrão de Brasília)\n\nQual campo você deseja editar? (valor, categoria ou descrição)"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T18:21:18.756Z",
+    "frase": "quero editar o ultimo registro",
+    "resposta": "📝 *Edição do último registro*\n\n🆔 Código: *RR6N2K*\n📝 Descrição: hoje gastei 500 no mercado\n🏷️ Categoria: Alimentação\n💰 Valor: R$ 500.00\n📅 Data: Wed May 28 2025 23:01:55 GMT-0300 (Horário Padrão de Brasília)\n\nQual campo você deseja editar? (valor, categoria ou descrição)",
+    "intencao": "-",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "superagent",
+    "resultado": {},
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "quero editar o ultimo registro"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "quero editar o ultimo registro"
+      },
+      {
+        "etapa": "intencao_especial_detectada",
+        "intencao": "editar_ultimo_registro"
+      },
+      {
+        "etapa": "multi_etapa_agent",
+        "motivo": "📝 *Edição do último registro*\n\n🆔 Código: *RR6N2K*\n📝 Descrição: hoje gastei 500 no mercado\n🏷️ Categoria: Alimentação\n💰 Valor: R$ 500.00\n📅 Data: Wed May 28 2025 23:01:55 GMT-0300 (Horário Padrão de Brasília)\n\nQual campo você deseja editar? (valor, categoria ou descrição)"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T18:21:25.720Z",
+    "frase": "o valor",
+    "resposta": "Campo não reconhecido. Responda apenas *valor*, *categoria* ou *descrição*.",
+    "intencao": "-",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "superagent",
+    "resultado": {},
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "o valor"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "o valor"
+      },
+      {
+        "etapa": "multi_etapa_agent",
+        "motivo": "Campo não reconhecido. Responda apenas *valor*, *categoria* ou *descrição*."
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T18:21:29.688Z",
+    "frase": "valor",
+    "resposta": "Qual o novo valor para o campo *valor*?",
+    "intencao": "-",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "superagent",
+    "resultado": {},
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "valor"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "valor"
+      },
+      {
+        "etapa": "multi_etapa_agent",
+        "motivo": "Qual o novo valor para o campo *valor*?"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T18:21:33.813Z",
+    "frase": "390",
+    "resposta": "✅ Registro RR6N2K atualizado!\nValor alterado para: *390*",
+    "intencao": "-",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "superagent",
+    "resultado": {
+      "codigo": "RR6N2K",
+      "campo": "valor",
+      "novo_valor": "390"
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "390"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "390"
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "desconhecida"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T18:22:57.124Z",
+    "frase": "comprei 50 camisas por 2990",
+    "resposta": "✅ Registro salvo!\n🆔 Código: *F3PV2B*\n📅 29/05/2025\n💰 Tipo: Saída\n📝 Descrição: comprei 50 camisas por 2990\n🏷️ Categoria: Compras\n📌 Valor: R$ 299.00",
+    "intencao": "registrar_saida",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "registrar_saida",
+      "tipo": "saida",
+      "valor": 299,
+      "descricao": "comprei 50 camisas por 2990",
+      "categoria": "Compras",
+      "data": "2025-05-29",
+      "periodo": null,
+      "similaridade": 1,
+      "codigo": "F3PV2B"
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "comprei 50 camisas por 2990"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "comprei 50 camisas por 2990"
+      },
+      {
+        "etapa": "categoria_classificada",
+        "categoria": "Compras"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 299,
+        "descricao": "comprei 50 camisas por 2990",
+        "categoria": "Compras",
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 1
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 299,
+        "descricao": "comprei 50 camisas por 2990",
+        "categoria": "Compras",
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 1
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "registrar_saida"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T18:27:16.922Z",
+    "frase": "comprei 34 camisas por 2990",
+    "resposta": "✅ Registro salvo!\n🆔 Código: *CSX8TY*\n📅 29/05/2025\n💰 Tipo: Saída\n📝 Descrição: comprei 34 camisas por 2990\n🏷️ Categoria: Compras\n📌 Valor: R$ 299.00",
+    "intencao": "registrar_saida",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "registrar_saida",
+      "tipo": "saida",
+      "valor": 299,
+      "descricao": "comprei 34 camisas por 2990",
+      "categoria": "Compras",
+      "data": "2025-05-29",
+      "periodo": null,
+      "similaridade": 1,
+      "codigo": "CSX8TY"
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "comprei 34 camisas por 2990"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "comprei 34 camisas por 2990"
+      },
+      {
+        "etapa": "categoria_classificada",
+        "categoria": "Compras"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 299,
+        "descricao": "comprei 34 camisas por 2990",
+        "categoria": "Compras",
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 1
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 299,
+        "descricao": "comprei 34 camisas por 2990",
+        "categoria": "Compras",
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 1
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "registrar_saida"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T18:30:44.532Z",
+    "frase": "comprei 34 camisas por 2990",
+    "resposta": "✅ Registro salvo!\n🆔 Código: *W88W4U*\n📅 29/05/2025\n💰 Tipo: Saída\n📝 Descrição: comprei 34 camisas por 2990\n🏷️ Categoria: Compras\n📌 Valor: R$ 299.00",
+    "intencao": "registrar_saida",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "registrar_saida",
+      "tipo": "saida",
+      "valor": 299,
+      "descricao": "comprei 34 camisas por 2990",
+      "categoria": "Compras",
+      "data": "2025-05-29",
+      "periodo": null,
+      "similaridade": 1,
+      "codigo": "W88W4U"
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "comprei 34 camisas por 2990"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "comprei 34 camisas por 2990"
+      },
+      {
+        "etapa": "categoria_classificada",
+        "categoria": "Compras"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 299,
+        "descricao": "comprei 34 camisas por 2990",
+        "categoria": "Compras",
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 1
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 299,
+        "descricao": "comprei 34 camisas por 2990",
+        "categoria": "Compras",
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 1
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "registrar_saida"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T18:31:55.901Z",
+    "frase": "comprei 34 camisas por 2990",
+    "resposta": "✅ Registro salvo!\n🆔 Código: *O5WH4H*\n📅 29/05/2025\n💰 Tipo: Saída\n📝 Descrição: comprei 34 camisas por 2990\n🏷️ Categoria: Compras\n📌 Valor: R$ 2990.00",
+    "intencao": "registrar_saida",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "registrar_saida",
+      "tipo": "saida",
+      "valor": 2990,
+      "descricao": "comprei 34 camisas por 2990",
+      "categoria": "Compras",
+      "data": "2025-05-29",
+      "periodo": null,
+      "similaridade": 1,
+      "codigo": "O5WH4H"
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "comprei 34 camisas por 2990"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "comprei 34 camisas por 2990"
+      },
+      {
+        "etapa": "categoria_classificada",
+        "categoria": "Compras"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 2990,
+        "descricao": "comprei 34 camisas por 2990",
+        "categoria": "Compras",
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 1
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 2990,
+        "descricao": "comprei 34 camisas por 2990",
+        "categoria": "Compras",
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 1
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "registrar_saida"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T18:32:22.160Z",
+    "frase": "comprei um m3 hoje por 685000",
+    "resposta": "✅ Registro salvo!\n🆔 Código: *RUHG45*\n📅 29/05/2025\n💰 Tipo: Saída\n📝 Descrição: comprei um m3 hoje por 685000\n🏷️ Categoria: Despesa\n📌 Valor: R$ 685000.00",
+    "intencao": "registrar_saida",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "registrar_saida",
+      "tipo": "saida",
+      "valor": 685000,
+      "descricao": "comprei um m3 hoje por 685000",
+      "categoria": "Despesa",
+      "data": "2025-05-29",
+      "periodo": {
+        "inicio": "2025-05-29",
+        "fim": "2025-05-29"
+      },
+      "similaridade": 1,
+      "codigo": "RUHG45"
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "comprei um m3 hoje por 685000"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "comprei um m3 hoje por 685000"
+      },
+      {
+        "etapa": "categoria_classificada",
+        "categoria": "Despesa"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 685000,
+        "descricao": "comprei um m3 hoje por 685000",
+        "categoria": "Despesa",
+        "data": "2025-05-29",
+        "periodo": {
+          "inicio": "2025-05-29",
+          "fim": "2025-05-29"
+        },
+        "similaridade": 1
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 685000,
+        "descricao": "comprei um m3 hoje por 685000",
+        "categoria": "Despesa",
+        "data": "2025-05-29",
+        "periodo": {
+          "inicio": "2025-05-29",
+          "fim": "2025-05-29"
+        },
+        "similaridade": 1
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "registrar_saida"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T18:32:50.730Z",
+    "frase": "paguei 90000 de imposto ontem",
+    "resposta": "✅ Registro salvo!\n🆔 Código: *HYJNAE*\n📅 29/05/2025\n💰 Tipo: Saída\n📝 Descrição: paguei 90000 de imposto ontem\n🏷️ Categoria: Despesa\n📌 Valor: R$ 90000.00",
+    "intencao": "registrar_saida",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "registrar_saida",
+      "tipo": "saida",
+      "valor": 90000,
+      "descricao": "paguei 90000 de imposto ontem",
+      "categoria": "Despesa",
+      "data": "2025-05-28",
+      "periodo": {
+        "inicio": "2025-05-28",
+        "fim": "2025-05-28"
+      },
+      "similaridade": 1,
+      "codigo": "HYJNAE"
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "paguei 90000 de imposto ontem"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "paguei 90000 de imposto ontem"
+      },
+      {
+        "etapa": "categoria_classificada",
+        "categoria": "Despesa"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 90000,
+        "descricao": "paguei 90000 de imposto ontem",
+        "categoria": "Despesa",
+        "data": "2025-05-28",
+        "periodo": {
+          "inicio": "2025-05-28",
+          "fim": "2025-05-28"
+        },
+        "similaridade": 1
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 90000,
+        "descricao": "paguei 90000 de imposto ontem",
+        "categoria": "Despesa",
+        "data": "2025-05-28",
+        "periodo": {
+          "inicio": "2025-05-28",
+          "fim": "2025-05-28"
+        },
+        "similaridade": 1
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "registrar_saida"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T18:36:39.458Z",
+    "frase": "dia 07 de junho tenho que pagar 30000 de parcela do novo carro",
+    "resposta": "✅ Registro salvo!\n🆔 Código: *VO0IGK*\n📅 29/05/2025\n💰 Tipo: Saída\n📝 Descrição: dia 07 de junho tenho que pagar 30000 de parcela do novo carro\n🏷️ Categoria: Despesas Fixas\n📌 Valor: R$ 30000.00",
+    "intencao": "registrar_saida",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "registrar_saida",
+      "tipo": "saida",
+      "valor": 30000,
+      "descricao": "dia 07 de junho tenho que pagar 30000 de parcela do novo carro",
+      "categoria": "Despesas Fixas",
+      "data": "2025-06-07",
+      "periodo": {
+        "inicio": "2025-06-07",
+        "fim": "2025-06-07"
+      },
+      "similaridade": 1,
+      "codigo": "VO0IGK"
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "dia 07 de junho tenho que pagar 30000 de parcela do novo carro"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "dia 07 de junho tenho que pagar 30000 de parcela do novo carro"
+      },
+      {
+        "etapa": "categoria_classificada",
+        "categoria": "Despesas Fixas"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 30000,
+        "descricao": "dia 07 de junho tenho que pagar 30000 de parcela do novo carro",
+        "categoria": "Despesas Fixas",
+        "data": "2025-06-07",
+        "periodo": {
+          "inicio": "2025-06-07",
+          "fim": "2025-06-07"
+        },
+        "similaridade": 1
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 30000,
+        "descricao": "dia 07 de junho tenho que pagar 30000 de parcela do novo carro",
+        "categoria": "Despesas Fixas",
+        "data": "2025-06-07",
+        "periodo": {
+          "inicio": "2025-06-07",
+          "fim": "2025-06-07"
+        },
+        "similaridade": 1
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "registrar_saida"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T18:39:17.337Z",
+    "frase": "comprei 3 sabonetes ontem 19,90",
+    "resposta": "✅ Registro salvo!\n🆔 Código: *0OOWWI*\n📅 27/05/2025\n💰 Tipo: Saída\n📝 Descrição: comprei 3 sabonetes ontem 19,90\n🏷️ Categoria: Despesa\n📌 Valor: R$ 19.90",
+    "intencao": "registrar_saida",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "registrar_saida",
+      "tipo": "saida",
+      "valor": 19.9,
+      "descricao": "comprei 3 sabonetes ontem 19,90",
+      "categoria": "Despesa",
+      "data": "2025-05-28",
+      "periodo": {
+        "inicio": "2025-05-28",
+        "fim": "2025-05-28"
+      },
+      "similaridade": 1,
+      "codigo": "0OOWWI"
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "comprei 3 sabonetes ontem 19,90"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "comprei 3 sabonetes ontem 19,90"
+      },
+      {
+        "etapa": "categoria_classificada",
+        "categoria": "Despesa"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 19.9,
+        "descricao": "comprei 3 sabonetes ontem 19,90",
+        "categoria": "Despesa",
+        "data": "2025-05-28",
+        "periodo": {
+          "inicio": "2025-05-28",
+          "fim": "2025-05-28"
+        },
+        "similaridade": 1
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 19.9,
+        "descricao": "comprei 3 sabonetes ontem 19,90",
+        "categoria": "Despesa",
+        "data": "2025-05-28",
+        "periodo": {
+          "inicio": "2025-05-28",
+          "fim": "2025-05-28"
+        },
+        "similaridade": 1
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "registrar_saida"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T18:42:48.464Z",
+    "frase": "comprei 1 shampoo ontem 13,90",
+    "resposta": "✅ Registro salvo!\n  🆔 Código: *50NI47*\n  📅 27/05/2025\n  💰 Tipo: Saída\n  📝 Descrição: comprei 1 shampoo ontem 13,90\n  🏷️ Categoria: Despesa\n  📌 Valor: R$ 13.90",
+    "intencao": "registrar_saida",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "registrar_saida",
+      "tipo": "saida",
+      "valor": 13.9,
+      "descricao": "comprei 1 shampoo ontem 13,90",
+      "categoria": "Despesa",
+      "data": "2025-05-28",
+      "periodo": {
+        "inicio": "2025-05-28",
+        "fim": "2025-05-28"
+      },
+      "similaridade": 1,
+      "codigo": "50NI47"
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "comprei 1 shampoo ontem 13,90"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "comprei 1 shampoo ontem 13,90"
+      },
+      {
+        "etapa": "categoria_classificada",
+        "categoria": "Despesa"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 13.9,
+        "descricao": "comprei 1 shampoo ontem 13,90",
+        "categoria": "Despesa",
+        "data": "2025-05-28",
+        "periodo": {
+          "inicio": "2025-05-28",
+          "fim": "2025-05-28"
+        },
+        "similaridade": 1
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 13.9,
+        "descricao": "comprei 1 shampoo ontem 13,90",
+        "categoria": "Despesa",
+        "data": "2025-05-28",
+        "periodo": {
+          "inicio": "2025-05-28",
+          "fim": "2025-05-28"
+        },
+        "similaridade": 1
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "registrar_saida"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T18:43:19.620Z",
+    "frase": "dia 07 de junho tenho que pagar 30000 de parcela do novo carro",
+    "resposta": "🔔 Agendamento salvo para *06/06/2025*:\n  📝 dia 07 de junho tenho que pagar 30000 de parcela do novo carro\n  💰 Valor: R$ 30000.00\n  🏷️ Categoria: Despesas Fixas\n  ",
+    "intencao": "registrar_saida",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "registrar_saida",
+      "tipo": "saida",
+      "valor": 30000,
+      "descricao": "dia 07 de junho tenho que pagar 30000 de parcela do novo carro",
+      "categoria": "Despesas Fixas",
+      "data": "2025-06-07",
+      "periodo": {
+        "inicio": "2025-06-07",
+        "fim": "2025-06-07"
+      },
+      "similaridade": 1,
+      "data_vencimento": "2025-06-07"
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "dia 07 de junho tenho que pagar 30000 de parcela do novo carro"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "dia 07 de junho tenho que pagar 30000 de parcela do novo carro"
+      },
+      {
+        "etapa": "categoria_classificada",
+        "categoria": "Despesas Fixas"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 30000,
+        "descricao": "dia 07 de junho tenho que pagar 30000 de parcela do novo carro",
+        "categoria": "Despesas Fixas",
+        "data": "2025-06-07",
+        "periodo": {
+          "inicio": "2025-06-07",
+          "fim": "2025-06-07"
+        },
+        "similaridade": 1
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 30000,
+        "descricao": "dia 07 de junho tenho que pagar 30000 de parcela do novo carro",
+        "categoria": "Despesas Fixas",
+        "data": "2025-06-07",
+        "periodo": {
+          "inicio": "2025-06-07",
+          "fim": "2025-06-07"
+        },
+        "similaridade": 1
+      },
+      {
+        "etapa": "registro_agendamento",
+        "insertId": 13
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "registrar_saida"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T18:48:48.284Z",
+    "frase": "dia 10 de julho tenho que pagar a terceira parcela do carro 30000",
+    "resposta": "🔔 Agendamento salvo para *10/07/2025*:\n  📝 dia 10 de julho tenho que pagar a terceira parcela do carro 30000\n  💰 Valor: R$ 30000.00\n  🏷️ Categoria: Despesas Fixas\n  ",
+    "intencao": "registrar_saida",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "registrar_saida",
+      "tipo": "saida",
+      "valor": 30000,
+      "descricao": "dia 10 de julho tenho que pagar a terceira parcela do carro 30000",
+      "categoria": "Despesas Fixas",
+      "data": "2025-07-10",
+      "periodo": {
+        "inicio": "2025-07-10",
+        "fim": "2025-07-10"
+      },
+      "similaridade": 1,
+      "data_vencimento": "2025-07-10"
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "dia 10 de julho tenho que pagar a terceira parcela do carro 30000"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "dia 10 de julho tenho que pagar a terceira parcela do carro 30000"
+      },
+      {
+        "etapa": "categoria_classificada",
+        "categoria": "Despesas Fixas"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 30000,
+        "descricao": "dia 10 de julho tenho que pagar a terceira parcela do carro 30000",
+        "categoria": "Despesas Fixas",
+        "data": "2025-07-10",
+        "periodo": {
+          "inicio": "2025-07-10",
+          "fim": "2025-07-10"
+        },
+        "similaridade": 1
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 30000,
+        "descricao": "dia 10 de julho tenho que pagar a terceira parcela do carro 30000",
+        "categoria": "Despesas Fixas",
+        "data": "2025-07-10",
+        "periodo": {
+          "inicio": "2025-07-10",
+          "fim": "2025-07-10"
+        },
+        "similaridade": 1
+      },
+      {
+        "etapa": "registro_agendamento",
+        "insertId": 14
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "registrar_saida"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T18:49:26.398Z",
+    "frase": "paguei 490 para o pintor ontem",
+    "resposta": "✅ Registro salvo!\n  🆔 Código: *E20H5W*\n  📅 28/05/2025\n  💰 Tipo: Saída\n  📝 Descrição: paguei 490 para o pintor ontem\n  🏷️ Categoria: Contas\n  📌 Valor: R$ 490.00",
+    "intencao": "registrar_saida",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "registrar_saida",
+      "tipo": "saida",
+      "valor": 490,
+      "descricao": "paguei 490 para o pintor ontem",
+      "categoria": "Contas",
+      "data": "2025-05-28",
+      "periodo": {
+        "inicio": "2025-05-28",
+        "fim": "2025-05-28"
+      },
+      "similaridade": 1,
+      "codigo": "E20H5W"
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "paguei 490 para o pintor ontem"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "paguei 490 para o pintor ontem"
+      },
+      {
+        "etapa": "categoria_classificada",
+        "categoria": "Contas"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 490,
+        "descricao": "paguei 490 para o pintor ontem",
+        "categoria": "Contas",
+        "data": "2025-05-28",
+        "periodo": {
+          "inicio": "2025-05-28",
+          "fim": "2025-05-28"
+        },
+        "similaridade": 1
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 490,
+        "descricao": "paguei 490 para o pintor ontem",
+        "categoria": "Contas",
+        "data": "2025-05-28",
+        "periodo": {
+          "inicio": "2025-05-28",
+          "fim": "2025-05-28"
+        },
+        "similaridade": 1
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "registrar_saida"
+      }
+    ]
   }
 ]
