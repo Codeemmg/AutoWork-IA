@@ -19,7 +19,7 @@ const mensagensProcessadas = new Set();
 setInterval(() => mensagensProcessadas.clear(), 10 * 60 * 1000);
 
 // 🔥 NOVO: Memória de contexto por usuário
-const sessions = {}; // <= SESSIONS AQUI!
+const sessions = {};
 
 // Servidor Express para expor QR Code (Railway/produção)
 const app = express();
@@ -44,10 +44,8 @@ async function startSock() {
         await QRCode.toFile(qrPath, qr);
         console.log('\n✅ QR Code gerado!');
         console.log('👉 Acesse o link: http://localhost:3000/qrcode.png\n');
-        logDebug({ etapa: 'qr_code_gerado', qrPath });
       } catch (err) {
         console.error('❌ Erro ao gerar QR Code:', err);
-        logDebug({ etapa: 'erro_qr_code', erro: err.message });
       }
     }
 
@@ -57,7 +55,6 @@ async function startSock() {
       if (shouldReconnect) startSock();
     } else if (connection === 'open') {
       console.log('✅ Conectado com sucesso ao WhatsApp!');
-      logDebug({ etapa: 'conexao_aberta_whatsapp' });
     }
   });
 
@@ -80,23 +77,9 @@ async function startSock() {
       texto = msg.message.imageMessage.caption;
     }
 
-    // Loga mensagem recebida antes de qualquer processamento
-    logDebug({
-      etapa: 'mensagem_recebida',
-      user_id: numero,
-      texto,
-      raw: msg,
-    });
-
     const msgId = msg.key.id;
     if (mensagensProcessadas.has(msgId)) {
       console.log(`🔁 Mensagem duplicada ignorada: ${msgId}`);
-      logDebug({
-        etapa: 'mensagem_duplicada',
-        user_id: numero,
-        msgId,
-        texto
-      });
       return;
     }
     mensagensProcessadas.add(msgId);
@@ -106,11 +89,6 @@ async function startSock() {
 
     if (!autorizado) {
       console.log(`❌ Número não autorizado: ${numero}`);
-      logDebug({
-        etapa: 'numero_nao_autorizado',
-        user_id: numero,
-        texto
-      });
       await sock.sendMessage(sender, {
         text: "🚫 Este número não está autorizado a usar o assistente AutoWork IA. Para liberar o uso, adquira sua licença."
       });
@@ -119,20 +97,10 @@ async function startSock() {
 
     if (!texto.trim()) {
       console.log(`📭 Mensagem sem texto de ${sender}`);
-      logDebug({
-        etapa: 'mensagem_vazia',
-        user_id: numero,
-        raw: msg
-      });
       return;
     }
 
     console.log(`🤖 Mensagem recebida de ${sender}: ${texto}`);
-    logDebug({
-      etapa: 'processando_mensagem',
-      user_id: numero,
-      texto
-    });
     await sock.sendPresenceUpdate('composing', sender);
 
     try {
@@ -140,62 +108,25 @@ async function startSock() {
       let contextoPendente = sessions[numero]?.contextoPendente || null;
 
       // Chama o AGENTE CENTRAL do AUTOWORK IA, passando o contexto!
-      logDebug({
-        etapa: 'chamando_roteador',
-        user_id: numero,
-        texto,
-        contextoPendente
-      });
-
       const resultado = await agent.routeMessage(numero, texto, [], contextoPendente);
-
-      logDebug({
-        etapa: 'resultado_roteador',
-        user_id: numero,
-        texto,
-        resultado
-      });
 
       // Atualiza ou limpa o contexto da sessão
       if (resultado && resultado.contextoPendente) {
         sessions[numero] = { contextoPendente: resultado.contextoPendente };
-        logDebug({
-          etapa: 'atualizando_contexto_pendente',
-          user_id: numero,
-          contextoPendente: resultado.contextoPendente
-        });
       } else {
         delete sessions[numero];
-        logDebug({
-          etapa: 'limpando_contexto_pendente',
-          user_id: numero
-        });
       }
 
       let respostaFinal = resultado.resposta || resultado.conteudo || resultado;
 
       if (respostaFinal) {
-        logDebug({
-          etapa: 'enviando_resposta',
-          user_id: numero,
-          respostaFinal
-        });
         await sock.sendMessage(sender, { text: respostaFinal });
       } else {
-        logDebug({
-          etapa: 'resposta_vazia',
-          user_id: numero
-        });
         await sock.sendMessage(sender, { text: "⚠️ Desculpe, não entendi sua solicitação." });
       }
 
     } catch (error) {
       console.error('Erro no agent:', error.message);
-      logDebug({
-        etapa: 'erro_interno',
-        user_id: numero,
-        error: error.message
-      });
       await sock.sendMessage(sender, { text: '⚠️ Ocorreu um erro interno ao processar sua mensagem.' });
     }
   });
