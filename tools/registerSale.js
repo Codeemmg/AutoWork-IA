@@ -14,6 +14,7 @@ exports.schema = z.object({
 
 // Função para gerar um código único curto e fácil de usar
 function gerarCodigoRegistro() {
+    console.log('[DEBUG] Entrou em registerSale.js > gerarCodigoRegistro');
   return Math.random().toString(36).substr(2, 6).toUpperCase();
 }
 

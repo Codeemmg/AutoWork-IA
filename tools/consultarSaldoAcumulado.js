@@ -9,6 +9,7 @@ exports.schema = z.object({
 });
 
 async function consultarSaldoAcumulado(userId, ateData, debugLog = []) {
+    console.log('[DEBUG] Entrou em consultarSaldoAcumulado.js > consultarSaldoAcumulado');
   try {
     const queryEntradas = `SELECT SUM(valor) as total FROM registros WHERE user_id = ? AND tipo = 'entrada' AND data < ?`;
     const querySaidas = `SELECT SUM(valor) as total FROM registros WHERE user_id = ? AND tipo = 'saida' AND data < ?`;

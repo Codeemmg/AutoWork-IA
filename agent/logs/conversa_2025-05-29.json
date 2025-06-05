@@ -2596,5 +2596,338 @@
         "intencao": "registrar_saida"
       }
     ]
+  },
+  {
+    "dataHora": "2025-05-29T19:50:36.280Z",
+    "frase": "quero ver meu extrato dessa semana",
+    "resposta": "📊 *Resumo Financeiro*\n📅 De 2025-05-26 até 2025-06-01\n\n💰 *Entradas*\n📌 Despesa:\n📅 26/05/2025 • fiz um depósito de 400 - R$ 400.00\n\n📌 Outro:\n📅 26/05/2025 • recebi 100 reais do João - R$ 100.00\n📅 26/05/2025 • entrou 2000 na empresa - R$ 2000.00\n📅 26/05/2025 • entrou um pix de 120 - R$ 120.00\n📅 26/05/2025 • entrou crédito de 90 - R$ 90.00\n📅 26/05/2025 • recebi 30 reais em espécie - R$ 30.00\n📅 26/05/2025 • recebi 3.500 do cliente Carlos mês passado - R$ 3.50\n\n📌 Receita:\n📅 26/05/2025 • foi creditado 1000 de salário agora - R$ 1000.00\n📅 28/05/2025 • recebi 300 hoje  - R$ 300.00\n📅 30/05/2025 • vou receber 700 de comissão dia 30/05/2025 - R$ 700.00\n📅 31/05/2025 • vou receber 700 de comissão dia 31/05/2025 - R$ 700.00\n\n📌 Renda:\n📅 26/05/2025 • ganhei 250 de comissão - R$ 250.00\n📅 26/05/2025 • ganhei 800 reais de comissão em março - R$ 800.00\n\n💵 Total: R$ 6493.50\n\n💸 *Saídas*\n📌 Alimentação:\n📅 26/05/2025 • gastei 120 no mercado hoje - R$ 120.00\n📅 28/05/2025 • comprei 4 reais de pão - R$ 4.00\n📅 28/05/2025 • comprei 3 reais de pão - R$ 3.00\n📅 28/05/2025 • hoje gastei 500 no mercado - R$ 390.00\n\n📌 Compras:\n📅 29/05/2025 • comprei 50 camisas por 2990 - R$ 299.00\n📅 29/05/2025 • comprei 34 camisas por 2990 - R$ 299.00\n📅 29/05/2025 • comprei 34 camisas por 2990 - R$ 299.00\n📅 29/05/2025 • comprei 34 camisas por 2990 - R$ 2990.00\n\n📌 Contas:\n📅 28/05/2025 • paguei 490 para o pintor ontem - R$ 490.00\n\n📌 Despesa:\n📅 28/05/2025 • paguei 90000 de imposto ontem - R$ 90000.00\n📅 28/05/2025 • comprei 3 sabonetes ontem 19,90 - R$ 19.90\n📅 28/05/2025 • comprei 1 shampoo ontem 13,90 - R$ 13.90\n📅 28/05/2025 • paguei 200 de imposto hoje - R$ 200.00\n📅 29/05/2025 • comprei um m3 hoje por 685000 - R$ 685000.00\n\n📌 Despesas Fixas:\n📅 26/05/2025 • anotar aluguel de 1200 reais para o próximo mês - R$ 1200.00\n📅 26/05/2025 • anotar aluguel de 1200 reais para o próximo mês - R$ 120.00\n📅 27/05/2025 • anotar aluguel de 1200 reais para o próximo mês - R$ 120.00\n📅 27/05/2025 • anotar aluguel de 1200 reais para o próximo mês - R$ 120.00\n📅 27/05/2025 • anotar aluguel de 1200 reais para o próximo mês - R$ 120.00\n\n📌 Outro:\n📅 28/05/2025 • comprei 3 camisas por 120 reais hoje - R$ 120.00\n📅 01/06/2025 • preciso pagar 450 de cartão dia 01/06/2025 - R$ 450.00\n\n💵 Total: R$ 782377.80\n\n📌 *Saldo Final:* R$ -775884.30\n",
+    "intencao": "consultar_extrato",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "consultar_extrato",
+      "tipo": null,
+      "valor": null,
+      "descricao": "quero ver meu extrato dessa semana",
+      "categoria": null,
+      "data": "2025-05-29",
+      "periodo": {
+        "inicio": "2025-05-26",
+        "fim": "2025-06-01"
+      },
+      "similaridade": 0.9256852800996147
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "quero ver meu extrato dessa semana"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "quero ver meu extrato dessa semana"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "consultar_extrato",
+        "tipo": null,
+        "valor": null,
+        "descricao": "quero ver meu extrato dessa semana",
+        "categoria": null,
+        "data": "2025-05-29",
+        "periodo": {
+          "inicio": "2025-05-26",
+          "fim": "2025-06-01"
+        },
+        "similaridade": 0.9256852800996147
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "consultar_extrato",
+        "tipo": null,
+        "valor": null,
+        "descricao": "quero ver meu extrato dessa semana",
+        "categoria": null,
+        "data": "2025-05-29",
+        "periodo": {
+          "inicio": "2025-05-26",
+          "fim": "2025-06-01"
+        },
+        "similaridade": 0.9256852800996147
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "consultar_extrato"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T19:51:12.786Z",
+    "frase": "caiu meu pagamento da PL 950000",
+    "resposta": "✅ Registro salvo!\n  🆔 Código: *0FY46H*\n  📅 29/05/2025\n  💰 Tipo: Saída\n  📝 Descrição: caiu meu pagamento da PL 950000\n  🏷️ Categoria: Receita\n  📌 Valor: R$ 950000.00",
+    "intencao": "registrar_saida",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "registrar_saida",
+      "tipo": "saida",
+      "valor": 950000,
+      "descricao": "caiu meu pagamento da PL 950000",
+      "categoria": "Receita",
+      "data": "2025-05-29",
+      "periodo": null,
+      "similaridade": 1,
+      "codigo": "0FY46H"
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "caiu meu pagamento da PL 950000"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "caiu meu pagamento da PL 950000"
+      },
+      {
+        "etapa": "categoria_classificada",
+        "categoria": "Receita"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 950000,
+        "descricao": "caiu meu pagamento da PL 950000",
+        "categoria": "Receita",
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 1
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "registrar_saida",
+        "tipo": "saida",
+        "valor": 950000,
+        "descricao": "caiu meu pagamento da PL 950000",
+        "categoria": "Receita",
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 1
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "registrar_saida"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T19:51:43.719Z",
+    "frase": "quero editar meu ultimo registro",
+    "resposta": "📝 *Edição do último registro*\n\n🆔 Código: *0FY46H*\n📝 Descrição: caiu meu pagamento da PL 950000\n🏷️ Categoria: Receita\n💰 Valor: R$ 950000.00\n📅 Data: Thu May 29 2025 16:51:12 GMT-0300 (Horário Padrão de Brasília)\n\nQual campo você deseja editar? (valor, categoria ou descrição)",
+    "intencao": "-",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "superagent",
+    "resultado": {},
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "quero editar meu ultimo registro"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "quero editar meu ultimo registro"
+      },
+      {
+        "etapa": "intencao_especial_detectada",
+        "intencao": "editar_ultimo_registro"
+      },
+      {
+        "etapa": "multi_etapa_agent",
+        "motivo": "📝 *Edição do último registro*\n\n🆔 Código: *0FY46H*\n📝 Descrição: caiu meu pagamento da PL 950000\n🏷️ Categoria: Receita\n💰 Valor: R$ 950000.00\n📅 Data: Thu May 29 2025 16:51:12 GMT-0300 (Horário Padrão de Brasília)\n\nQual campo você deseja editar? (valor, categoria ou descrição)"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T19:52:11.394Z",
+    "frase": "quero um extrato da semana",
+    "resposta": "⚠️ Período inválido ou não informado. Por favor, especifique uma data inicial e final.",
+    "intencao": "consultar_extrato",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "consultar_extrato",
+      "tipo": null,
+      "valor": null,
+      "descricao": "quero um extrato da semana",
+      "categoria": null,
+      "data": "2025-05-29",
+      "periodo": null,
+      "similaridade": 0.9469923876875526
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "quero um extrato da semana"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "quero um extrato da semana"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "consultar_extrato",
+        "tipo": null,
+        "valor": null,
+        "descricao": "quero um extrato da semana",
+        "categoria": null,
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 0.9469923876875526
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "consultar_extrato",
+        "tipo": null,
+        "valor": null,
+        "descricao": "quero um extrato da semana",
+        "categoria": null,
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 0.9469923876875526
+      },
+      {
+        "etapa": "multi_etapa_agent",
+        "motivo": "⚠️ Período inválido ou não informado. Por favor, especifique uma data inicial e final."
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T19:52:37.444Z",
+    "frase": "quero ver meu extrato dessa semana",
+    "resposta": "📊 *Resumo Financeiro*\n📅 De 2025-05-26 até 2025-06-01\n\n💰 *Entradas*\n📌 Despesa:\n📅 26/05/2025 • fiz um depósito de 400 - R$ 400.00\n\n📌 Outro:\n📅 26/05/2025 • recebi 100 reais do João - R$ 100.00\n📅 26/05/2025 • entrou 2000 na empresa - R$ 2000.00\n📅 26/05/2025 • entrou um pix de 120 - R$ 120.00\n📅 26/05/2025 • entrou crédito de 90 - R$ 90.00\n📅 26/05/2025 • recebi 30 reais em espécie - R$ 30.00\n📅 26/05/2025 • recebi 3.500 do cliente Carlos mês passado - R$ 3.50\n\n📌 Receita:\n📅 26/05/2025 • foi creditado 1000 de salário agora - R$ 1000.00\n📅 28/05/2025 • recebi 300 hoje  - R$ 300.00\n📅 30/05/2025 • vou receber 700 de comissão dia 30/05/2025 - R$ 700.00\n📅 31/05/2025 • vou receber 700 de comissão dia 31/05/2025 - R$ 700.00\n\n📌 Renda:\n📅 26/05/2025 • ganhei 250 de comissão - R$ 250.00\n📅 26/05/2025 • ganhei 800 reais de comissão em março - R$ 800.00\n\n💵 Total: R$ 6493.50\n\n💸 *Saídas*\n📌 Alimentação:\n📅 26/05/2025 • gastei 120 no mercado hoje - R$ 120.00\n📅 28/05/2025 • comprei 4 reais de pão - R$ 4.00\n📅 28/05/2025 • comprei 3 reais de pão - R$ 3.00\n📅 28/05/2025 • hoje gastei 500 no mercado - R$ 390.00\n\n📌 Compras:\n📅 29/05/2025 • comprei 50 camisas por 2990 - R$ 299.00\n📅 29/05/2025 • comprei 34 camisas por 2990 - R$ 299.00\n📅 29/05/2025 • comprei 34 camisas por 2990 - R$ 299.00\n📅 29/05/2025 • comprei 34 camisas por 2990 - R$ 2990.00\n\n📌 Contas:\n📅 28/05/2025 • paguei 490 para o pintor ontem - R$ 490.00\n\n📌 Despesa:\n📅 28/05/2025 • paguei 90000 de imposto ontem - R$ 90000.00\n📅 28/05/2025 • comprei 3 sabonetes ontem 19,90 - R$ 19.90\n📅 28/05/2025 • comprei 1 shampoo ontem 13,90 - R$ 13.90\n📅 28/05/2025 • paguei 200 de imposto hoje - R$ 200.00\n📅 29/05/2025 • comprei um m3 hoje por 685000 - R$ 685000.00\n\n📌 Despesas Fixas:\n📅 26/05/2025 • anotar aluguel de 1200 reais para o próximo mês - R$ 1200.00\n📅 26/05/2025 • anotar aluguel de 1200 reais para o próximo mês - R$ 120.00\n📅 27/05/2025 • anotar aluguel de 1200 reais para o próximo mês - R$ 120.00\n📅 27/05/2025 • anotar aluguel de 1200 reais para o próximo mês - R$ 120.00\n📅 27/05/2025 • anotar aluguel de 1200 reais para o próximo mês - R$ 120.00\n\n📌 Outro:\n📅 28/05/2025 • comprei 3 camisas por 120 reais hoje - R$ 120.00\n📅 01/06/2025 • preciso pagar 450 de cartão dia 01/06/2025 - R$ 450.00\n\n📌 Receita:\n📅 29/05/2025 • caiu meu pagamento da PL 950000 - R$ 950000.00\n\n💵 Total: R$ 1732377.80\n\n📌 *Saldo Final:* R$ -1725884.30\n",
+    "intencao": "consultar_extrato",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "consultar_extrato",
+      "tipo": null,
+      "valor": null,
+      "descricao": "quero ver meu extrato dessa semana",
+      "categoria": null,
+      "data": "2025-05-29",
+      "periodo": {
+        "inicio": "2025-05-26",
+        "fim": "2025-06-01"
+      },
+      "similaridade": 0.9256852800996147
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "quero ver meu extrato dessa semana"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "quero ver meu extrato dessa semana"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "consultar_extrato",
+        "tipo": null,
+        "valor": null,
+        "descricao": "quero ver meu extrato dessa semana",
+        "categoria": null,
+        "data": "2025-05-29",
+        "periodo": {
+          "inicio": "2025-05-26",
+          "fim": "2025-06-01"
+        },
+        "similaridade": 0.9256852800996147
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "consultar_extrato",
+        "tipo": null,
+        "valor": null,
+        "descricao": "quero ver meu extrato dessa semana",
+        "categoria": null,
+        "data": "2025-05-29",
+        "periodo": {
+          "inicio": "2025-05-26",
+          "fim": "2025-06-01"
+        },
+        "similaridade": 0.9256852800996147
+      },
+      {
+        "etapa": "roteador_decisao",
+        "para": "agent",
+        "intencao": "consultar_extrato"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-05-29T19:52:47.284Z",
+    "frase": "perfeito",
+    "resposta": "⚠️ Período inválido ou não informado. Por favor, especifique uma data inicial e final.",
+    "intencao": "consultar_extrato",
+    "quem_chamou": "roteador",
+    "quem_respondeu": "agent",
+    "resultado": {
+      "intencao": "consultar_extrato",
+      "tipo": null,
+      "valor": null,
+      "descricao": "perfeito",
+      "categoria": null,
+      "data": "2025-05-29",
+      "periodo": null,
+      "similaridade": 0.8510214538035914
+    },
+    "debugLog": [
+      {
+        "etapa": "mensagem_recebida",
+        "frase": "perfeito"
+      },
+      {
+        "etapa": "inicio_roteador",
+        "frase": "perfeito"
+      },
+      {
+        "etapa": "dados_extraidos",
+        "via": "embedding",
+        "intencao": "consultar_extrato",
+        "tipo": null,
+        "valor": null,
+        "descricao": "perfeito",
+        "categoria": null,
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 0.8510214538035914
+      },
+      {
+        "etapa": "fim_interpretar",
+        "via": "embedding",
+        "intencao": "consultar_extrato",
+        "tipo": null,
+        "valor": null,
+        "descricao": "perfeito",
+        "categoria": null,
+        "data": "2025-05-29",
+        "periodo": null,
+        "similaridade": 0.8510214538035914
+      },
+      {
+        "etapa": "multi_etapa_agent",
+        "motivo": "⚠️ Período inválido ou não informado. Por favor, especifique uma data inicial e final."
+      }
+    ]
   }
 ]

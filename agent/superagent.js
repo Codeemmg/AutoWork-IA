@@ -12,6 +12,7 @@ if (!fs.existsSync(MEMORY_PATH)) fs.mkdirSync(MEMORY_PATH);
 
 // Funções de memória de conversa
 function getMemory(user_id) {
+    console.log('[DEBUG] Entrou em superagent.js > getMemory');
     const memFile = path.join(MEMORY_PATH, `${user_id}.json`);
     if (fs.existsSync(memFile)) {
         return JSON.parse(fs.readFileSync(memFile, 'utf-8'));

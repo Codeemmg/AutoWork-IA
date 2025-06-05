@@ -15,6 +15,7 @@ const INTENCOES_SOCIAIS = [
 
 // Função principal do roteador
 async function routeMessage(user_id, frase, debugLog = [], contextoPendente = null) {
+    console.log('[DEBUG] Entrou em roteador.js > routeMessage');
     debugLog.push({ etapa: "inicio_roteador", frase });
 
     // Se houver contexto pendente, ele é passado para o agent.

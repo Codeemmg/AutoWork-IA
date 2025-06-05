@@ -23,6 +23,7 @@ exports.schema = z.object({
  * @returns {Promise<string>} texto pronto para exibir ao usuário
  */
 async function consultarTopGastos(userId = 'desconhecido', periodo = null, debugLog = [], topN = 5) {
+    console.log('[DEBUG] Entrou em consultarTopGasto.js > consultarTopGastos');
   let inicio, fim;
 
   // Detecta período (semana padrão)

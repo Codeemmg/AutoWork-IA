@@ -7,6 +7,7 @@ const memoriaPorUsuario = {};
  * @param {string} numero - número de telefone
  */
 function getTudo(numero) {
+    console.log('[DEBUG] Entrou em memory.js > getTudo');
   return memoriaPorUsuario[numero] || { historico: [] };
 }
 

@@ -9,6 +9,7 @@ exports.schema = z.object({
 });
 
 async function getSaleByCode(user_id, codigo) {
+    console.log('[DEBUG] Entrou em getSaleByCode.js > getSaleByCode');
   // Garante case-insensitive na busca SQL
   const [res] = await db.query(
     `SELECT * FROM registros WHERE user_id = ? AND LOWER(codigo) = ? LIMIT 1`,

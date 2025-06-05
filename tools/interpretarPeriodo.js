@@ -5,6 +5,7 @@ exports.description = 'Interpreta frases que indicam período de datas';
 exports.schema = z.object({ mensagem: z.string() });
 
 function interpretarPeriodo(mensagem) {
+    console.log('[DEBUG] Entrou em interpretarPeriodo.js > interpretarPeriodo');
   mensagem = mensagem.toLowerCase();
   const hoje = moment();
 

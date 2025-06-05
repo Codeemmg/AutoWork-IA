@@ -8,6 +8,7 @@ if (!fs.existsSync(LOG_PATH)) fs.mkdirSync(LOG_PATH);
 
 // Nome do arquivo por data (pode trocar por userId, etc)
 function getLogFileName() {
+    console.log('[DEBUG] Entrou em logs.js > getLogFileName');
     const hoje = new Date().toISOString().slice(0,10); // YYYY-MM-DD
     return path.join(LOG_PATH, `conversa_${hoje}.json`);
 }

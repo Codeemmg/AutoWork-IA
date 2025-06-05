@@ -19,6 +19,7 @@ if (fs.existsSync(categoriasPath)) {
 }
 
 async function gerarEmbedding(texto) {
+    console.log('[DEBUG] Entrou em classificarCategoriaViaIA.js > gerarEmbedding');
   const response = await openai.embeddings.create({
     model: "text-embedding-ada-002",
     input: texto,

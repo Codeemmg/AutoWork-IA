@@ -21,6 +21,7 @@ const INTENCOES_SOCIAIS = [
 ];
 
 function extrairValor(frase) {
+    console.log('[DEBUG] Entrou em interpretarMensagemIA.js > extrairValor');
   if (!frase) return null;
   let fraseSemDatas = frase.replace(/\b\d{1,2}\/\d{1,2}(\/\d{2,4})?\b/g, '');
   fraseSemDatas = fraseSemDatas.replace(/\b\d{1,2} de \w+\b/gi, '');

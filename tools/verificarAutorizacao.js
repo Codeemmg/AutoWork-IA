@@ -10,6 +10,7 @@ exports.schema = z.object({ numero: z.string() });
  * @returns {Promise<boolean>} - true se autorizado, false caso contrário
  */
 async function verificarAutorizacao(numero) {
+    console.log('[DEBUG] Entrou em verificarAutorizacao.js > verificarAutorizacao');
   try {
     const [res] = await db.query(
       `SELECT * FROM usuarios_autorizados WHERE numero = ? AND ativo = 1`,

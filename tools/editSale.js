@@ -15,6 +15,7 @@ exports.schema = z.object({
 });
 
 async function editSale(user_id, codigo, updates = {}) {
+    console.log('[DEBUG] Entrou em editSale.js > editSale');
   // Monta query dinâmica de acordo com os campos passados
   const campos = [];
   const valores = [];

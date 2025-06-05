@@ -20,6 +20,7 @@ exports.schema = z.object({
  * @returns {Promise<string>} Saldo detalhado para exibição
  */
 async function consultarSaldo(userId, periodo = null, debugLog = []) {
+    console.log('[DEBUG] Entrou em consultarSaldo.js > consultarSaldo');
   try {
     let entradasQuery, saidasQuery, entradasParams, saidasParams;
 

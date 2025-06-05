@@ -13,6 +13,7 @@ exports.schema = z.object({
 });
 
 function registrarUsoDeTokens({ totalTokens, modelo, origem = 'agent', telefone = 'desconhecido' }) {
+    console.log('[DEBUG] Entrou em tokenCounter.js > registrarUsoDeTokens');
   const agora = new Date();
   const registro = {
     data: agora.toISOString(),

@@ -306,3 +306,67 @@
 [2025-05-29T18:48:48.277Z] [ROTEADOR_AGENT] {"user_id":553299642181,"frase":"dia 10 de julho tenho que pagar a terceira parcela do carro 30000","intencao":"registrar_saida"}
 [2025-05-29T18:49:25.459Z] [AGENT_START] {"user_id":553299642181,"frase":"paguei 490 para o pintor ontem","contextoPendente":null}
 [2025-05-29T18:49:26.390Z] [ROTEADOR_AGENT] {"user_id":553299642181,"frase":"paguei 490 para o pintor ontem","intencao":"registrar_saida"}
+[2025-05-29T19:50:33.770Z] [AGENT_START] {"user_id":553299642181,"frase":"quero ver meu extrato dessa semana","contextoPendente":null}
+[2025-05-29T19:50:36.274Z] [ROTEADOR_AGENT] {"user_id":553299642181,"frase":"quero ver meu extrato dessa semana","intencao":"consultar_extrato"}
+[2025-05-29T19:51:10.747Z] [AGENT_START] {"user_id":553299642181,"frase":"caiu meu pagamento da PL 950000","contextoPendente":null}
+[2025-05-29T19:51:12.776Z] [ROTEADOR_AGENT] {"user_id":553299642181,"frase":"caiu meu pagamento da PL 950000","intencao":"registrar_saida"}
+[2025-05-29T19:51:43.698Z] [AGENT_START] {"user_id":553299642181,"frase":"quero editar meu ultimo registro","contextoPendente":null}
+[2025-05-29T19:51:43.712Z] [ROTEADOR_AGENT_MULTI_ETAPA] {"user_id":553299642181,"frase":"quero editar meu ultimo registro","motivo":"📝 *Edição do último registro*\n\n🆔 Código: *0FY46H*\n📝 Descrição: caiu meu pagamento da PL 950000\n🏷️ Categoria: Receita\n💰 Valor: R$ 950000.00\n📅 Data: Thu May 29 2025 16:51:12 GMT-0300 (Horário Padrão de Brasília)\n\nQual campo você deseja editar? (valor, categoria ou descrição)"}
+[2025-05-29T19:52:10.333Z] [AGENT_START] {"user_id":553299642181,"frase":"quero um extrato da semana","contextoPendente":null}
+[2025-05-29T19:52:11.385Z] [ROTEADOR_AGENT_MULTI_ETAPA] {"user_id":553299642181,"frase":"quero um extrato da semana","motivo":"⚠️ Período inválido ou não informado. Por favor, especifique uma data inicial e final."}
+[2025-05-29T19:52:35.652Z] [AGENT_START] {"user_id":553299642181,"frase":"quero ver meu extrato dessa semana","contextoPendente":null}
+[2025-05-29T19:52:37.439Z] [ROTEADOR_AGENT] {"user_id":553299642181,"frase":"quero ver meu extrato dessa semana","intencao":"consultar_extrato"}
+[2025-05-29T19:52:45.337Z] [AGENT_START] {"user_id":553299642181,"frase":"perfeito","contextoPendente":null}
+[2025-05-29T19:52:47.282Z] [ROTEADOR_AGENT_MULTI_ETAPA] {"user_id":553299642181,"frase":"perfeito","motivo":"⚠️ Período inválido ou não informado. Por favor, especifique uma data inicial e final."}
+[2025-06-04T15:51:02.952Z] [AGENT_START] {"user_id":"553299642181","frase":"quero registrar um compromisso de pagamento de 500 reais para dia 10 de junho","contextoPendente":null}
+[2025-06-04T15:51:04.400Z] [ROTEADOR_AGENT] {"user_id":"553299642181","frase":"quero registrar um compromisso de pagamento de 500 reais para dia 10 de junho","intencao":"registrar_saida"}
+[2025-06-04T15:51:04.402Z] [AGENT_START] {"user_id":"553299642181","frase":"anotar aluguel de 1200 reais para o próximo mês","contextoPendente":null}
+[2025-06-04T15:51:05.196Z] [ROTEADOR_AGENT] {"user_id":"553299642181","frase":"anotar aluguel de 1200 reais para o próximo mês","intencao":"registrar_saida"}
+[2025-06-04T15:54:37.795Z] [AGENT_START] {"user_id":"553299642181","frase":"Agende uma reunião com o João para amanhã às 15h","contextoPendente":null}
+[2025-06-04T15:54:38.375Z] [ROTEADOR_AGENT] {"user_id":"553299642181","frase":"Agende uma reunião com o João para amanhã às 15h","intencao":"registrar_saida"}
+[2025-06-04T15:54:38.379Z] [AGENT_START] {"user_id":"553299642181","frase":"comprei um carro novo, preciso registrar","contextoPendente":null}
+[2025-06-04T15:54:39.251Z] [ROTEADOR_AGENT] {"user_id":"553299642181","frase":"comprei um carro novo, preciso registrar","intencao":"registrar_saida"}
+[2025-06-04T15:57:34.830Z] [AGENT_START] {"user_id":553299642181,"frase":"oi","contextoPendente":null}
+[2025-06-04T15:57:37.671Z] [ROTEADOR_SUPERAGENT] {"user_id":553299642181,"frase":"oi","intencao":"saudacao"}
+[2025-06-04T15:57:37.672Z] [SUPERAGENT_START] {"user_id":553299642181,"frase":"oi","resultado":{"tipo":"texto","conteudo":"Olá! Como posso ajudar você com suas finanças hoje?","resposta":"Olá! Como posso ajudar você com suas finanças hoje?","resultado":{"intencao":"saudacao","tipo":null,"valor":null,"descricao":"oi","categoria":null,"data":"2025-06-04","periodo":null,"similaridade":0.9999999999999999},"debugLog":[{"etapa":"mensagem_recebida","frase":"oi"},{"etapa":"inicio_roteador","frase":"oi"},{"etapa":"intencao_social_detectada","intencao":"saudacao"},{"etapa":"roteador_decisao","para":"superagent","motivo":"saudacao"}]}}
+[2025-06-04T15:57:39.879Z] [SUPERAGENT_GPT_OK] {"user_id":553299642181,"pergunta":"oi","respostaGPT":"Olá! Como posso ajudar você hoje?"}
+[2025-06-04T15:58:30.132Z] [AGENT_START] {"user_id":553299642181,"frase":"quero olhar minhas finanças","contextoPendente":null}
+[2025-06-04T15:58:31.083Z] [ROTEADOR_AGENT_MULTI_ETAPA] {"user_id":553299642181,"frase":"quero olhar minhas finanças","motivo":"⚠️ Período inválido ou não informado. Por favor, especifique uma data inicial e final."}
+[2025-06-04T15:59:17.861Z] [AGENT_START] {"user_id":553299642181,"frase":"extrato da semana passada","contextoPendente":null}
+[2025-06-04T15:59:19.392Z] [ROTEADOR_AGENT] {"user_id":553299642181,"frase":"extrato da semana passada","intencao":"consultar_extrato"}
+[2025-06-04T15:59:55.611Z] [AGENT_START] {"user_id":553299642181,"frase":"gastei 500 reais no mercado ontem","contextoPendente":null}
+[2025-06-04T15:59:57.104Z] [ROTEADOR_AGENT] {"user_id":553299642181,"frase":"gastei 500 reais no mercado ontem","intencao":"registrar_saida"}
+[2025-06-04T16:02:38.937Z] [AGENT_START] {"user_id":553299642181,"frase":"Recebi 1000 reais de cliente X hoje","contextoPendente":null}
+[2025-06-04T16:02:39.931Z] [ROTEADOR_AGENT] {"user_id":553299642181,"frase":"Recebi 1000 reais de cliente X hoje","intencao":"registrar_entrada"}
+[2025-06-04T16:02:53.043Z] [AGENT_START] {"user_id":553299642181,"frase":"Entrou 500 de comissão ontem","contextoPendente":null}
+[2025-06-04T16:02:53.417Z] [ROTEADOR_AGENT] {"user_id":553299642181,"frase":"Entrou 500 de comissão ontem","intencao":"registrar_entrada"}
+[2025-06-04T16:03:01.047Z] [AGENT_START] {"user_id":553299642181,"frase":"Paguei 1200 reais de aluguel dia 5","contextoPendente":null}
+[2025-06-04T16:03:01.478Z] [ROTEADOR_AGENT] {"user_id":553299642181,"frase":"Paguei 1200 reais de aluguel dia 5","intencao":"registrar_saida"}
+[2025-06-04T16:03:56.103Z] [AGENT_START] {"user_id":553299642181,"frase":"Preciso pagar o cartão 300 reais na próxima semana","contextoPendente":null}
+[2025-06-04T16:03:56.666Z] [ROTEADOR_AGENT] {"user_id":553299642181,"frase":"Preciso pagar o cartão 300 reais na próxima semana","intencao":"registrar_saida"}
+[2025-06-04T16:04:11.015Z] [AGENT_START] {"user_id":553299642181,"frase":"Tenho um boleto para pagar dia 20 de junho, valor 780","contextoPendente":null}
+[2025-06-04T16:04:11.519Z] [ROTEADOR_AGENT] {"user_id":553299642181,"frase":"Tenho um boleto para pagar dia 20 de junho, valor 780","intencao":"registrar_saida"}
+[2025-06-04T16:04:20.391Z] [AGENT_START] {"user_id":553299642181,"frase":"Resumo financeiro do mês","contextoPendente":null}
+[2025-06-04T16:04:21.111Z] [ROTEADOR_AGENT_MULTI_ETAPA] {"user_id":553299642181,"frase":"Resumo financeiro do mês","motivo":"⚠️ Período inválido ou não informado. Por favor, especifique uma data inicial e final."}
+[2025-06-04T16:04:27.264Z] [AGENT_START] {"user_id":553299642181,"frase":"Quais foram minhas maiores despesas?","contextoPendente":null}
+[2025-06-04T16:04:27.940Z] [ROTEADOR_AGENT] {"user_id":553299642181,"frase":"Quais foram minhas maiores despesas?","intencao":"consultar_saidas"}
+[2025-06-04T16:04:36.880Z] [AGENT_START] {"user_id":553299642181,"frase":"Quais foram as entradas deste mês?","contextoPendente":null}
+[2025-06-04T16:04:37.528Z] [ROTEADOR_AGENT] {"user_id":553299642181,"frase":"Quais foram as entradas deste mês?","intencao":"consultar_entradas"}
+[2025-06-04T16:04:43.670Z] [AGENT_START] {"user_id":553299642181,"frase":"Excluir o lançamento do dia 01/06/2025","contextoPendente":null}
+[2025-06-04T16:04:45.463Z] [ROTEADOR_AGENT_MULTI_ETAPA] {"user_id":553299642181,"frase":"Excluir o lançamento do dia 01/06/2025","motivo":"Qual é o código do registro que você deseja apagar?"}
+[2025-06-04T16:05:11.927Z] [AGENT_START] {"user_id":553299642181,"frase":"JA7R7K","contextoPendente":{"tipo":"excluir_registro","aguardandoCodigo":true}}
+[2025-06-04T16:05:11.938Z] [ROTEADOR_AGENT_MULTI_ETAPA] {"user_id":553299642181,"frase":"JA7R7K","motivo":"Você quer mesmo excluir este registro?\n\n🆔 Código: *JA7R7K*\n📝 Descrição: Preciso pagar o cartão 300 reais na próxima semana\n🏷️ Categoria: Despesa\n💰 Valor: R$ 300.00\n📅 Data: Wed Jun 04 2025 13:03:56 GMT-0300 (Horário Padrão de Brasília)\n\nResponda *SIM* para confirmar ou *NÃO* para cancelar."}
+[2025-06-04T16:05:13.946Z] [AGENT_START] {"user_id":553299642181,"frase":"sim","contextoPendente":{"tipo":"excluir_registro","aguardandoConfirmacao":true,"codigo":"JA7R7K"}}
+[2025-06-04T16:05:13.955Z] [ROTEADOR_AGENT] {"user_id":553299642181,"frase":"sim"}
+[2025-06-04T16:05:23.443Z] [AGENT_START] {"user_id":553299642181,"frase":"Editar o registro de 500 reais no mercado para 600 reais","contextoPendente":null}
+[2025-06-04T16:05:23.447Z] [ROTEADOR_AGENT_MULTI_ETAPA] {"user_id":553299642181,"frase":"Editar o registro de 500 reais no mercado para 600 reais","motivo":"Qual o código do registro que deseja editar?"}
+[2025-06-04T16:05:34.484Z] [AGENT_START] {"user_id":553299642181,"frase":"o ultimo","contextoPendente":{"tipo":"editar_registro","aguardando":"codigo"}}
+[2025-06-04T16:05:34.485Z] [ROTEADOR_AGENT] {"user_id":553299642181,"frase":"o ultimo"}
+[2025-06-04T16:05:40.642Z] [AGENT_START] {"user_id":553299642181,"frase":"ok","contextoPendente":null}
+[2025-06-04T16:05:41.156Z] [ROTEADOR_SUPERAGENT] {"user_id":553299642181,"frase":"ok","intencao":"saudacao"}
+[2025-06-04T16:05:41.156Z] [SUPERAGENT_START] {"user_id":553299642181,"frase":"ok","resultado":{"tipo":"texto","conteudo":"Olá! Como posso ajudar você com suas finanças hoje?","resposta":"Olá! Como posso ajudar você com suas finanças hoje?","resultado":{"intencao":"saudacao","tipo":null,"valor":null,"descricao":"ok","categoria":null,"data":"2025-06-04","periodo":null,"similaridade":0.8600928288517916},"debugLog":[{"etapa":"mensagem_recebida","frase":"ok"},{"etapa":"inicio_roteador","frase":"ok"},{"etapa":"intencao_social_detectada","intencao":"saudacao"},{"etapa":"roteador_decisao","para":"superagent","motivo":"saudacao"}]}}
+[2025-06-04T16:05:42.172Z] [SUPERAGENT_GPT_OK] {"user_id":553299642181,"pergunta":"ok","respostaGPT":"Se precisar de algo, é só me chamar."}
+[2025-06-04T16:05:55.925Z] [AGENT_START] {"user_id":553299642181,"frase":"Anotar uma saída","contextoPendente":null}
+[2025-06-04T16:05:56.539Z] [ROTEADOR_AGENT] {"user_id":553299642181,"frase":"Anotar uma saída","intencao":"consultar_maior_gasto"}
+[2025-06-04T16:06:10.335Z] [AGENT_START] {"user_id":553299642181,"frase":"Registrar um recebimento","contextoPendente":null}
+[2025-06-04T16:06:11.534Z] [ROTEADOR_AGENT] {"user_id":553299642181,"frase":"Registrar um recebimento","intencao":"duvida_uso"}

@@ -1,22 +1,6 @@
 [
   {
     "role": "user",
-    "content": "quero editar o registro NQTW72"
-  },
-  {
-    "role": "assistant",
-    "content": "Você pode me informar qual campo do registro NQTW72 deseja editar?"
-  },
-  {
-    "role": "user",
-    "content": "quero editar o meu ultimo registro"
-  },
-  {
-    "role": "assistant",
-    "content": "Você pode me informar qual campo do último registro deseja editar?"
-  },
-  {
-    "role": "user",
     "content": "quero exluir mue ultimo registro"
   },
   {
@@ -38,5 +22,21 @@
   {
     "role": "assistant",
     "content": "Você pode me informar qual campo do último registro deseja editar?"
+  },
+  {
+    "role": "user",
+    "content": "oi"
+  },
+  {
+    "role": "assistant",
+    "content": "Olá! Como posso ajudar você hoje?"
+  },
+  {
+    "role": "user",
+    "content": "ok"
+  },
+  {
+    "role": "assistant",
+    "content": "Se precisar de algo, é só me chamar."
   }
 ]

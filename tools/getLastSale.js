@@ -7,6 +7,7 @@ exports.schema = z.object({ user_id: z.string() });
 
 // Retorna o último registro do usuário (entrada ou saída REAL)
 async function getLastSale(user_id) {
+    console.log('[DEBUG] Entrou em getLastSale.js > getLastSale');
   const [rows] = await db.query(
     `SELECT * FROM registros 
      WHERE user_id = ? 

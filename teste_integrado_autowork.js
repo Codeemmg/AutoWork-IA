@@ -9,8 +9,8 @@ const frasesTeste = [
     
 
     // Registro de compromissos futuros
-    "quero registrar um compromisso de pagamento de 500 reais para dia 10 de junho",
-    "anotar aluguel de 1200 reais para o próximo mês",
+    "Agende uma reunião com o João para amanhã às 15h",
+    "comprei um carro novo, preciso registrar",
 
  
 

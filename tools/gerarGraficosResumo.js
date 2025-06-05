@@ -19,6 +19,7 @@ const chartJSNodeCanvas = new ChartJSNodeCanvas({ width: largura, height: altura
  * @returns {Promise<{graficoBar: string, graficoPizza: string} | null>}
  */
 async function gerarGraficosResumo(userId = 'desconhecido') {
+    console.log('[DEBUG] Entrou em gerarGraficosResumo.js > gerarGraficosResumo');
   const inicioSemana = moment().startOf('isoWeek').format('YYYY-MM-DD');
   const fimSemana = moment().endOf('isoWeek').format('YYYY-MM-DD');
 

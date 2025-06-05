@@ -13,6 +13,7 @@ exports.schema = z.object({ userId: z.string() });
  * @returns {Promise<string>} Sugestão financeira para o usuário
  */
 async function motorConsultivo(userId, debugLog = []) {
+    console.log('[DEBUG] Entrou em motorConsultivo.js > motorConsultivo');
   try {
     // 1. Busca entradas e saídas dos últimos 30 dias
     const [entradas] = await db.query(

@@ -18,6 +18,7 @@ exports.schema = z.object({
  * @returns {Promise<string>}
  */
 async function gerarResumoCompleto(userId, periodo, foco = null) {
+    console.log('[DEBUG] Entrou em gerarResumoCompleto.js > gerarResumoCompleto');
   if (!periodo?.inicio || !periodo?.fim) {
     return "⚠️ Período inválido. Especifique uma data inicial e final.";
   }

@@ -22,6 +22,7 @@ const rotinaAgendamento = require('../agendamentos/rotinaAgendamento');
 const lembreteAgendamento = require('../agendamentos/lembreteAgendamento');
 
 async function agent(user_id, frase, debugLog = [], contextoPendente = null) {
+    console.log('[DEBUG] Entrou em agent.js > agent');
   logEvent('AGENT_START', { user_id, frase, contextoPendente });
 
   let resultado;
