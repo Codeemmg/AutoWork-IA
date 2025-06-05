@@ -1,6 +1,14 @@
 const fs = require("fs");
 const path = require("path");
 const db = require("../db");
+const { z } = require('zod');
+
+exports.description = 'Gera resumo financeiro completo';
+exports.schema = z.object({
+  userId: z.string(),
+  periodo: z.object({ inicio: z.string(), fim: z.string() }),
+  foco: z.string().nullable().optional()
+});
 
 /**
  * Gera um resumo completo, apenas de entradas ou saídas, ou ambos.

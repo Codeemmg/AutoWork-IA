@@ -2,6 +2,17 @@
 
 const db = require('../db');
 const moment = require('moment');
+const { z } = require('zod');
+
+exports.description = 'Lista os maiores gastos no período';
+exports.schema = z.object({
+  userId: z.string(),
+  periodo: z
+    .object({ inicio: z.string(), fim: z.string() })
+    .nullable()
+    .optional(),
+  topN: z.number().optional()
+});
 
 /**
  * Consulta os top N maiores gastos de um usuário em qualquer período.

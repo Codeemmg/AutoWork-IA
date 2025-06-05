@@ -1,4 +1,11 @@
 const db = require('../db');
+const { z } = require('zod');
+
+exports.description = 'Remove um agendamento existente';
+exports.schema = z.object({
+  user_id: z.string(),
+  resultado: z.object({ id: z.number() })
+});
 
 /**
  * Remove um agendamento por ID.

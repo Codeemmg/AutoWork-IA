@@ -7,6 +7,10 @@ const path = require('path');
 const { OpenAI } = require('openai');
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 const { format, startOfWeek, addDays } = require("date-fns");
+const { z } = require('zod');
+
+exports.description = 'Interpreta a mensagem do usuário e extrai intenção';
+exports.schema = z.object({ frase: z.string() });
 
 const INTENCOES_SOCIAIS = [
   'saudacao',

@@ -1,5 +1,12 @@
 // tools/getSaleByCode.js
 const db = require('../db');
+const { z } = require('zod');
+
+exports.description = 'Busca um registro pelo código';
+exports.schema = z.object({
+  user_id: z.string(),
+  codigo: z.string()
+});
 
 async function getSaleByCode(user_id, codigo) {
   // Garante case-insensitive na busca SQL

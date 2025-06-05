@@ -1,4 +1,8 @@
 const moment = require('moment');
+const { z } = require('zod');
+
+exports.description = 'Interpreta frases que indicam período de datas';
+exports.schema = z.object({ mensagem: z.string() });
 
 function interpretarPeriodo(mensagem) {
   mensagem = mensagem.toLowerCase();

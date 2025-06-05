@@ -1,4 +1,11 @@
 const db = require('../db');
+const { z } = require('zod');
+
+exports.description = 'Exclui um registro por código';
+exports.schema = z.object({
+  user_id: z.string(),
+  codigo: z.string()
+});
 
 async function deleteSale(user_id, codigo) {
   // Exclui só se o registro pertencer ao usuário
