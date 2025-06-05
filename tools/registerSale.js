@@ -1,5 +1,16 @@
 const db = require('../db');
 const moment = require('moment');
+const { z } = require('zod');
+
+exports.description = 'Registra uma movimentação financeira';
+exports.schema = z.object({
+  user_id: z.string(),
+  descricao: z.string(),
+  valor: z.number(),
+  tipo: z.string().optional(),
+  categoria: z.string().optional(),
+  data: z.string().nullable().optional()
+});
 
 // Função para gerar um código único curto e fácil de usar
 function gerarCodigoRegistro() {

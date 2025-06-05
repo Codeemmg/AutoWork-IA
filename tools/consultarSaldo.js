@@ -1,6 +1,16 @@
 // tools/consultarSaldo.js
 
 const db = require("../db");
+const { z } = require("zod");
+
+exports.description = "Consulta saldo do usuário em um período";
+exports.schema = z.object({
+  userId: z.string(),
+  periodo: z
+    .object({ inicio: z.string(), fim: z.string() })
+    .nullable()
+    .optional()
+});
 
 /**
  * Consulta o saldo de um usuário em um período.

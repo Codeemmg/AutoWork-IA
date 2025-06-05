@@ -1,4 +1,22 @@
 const db = require('../db');
+const { z } = require('zod');
+
+exports.description = 'Registra um novo agendamento';
+exports.schema = z.object({
+  user_id: z.string(),
+  resultado: z.object({
+    descricao: z.string(),
+    valor: z.number(),
+    tipo: z.string(),
+    categoria: z.string().nullable().optional(),
+    data_vencimento: z.string(),
+    recorrencia: z.string().optional(),
+    lembrete: z.boolean().optional(),
+    dias_lembrete: z.number().optional(),
+    status: z.string().optional(),
+    observacao: z.string().nullable().optional()
+  })
+});
 
 async function registerAgendamento(user_id, resultado = {}, debugLog = []) {
     const {

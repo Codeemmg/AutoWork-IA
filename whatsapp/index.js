@@ -11,8 +11,9 @@ const express = require('express');
 const { default: makeWASocket, useMultiFileAuthState, DisconnectReason } = require('@whiskeysockets/baileys');
 const { Boom } = require('@hapi/boom');
 
-// AGENTE CENTRAL (roteador.js)
-const agent = require('../agent/roteador');
+// Planner LLM
+const { decidir } = require('../agent/planner/routerLLM');
+const { skillsMap } = require('../agent/skills');
 
 // ✅ Set para rastrear mensagens já processadas
 const mensagensProcessadas = new Set();
@@ -104,29 +105,17 @@ async function startSock() {
     await sock.sendPresenceUpdate('composing', sender);
 
     try {
-      // NOVO: recupera o contexto pendente desse usuário
-      let contextoPendente = sessions[numero]?.contextoPendente || null;
-
-      // Chama o AGENTE CENTRAL do AUTOWORK IA, passando o contexto!
-      const resultado = await agent.routeMessage(numero, texto, [], contextoPendente);
-
-      // Atualiza ou limpa o contexto da sessão
-      if (resultado && resultado.contextoPendente) {
-        sessions[numero] = { contextoPendente: resultado.contextoPendente };
-      } else {
-        delete sessions[numero];
+      const { skill, args } = await decidir(texto);
+      let resposta;
+      try {
+        resposta = await skillsMap[skill].exec(args, { user_id: msg.key.remoteJid });
+      } catch (e) {
+        console.error(e);
+        resposta = '❌ Ocorreu um erro interno. Tente novamente.';
       }
-
-      let respostaFinal = resultado.resposta || resultado.conteudo || resultado;
-
-      if (respostaFinal) {
-        await sock.sendMessage(sender, { text: respostaFinal });
-      } else {
-        await sock.sendMessage(sender, { text: "⚠️ Desculpe, não entendi sua solicitação." });
-      }
-
+      await sock.sendMessage(sender, { text: resposta }, { quoted: msg });
     } catch (error) {
-      console.error('Erro no agent:', error.message);
+      console.error('Erro no planner:', error.message);
       await sock.sendMessage(sender, { text: '⚠️ Ocorreu um erro interno ao processar sua mensagem.' });
     }
   });

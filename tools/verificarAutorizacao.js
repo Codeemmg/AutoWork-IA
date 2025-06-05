@@ -1,4 +1,8 @@
 const db = require('../db');
+const { z } = require('zod');
+
+exports.description = 'Verifica autorização de número do usuário';
+exports.schema = z.object({ numero: z.string() });
 
 /**
  * Verifica se o número do usuário está autorizado a usar o assistente.

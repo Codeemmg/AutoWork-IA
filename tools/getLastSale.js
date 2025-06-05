@@ -1,5 +1,9 @@
 // getLastSale.js
 const db = require('../db');
+const { z } = require('zod');
+
+exports.description = 'Obtém o último registro do usuário';
+exports.schema = z.object({ user_id: z.string() });
 
 // Retorna o último registro do usuário (entrada ou saída REAL)
 async function getLastSale(user_id) {

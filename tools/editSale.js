@@ -1,4 +1,18 @@
 const db = require('../db');
+const { z } = require('zod');
+
+exports.description = 'Edita um registro existente';
+exports.schema = z.object({
+  user_id: z.string(),
+  codigo: z.string(),
+  updates: z
+    .object({
+      valor: z.number().optional(),
+      categoria: z.string().optional(),
+      descricao: z.string().optional()
+    })
+    .optional()
+});
 
 async function editSale(user_id, codigo, updates = {}) {
   // Monta query dinâmica de acordo com os campos passados

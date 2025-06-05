@@ -1,6 +1,10 @@
 const fs = require("fs");
 const path = require("path");
 const { OpenAI } = require("openai");
+const { z } = require("zod");
+
+exports.description = "Classifica categoria de um texto via IA";
+exports.schema = z.object({ frase: z.string() });
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 

@@ -3,6 +3,10 @@ const moment = require('moment');
 const { ChartJSNodeCanvas } = require('chartjs-node-canvas');
 const fs = require('fs');
 const path = require('path');
+const { z } = require('zod');
+
+exports.description = 'Gera gráficos de resumo semanal';
+exports.schema = z.object({ userId: z.string() });
 
 const largura = 700;
 const altura = 400;

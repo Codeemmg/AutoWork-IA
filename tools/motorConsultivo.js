@@ -1,6 +1,10 @@
 // tools/motorConsultivo.js
 
 const db = require("../db");
+const { z } = require('zod');
+
+exports.description = 'Gera sugestão financeira ao usuário';
+exports.schema = z.object({ userId: z.string() });
 
 /**
  * Gera uma sugestão consultiva financeira para o usuário, com base em análise simples do histórico.

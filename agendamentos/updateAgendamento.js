@@ -1,4 +1,11 @@
 const db = require('../db');
+const { z } = require('zod');
+
+exports.description = 'Atualiza um agendamento existente';
+exports.schema = z.object({
+  user_id: z.string(),
+  resultado: z.object({ id: z.number() }).passthrough()
+});
 
 /**
  * Atualiza um agendamento por ID.

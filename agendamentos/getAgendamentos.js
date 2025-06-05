@@ -1,5 +1,21 @@
 const db = require('../db');
 const moment = require('moment');
+const { z } = require('zod');
+
+exports.description = 'Consulta registros agendados';
+exports.schema = z.object({
+  user_id: z.string(),
+  resultado: z
+    .object({
+      status: z.string().optional(),
+      recorrencia: z.string().optional(),
+      periodo: z
+        .object({ inicio: z.string(), fim: z.string() })
+        .optional(),
+      data_referencia: z.string().optional()
+    })
+    .optional()
+});
 
 /**
  * Consulta agendamentos do usuário, com filtros opcionais.

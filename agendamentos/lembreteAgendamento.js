@@ -1,4 +1,11 @@
 const getAgendamentos = require('./getAgendamentos');
+const { z } = require('zod');
+
+exports.description = 'Lista agendamentos próximos ao vencimento';
+exports.schema = z.object({
+  user_id: z.string(),
+  diasAntes: z.number().optional()
+});
 
 /**
  * Retorna lista de agendamentos para lembrete no período escolhido.

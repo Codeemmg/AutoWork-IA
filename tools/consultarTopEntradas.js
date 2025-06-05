@@ -2,6 +2,17 @@
 
 const db = require('../db');
 const moment = require('moment');
+const { z } = require('zod');
+
+exports.description = 'Lista as maiores entradas no período';
+exports.schema = z.object({
+  userId: z.string(),
+  periodo: z
+    .object({ inicio: z.string(), fim: z.string() })
+    .nullable()
+    .optional(),
+  topN: z.number().optional()
+});
 
 /**
  * Consulta os top N maiores entradas de um usuário em qualquer período.

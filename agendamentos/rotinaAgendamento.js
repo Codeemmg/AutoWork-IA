@@ -1,5 +1,12 @@
 const getAgendamentos = require('./getAgendamentos');
 const registerSale = require('../tools/registerSale'); // Ou outro caminho se estiver diferente
+const { z } = require('zod');
+
+exports.description = 'Executa agendamentos do dia corrente';
+exports.schema = z.object({
+  user_id: z.string(),
+  hoje: z.date().optional()
+});
 
 /**
  * Executa os agendamentos do dia, criando registro real se necessário.

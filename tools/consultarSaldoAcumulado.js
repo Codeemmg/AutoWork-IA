@@ -1,5 +1,12 @@
 // tools/consultarSaldoAcumulado.js
 const db = require("../db");
+const { z } = require("zod");
+
+exports.description = "Consulta saldo acumulado até uma data";
+exports.schema = z.object({
+  userId: z.string(),
+  ateData: z.string()
+});
 
 async function consultarSaldoAcumulado(userId, ateData, debugLog = []) {
   try {
